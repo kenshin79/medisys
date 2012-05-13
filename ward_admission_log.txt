@@ -1,0 +1,383 @@
+11/11/2011 02:25:21 pm, user:homer, task: backup ward admission id#203
+11/11/2011 02:25:21 pm, user:homer, task: delete ward admission id#203
+11/11/2011 02:27:25 pm, user:guest, task: edit ward admission id#240, patient#:114, date_in:2011-11-11
+11/11/2011 03:09:13 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#240, patient#:139, date_in:2011-11-11
+11/11/2011 03:13:42 pm, IP Add: 127.0.0.1, user:homer, task: backup ward admission id#177
+11/11/2011 03:13:42 pm, IP Add: 127.0.0.1, user:homer, task: delete ward admission id#177
+11/12/2011 09:37:51 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#240, patient#:139, date_in:2011-11-11
+11/13/2011 10:34:58 am, IP Add: 127.0.0.1, user:homer, task: insert ward admission id#241
+11/13/2011 10:38:21 am, IP Add: 127.0.0.1, user:homer, task: insert ward admission id#242
+11/13/2011 10:39:09 am, IP Add: 127.0.0.1, user:homer, task: insert ward admission id#243
+11/24/2011 01:47:02 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#240, patient#:139, date_in:2011-11-11
+11/24/2011 01:53:12 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#240, patient#:139, date_in:2011-11-11
+11/24/2011 08:02:51 pm, IP Add: 127.0.0.1, user:genmed4, task: insert ward admission id#244
+11/24/2011 08:06:40 pm, IP Add: 127.0.0.1, user:genmed4, task: backup ward admission id#244
+11/24/2011 08:06:40 pm, IP Add: 127.0.0.1, user:genmed4, task: delete ward admission id#244
+11/24/2011 08:06:49 pm, IP Add: 127.0.0.1, user:genmed4, task: backup ward admission id#239
+11/24/2011 08:06:49 pm, IP Add: 127.0.0.1, user:genmed4, task: delete ward admission id#239
+11/24/2011 08:07:08 pm, IP Add: 127.0.0.1, user:genmed4, task: backup ward admission id#216
+11/24/2011 08:07:08 pm, IP Add: 127.0.0.1, user:genmed4, task: delete ward admission id#216
+11/24/2011 08:27:36 pm, IP Add: 127.0.0.1, user:homer, task: insert ward admission id#1
+11/25/2011 01:16:58 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#226, patient#:107, date_in:2011-10-22
+11/28/2011 09:20:14 am, IP Add: 127.0.0.1, user:homer, task: backup ward admission id#225
+11/28/2011 09:20:14 am, IP Add: 127.0.0.1, user:homer, task: delete ward admission id#225
+11/28/2011 09:20:35 am, IP Add: 127.0.0.1, user:homer, task: backup ward admission id#177
+11/28/2011 09:20:35 am, IP Add: 127.0.0.1, user:homer, task: delete ward admission id#177
+11/28/2011 07:49:11 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#231, patient#:162, date_in:2011-10-23
+11/28/2011 07:53:10 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#202, patient#:130, date_in:2011-09-23
+11/28/2011 07:57:06 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#202, patient#:130, date_in:2011-09-23
+11/28/2011 08:00:04 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#202, patient#:130, date_in:2011-09-23
+11/28/2011 08:01:32 pm, IP Add: 127.0.0.1, user:homer, task: insert ward admission id#240
+11/28/2011 08:08:38 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#233, patient#:130, date_in:2011-10-23
+11/28/2011 08:09:44 pm, IP Add: 127.0.0.1, user:homer, task: backup ward admission id#231
+11/28/2011 08:09:44 pm, IP Add: 127.0.0.1, user:homer, task: delete ward admission id#231
+11/28/2011 08:14:28 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#224, patient#:139, date_in:2011-10-22
+11/28/2011 08:14:38 pm, IP Add: 127.0.0.1, user:homer, task: backup ward admission id#224
+11/28/2011 08:14:39 pm, IP Add: 127.0.0.1, user:homer, task: delete ward admission id#224
+11/28/2011 08:20:56 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#180, patient#:48, date_in:2011-09-11
+11/28/2011 08:24:18 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#180, patient#:48, date_in:2011-09-11
+11/28/2011 09:04:29 pm, IP Add: 127.0.0.1, user:homer, task: insert ward admission id#241
+11/28/2011 09:26:22 pm, IP Add: 112.205.166.20, user:genmed1, task: edit ward admission id#233, patient#:130, date_in:2011-10-23
+11/28/2011 09:26:57 pm, IP Add: 112.205.166.20, user:genmed1, task: edit ward admission id#233, patient#:130, date_in:2011-10-23
+11/30/2011 01:50:11 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#233, patient#:130, date_in:2011-10-23
+11/30/2011 01:58:49 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#196, patient#:124, date_in:2011-09-21
+12/01/2011 08:54:53 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#233, patient#:130, date_in:2011-10-23
+12/02/2011 01:14:48 am, IP Add: 127.0.0.1, user:homer, task: backup ward admission id#233
+12/02/2011 01:14:48 am, IP Add: 127.0.0.1, user:homer, task: delete ward admission id#233
+12/02/2011 01:40:22 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#, patient#:, date_in:
+12/02/2011 01:40:45 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#235, patient#:, date_in:
+12/02/2011 10:10:08 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#203, date_in:
+12/02/2011 10:13:28 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#203, date_in:
+12/02/2011 10:13:44 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#203, date_in:
+12/03/2011 12:57:09 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#, date_in:
+12/03/2011 01:00:47 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#, date_in:
+12/03/2011 01:04:23 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#, date_in:
+12/03/2011 01:06:55 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#, date_in:
+12/03/2011 01:07:10 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#, date_in:
+12/03/2011 01:09:16 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#235, date_in:
+12/03/2011 01:09:53 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#235, date_in:
+12/03/2011 01:11:03 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#, date_in:
+12/03/2011 01:11:40 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 01:16:04 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 01:16:28 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 01:17:07 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 01:17:33 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 01:19:39 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 01:21:09 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#235, date_in:
+12/03/2011 01:21:49 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 01:23:15 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 01:24:36 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 01:25:59 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 01:31:18 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 01:31:51 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 01:33:03 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 01:34:13 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 01:34:52 am, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#235, date_in:
+12/03/2011 02:07:59 am, IP Add: 127.0.0.1, user:homer, task: backup ward admission id#235
+12/03/2011 02:07:59 am, IP Add: 127.0.0.1, user:homer, task: delete ward admission id#235
+12/03/2011 02:12:44 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#239, date_in:
+12/03/2011 08:09:50 am, IP Add: 192.168.1.1, user:homer, task: edit abstract id#240, date_in:
+12/03/2011 08:12:27 am, IP Add: 112.205.166.20, user:genmed1, task: edit dsummary id#240, date_in:
+12/03/2011 08:24:12 am, IP Add: 192.168.1.1, user:homer, task: edit abstract id#240, date_in:
+12/03/2011 08:29:21 am, IP Add: 192.168.1.1, user:homer, task: edit abstract id#240, date_in:
+12/03/2011 08:32:48 am, IP Add: 112.205.166.20, user:genmed1, task: edit abstract id#181, date_in:
+12/03/2011 08:36:13 am, IP Add: 112.205.166.20, user:genmed1, task: edit dsummary id#181, date_in:
+12/05/2011 10:35:20 pm, IP Add: 127.0.0.1, user:homer, task: edit sagip id#, date_in:
+12/05/2011 10:36:07 pm, IP Add: 127.0.0.1, user:homer, task: edit sagip id#, date_in:
+12/05/2011 10:36:57 pm, IP Add: 127.0.0.1, user:homer, task: edit sagip id#203, date_in:
+12/05/2011 10:37:08 pm, IP Add: 127.0.0.1, user:homer, task: edit sagip id#203, date_in:
+12/05/2011 10:37:26 pm, IP Add: 127.0.0.1, user:homer, task: edit sagip id#203, date_in:
+12/05/2011 10:37:46 pm, IP Add: 127.0.0.1, user:homer, task: edit sagip id#203, date_in:
+12/05/2011 10:43:54 pm, IP Add: 127.0.0.1, user:homer, task: backup ward admission id#203
+12/05/2011 10:43:55 pm, IP Add: 127.0.0.1, user:homer, task: delete ward admission id#203
+12/06/2011 01:35:10 am, IP Add: 127.0.0.1, user:homer, task: edit home id#204, date_in:
+12/06/2011 01:35:28 am, IP Add: 127.0.0.1, user:homer, task: edit home id#204, date_in:
+12/06/2011 01:36:51 am, IP Add: 127.0.0.1, user:homer, task: edit home id#204, date_in:
+12/06/2011 01:38:00 am, IP Add: 127.0.0.1, user:homer, task: edit home id#204, date_in:
+12/06/2011 01:39:01 am, IP Add: 127.0.0.1, user:homer, task: edit home id#204, date_in:
+12/06/2011 01:40:52 am, IP Add: 127.0.0.1, user:homer, task: edit home id#204, date_in:
+12/06/2011 01:44:33 am, IP Add: 127.0.0.1, user:homer, task: edit home id#204, date_in:
+12/06/2011 01:44:50 am, IP Add: 127.0.0.1, user:homer, task: edit home id#204, date_in:
+12/06/2011 01:45:54 am, IP Add: 127.0.0.1, user:homer, task: edit home id#204, date_in:
+12/06/2011 01:46:09 am, IP Add: 127.0.0.1, user:homer, task: edit home id#204, date_in:
+12/06/2011 01:46:31 am, IP Add: 127.0.0.1, user:homer, task: edit home id#204, date_in:
+12/06/2011 01:49:00 am, IP Add: 127.0.0.1, user:homer, task: edit home id#204, date_in:
+12/06/2011 01:49:18 am, IP Add: 127.0.0.1, user:homer, task: edit home id#204, date_in:
+12/06/2011 01:50:00 am, IP Add: 127.0.0.1, user:homer, task: edit home id#204, date_in:
+12/06/2011 01:53:59 am, IP Add: 127.0.0.1, user:homer, task: backup ward admission id#204
+12/06/2011 01:53:59 am, IP Add: 127.0.0.1, user:homer, task: delete ward admission id#204
+12/06/2011 09:14:39 am, IP Add: 127.0.0.1, user:homer, task: edit home id#196, date_in:
+12/06/2011 10:10:58 pm, IP Add: 112.205.166.20, user:genmed1, task: edit ward admission id#240, patient#:141, date_in:2011-11-28
+12/06/2011 10:32:20 pm, IP Add: 112.205.166.20, user:genmed1, task: edit home id#240, date_in:
+12/08/2011 10:52:54 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#239, patient#:120, date_in:2011-11-10
+12/08/2011 10:53:04 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#239, patient#:120, date_in:2011-11-10
+12/08/2011 10:55:01 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#239, patient#:120, date_in:2011-11-10
+12/08/2011 10:56:06 pm, IP Add: 112.205.181.170, user:genmed1, task: edit ward admission id#240, patient#:141, date_in:2011-11-28
+12/08/2011 10:57:41 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#196, patient#:124, date_in:2011-09-21
+12/08/2011 10:59:04 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#241, patient#:70, date_in:2011-11-28
+12/08/2011 10:59:40 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#218, patient#:149, date_in:2011-10-03
+12/08/2011 11:03:42 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#22, patient#:68, date_in:2011-08-26
+12/08/2011 11:08:34 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#241, patient#:70, date_in:2011-11-28
+12/09/2011 04:25:35 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#106, patient#:104, date_in:2011-12-07
+12/09/2011 05:37:18 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#90, patient#:88, date_in:2011-12-06
+12/09/2011 05:38:28 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#90, patient#:88, date_in:2011-12-06
+12/09/2011 06:30:31 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#37, patient#:34, date_in:2011-12-03
+12/11/2011 04:27:17 pm, IP Add: 112.205.181.170, user:genmed1, task: edit ward admission id#69, patient#:68, date_in:2011-11-30
+12/11/2011 08:07:35 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#, date_in:
+12/11/2011 08:14:30 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#, date_in:
+12/11/2011 08:20:48 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#, date_in:
+12/11/2011 08:22:46 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#, date_in:
+12/11/2011 08:24:03 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#, date_in:
+12/11/2011 08:26:42 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#, date_in:
+12/11/2011 08:27:10 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 08:45:04 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 08:46:15 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 08:47:14 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 08:52:04 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 08:55:26 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 08:55:58 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 09:02:21 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 09:02:58 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 09:03:23 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 09:29:31 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 09:29:59 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 09:45:53 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 10:04:48 pm, IP Add: 112.205.244.114, user:genmed1, task: edit abstract id#63, date_in:
+12/11/2011 10:57:47 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 10:58:19 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 10:58:29 pm, IP Add: 127.0.0.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 11:22:05 pm, IP Add: 192.168.1.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 11:24:54 pm, IP Add: 192.168.1.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 11:25:21 pm, IP Add: 192.168.1.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 11:26:44 pm, IP Add: 192.168.1.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 11:29:51 pm, IP Add: 192.168.1.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 11:30:16 pm, IP Add: 192.168.1.1, user:homer, task: edit cbc id#63, date_in:
+12/11/2011 11:32:45 pm, IP Add: 192.168.1.1, user:homer, task: edit abstract id#63, date_in:
+12/11/2011 11:33:11 pm, IP Add: 192.168.1.1, user:homer, task: edit abstract id#63, date_in:
+12/11/2011 11:33:22 pm, IP Add: 192.168.1.1, user:homer, task: edit abstract id#63, date_in:
+12/11/2011 11:33:51 pm, IP Add: 192.168.1.1, user:homer, task: edit abstract id#63, date_in:
+12/11/2011 11:34:00 pm, IP Add: 192.168.1.1, user:homer, task: edit abstract id#63, date_in:
+12/11/2011 11:35:02 pm, IP Add: 192.168.1.1, user:homer, task: edit abstract id#63, date_in:
+12/11/2011 11:47:04 pm, IP Add: 192.168.1.1, user:homer, task: edit abstract id#63, date_in:
+12/12/2011 12:08:33 am, IP Add: 61.201.53.167, user:genmed1, task: edit abstract id#63, date_in:
+12/12/2011 12:20:52 am, IP Add: 192.168.1.1, user:homer, task: edit abstract id#63, date_in:
+12/12/2011 06:50:29 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#63, patient#:59, date_in:2011-11-26
+12/12/2011 07:11:32 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#63, date_in:
+12/12/2011 07:11:43 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#63, patient#:59, date_in:2011-11-26
+12/12/2011 07:12:06 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#63, patient#:59, date_in:2011-11-26
+12/12/2011 07:14:23 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#63, patient#:59, date_in:2011-11-26
+12/12/2011 07:19:13 am, IP Add: 127.0.0.1, user:homer, task: insert ward admission id#119
+12/12/2011 07:19:42 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#119, patient#:78, date_in:2011-12-12
+12/12/2011 07:20:02 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#119, date_in:
+12/12/2011 07:20:07 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#119, patient#:78, date_in:2011-12-12
+12/12/2011 07:21:50 am, IP Add: 127.0.0.1, user:homer, task: backup ward admission id#119
+12/12/2011 07:21:50 am, IP Add: 127.0.0.1, user:homer, task: delete ward admission id#119
+12/12/2011 07:27:59 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#63, patient#:59, date_in:2011-11-26
+12/12/2011 07:28:11 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#62, patient#:62, date_in:2011-12-05
+12/12/2011 08:02:17 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#63, date_in:
+12/12/2011 08:02:25 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#63, patient#:59, date_in:2011-11-26
+12/12/2011 08:02:39 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#63, date_in:
+12/12/2011 08:24:46 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#63, date_in:
+12/16/2011 11:28:28 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#63, patient#:59, date_in:2011-11-26
+12/16/2011 11:37:30 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#90, patient#:88, date_in:2011-12-06
+12/16/2011 11:39:40 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#90, patient#:88, date_in:2011-12-06
+12/16/2011 11:43:34 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#90, patient#:88, date_in:2011-12-06
+12/16/2011 11:50:46 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#90, patient#:88, date_in:2011-12-06
+12/16/2011 11:51:40 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#90, patient#:88, date_in:2011-12-06
+12/16/2011 11:51:56 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#90, patient#:88, date_in:2011-12-06
+12/16/2011 11:52:01 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#90, patient#:88, date_in:2011-12-06
+12/16/2011 11:56:23 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#90, patient#:88, date_in:2011-12-06
+12/16/2011 11:56:31 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#90, patient#:88, date_in:2011-12-06
+12/16/2011 11:57:05 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#90, patient#:88, date_in:2011-12-06
+12/16/2011 11:57:11 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#62, patient#:62, date_in:2011-12-05
+12/16/2011 11:57:19 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#62, patient#:62, date_in:2011-12-05
+12/16/2011 11:58:03 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#62, patient#:62, date_in:2011-12-05
+12/16/2011 11:59:02 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#62, patient#:62, date_in:2011-12-05
+12/16/2011 11:59:23 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#62, patient#:62, date_in:2011-12-05
+12/17/2011 12:00:00 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#67, patient#:66, date_in:2011-11-20
+12/17/2011 12:01:01 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#67, patient#:66, date_in:2011-11-20
+12/17/2011 12:01:07 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:2011-11-30
+12/17/2011 12:05:45 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:2011-11-30
+12/17/2011 12:05:51 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:2011-11-30
+12/17/2011 12:06:06 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:2011-11-30
+12/17/2011 12:33:43 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:2011-11-30
+12/17/2011 12:34:09 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:0000-00-00
+12/17/2011 12:34:20 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:ed3ert4
+12/17/2011 12:34:29 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:2011-11-30
+12/17/2011 12:37:29 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:2011-11-30
+12/17/2011 12:37:40 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:dwedwed
+12/17/2011 12:38:30 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:dwedwed
+12/17/2011 12:38:46 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:0000-00-00
+12/17/2011 12:39:01 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:2011-11-11
+12/17/2011 12:45:44 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:2011-11-11
+12/17/2011 12:55:12 am, IP Add: 127.0.0.1, user:homer, task: insert ward admission id#119
+12/17/2011 01:12:53 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:2011-11-11
+12/17/2011 01:13:02 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:2011-11-11
+12/17/2011 01:14:57 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:2011-11-11
+12/17/2011 01:15:57 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#69, patient#:68, date_in:2011-11-11
+12/17/2011 01:16:04 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#71, patient#:69, date_in:2011-11-26
+12/17/2011 01:16:19 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#71, patient#:69, date_in:2011-11-26
+12/17/2011 01:16:58 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#73, patient#:71, date_in:2011-12-03
+12/17/2011 01:17:38 am, IP Add: 127.0.0.1, user:homer, task: insert ward admission id#120
+12/17/2011 02:07:43 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#47, date_in:
+12/17/2011 02:08:03 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#47, date_in:
+12/17/2011 02:08:26 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#119, patient#:123, date_in:2011-12-16
+12/17/2011 02:08:32 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#47, patient#:44, date_in:2011-11-26
+12/18/2011 10:09:00 pm, IP Add: 127.0.0.1, user:homer, task: edit bloodchem id#120, date_in:
+12/18/2011 10:10:08 pm, IP Add: 127.0.0.1, user:homer, task: edit bloodchem id#120, date_in:
+12/18/2011 10:10:33 pm, IP Add: 127.0.0.1, user:homer, task: edit bloodchem id#120, date_in:
+12/18/2011 10:11:14 pm, IP Add: 127.0.0.1, user:homer, task: edit bloodchem id#120, date_in:
+12/18/2011 10:13:58 pm, IP Add: 127.0.0.1, user:homer, task: edit bloodchem id#120, date_in:
+12/18/2011 10:53:04 pm, IP Add: 127.0.0.1, user:homer, task: edit protime id#81, date_in:
+12/18/2011 11:10:25 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#81, patient#:77, date_in:2011-11-26
+12/18/2011 11:10:56 pm, IP Add: 127.0.0.1, user:homer, task: edit protime id#81, date_in:
+12/18/2011 11:12:17 pm, IP Add: 127.0.0.1, user:homer, task: edit bloodchem id#81, date_in:
+12/18/2011 11:12:33 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#81, patient#:77, date_in:2011-11-26
+12/18/2011 11:14:56 pm, IP Add: 127.0.0.1, user:homer, task: backup ward admission id#81
+12/18/2011 11:14:56 pm, IP Add: 127.0.0.1, user:homer, task: delete ward admission id#81
+12/19/2011 12:35:52 am, IP Add: 127.0.0.1, user:homer, task: insert ward admission id#121
+12/19/2011 01:03:26 am, IP Add: 127.0.0.1, user:homer, task: edit urinalysis id#119, date_in:
+12/19/2011 01:03:44 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#119, patient#:123, date_in:2011-12-16
+12/19/2011 01:39:56 am, IP Add: 127.0.0.1, user:homer, task: edit abg id#121, date_in:
+12/19/2011 01:40:17 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#121, patient#:20, date_in:2011-12-18
+12/19/2011 01:40:39 am, IP Add: 127.0.0.1, user:homer, task: edit cbc id#121, date_in:
+12/19/2011 01:40:49 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#121, patient#:20, date_in:2011-12-18
+12/19/2011 02:05:25 am, IP Add: 127.0.0.1, user:homer, task: edit cbc id#121, date_in:
+12/19/2011 02:06:15 am, IP Add: 127.0.0.1, user:homer, task: edit cbc id#121, date_in:
+12/19/2011 08:10:22 am, IP Add: 127.0.0.1, user:homer, task: edit fecalysis id#120, date_in:
+12/19/2011 08:10:38 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#120, patient#:74, date_in:2011-12-16
+12/19/2011 09:01:13 am, IP Add: 127.0.0.1, user:homer, task: edit uchem id#120, date_in:
+12/19/2011 09:01:39 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#120, patient#:74, date_in:2011-12-16
+12/19/2011 09:02:00 am, IP Add: 127.0.0.1, user:homer, task: backup ward admission id#120
+12/19/2011 09:02:00 am, IP Add: 127.0.0.1, user:homer, task: delete ward admission id#120
+12/19/2011 09:32:39 am, IP Add: 127.0.0.1, user:homer, task: edit culture id#121, date_in:
+12/19/2011 09:33:45 am, IP Add: 127.0.0.1, user:homer, task: edit culture id#121, date_in:
+12/19/2011 09:34:06 am, IP Add: 127.0.0.1, user:homer, task: edit culture id#121, date_in:
+12/19/2011 09:34:23 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#121, patient#:20, date_in:2011-12-18
+12/19/2011 09:36:39 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#121, patient#:20, date_in:2011-12-18
+12/19/2011 11:28:17 am, IP Add: 127.0.0.1, user:homer, task: edit imaging id#121, date_in:
+12/19/2011 11:28:31 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#121, patient#:20, date_in:2011-12-18
+12/19/2011 11:46:18 am, IP Add: 127.0.0.1, user:homer, task: edit ecg id#119, date_in:
+12/19/2011 11:46:35 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#119, patient#:123, date_in:2011-12-16
+12/19/2011 05:40:38 pm, IP Add: 127.0.0.1, user:homer, task: edit others id#38, date_in:
+12/19/2011 05:40:52 pm, IP Add: 127.0.0.1, user:homer, task: edit others id#38, date_in:
+12/19/2011 05:41:09 pm, IP Add: 127.0.0.1, user:homer, task: edit others id#38, date_in:
+12/19/2011 05:41:24 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#38, patient#:35, date_in:2011-11-29
+12/20/2011 03:44:10 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#69, date_in:
+12/20/2011 03:45:46 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#62, date_in:
+12/20/2011 03:48:10 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#62, date_in:
+12/20/2011 03:48:41 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#63, date_in:
+12/20/2011 03:49:03 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#90, date_in:
+12/20/2011 03:49:56 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#71, date_in:
+12/20/2011 03:50:16 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#54, date_in:
+12/20/2011 03:50:33 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#49, date_in:
+12/20/2011 03:50:58 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#51, date_in:
+12/20/2011 03:51:40 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 04:13:26 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 04:16:23 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 04:16:44 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 04:19:13 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 04:19:33 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 04:20:17 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 04:20:28 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 04:21:04 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 04:21:19 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 04:21:46 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 04:21:57 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 04:22:27 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 04:22:48 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 09:28:42 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 09:30:17 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 09:30:57 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 09:31:23 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 09:31:54 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#42, date_in:
+12/20/2011 09:47:37 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#42, date_in:
+12/20/2011 09:48:02 pm, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#42, date_in:
+12/20/2011 10:39:08 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#85, date_in:
+12/20/2011 10:49:19 pm, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#121, date_in:
+12/20/2011 10:49:37 pm, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#121, date_in:
+12/20/2011 10:50:50 pm, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#121, date_in:
+12/20/2011 10:50:51 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 10:51:53 pm, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#121, date_in:
+12/20/2011 10:51:53 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/20/2011 10:56:30 pm, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#98, date_in:
+12/20/2011 10:56:30 pm, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#98, date_in:
+12/21/2011 04:53:55 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 04:53:55 am, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#29, date_in:
+12/21/2011 05:03:53 am, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#29, date_in:
+12/21/2011 05:12:39 am, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#29, date_in:
+12/21/2011 05:13:18 am, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#29, date_in:
+12/21/2011 05:16:52 am, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#29, date_in:
+12/21/2011 05:42:17 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 05:42:17 am, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#29, date_in:
+12/21/2011 05:47:58 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 05:47:58 am, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#29, date_in:
+12/21/2011 05:50:12 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 05:51:11 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 05:51:42 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 05:54:17 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 06:01:43 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 06:02:28 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 06:02:59 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 06:07:42 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 06:07:51 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 06:08:14 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#121, date_in:
+12/21/2011 06:08:35 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#119, date_in:
+12/21/2011 06:09:09 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#121, date_in:
+12/21/2011 06:09:09 am, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/21/2011 06:12:44 am, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#29, date_in:
+12/21/2011 06:13:03 am, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#29, date_in:
+12/21/2011 06:13:14 am, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#20, date_in:
+12/21/2011 06:13:35 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 06:35:48 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#121, date_in:
+12/21/2011 06:43:49 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#37, date_in:
+12/21/2011 06:44:20 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#121, date_in:
+12/21/2011 06:44:20 am, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#121, date_in:
+12/21/2011 06:48:15 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 06:56:09 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#19, date_in:
+12/21/2011 06:56:09 am, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#19, date_in:
+12/21/2011 07:04:48 am, IP Add: 127.0.0.1, user:homer, task: edit dispo date id#29, date_in:
+12/21/2011 07:04:57 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/21/2011 07:33:45 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#29, date_in:
+12/22/2011 12:49:54 am, IP Add: 127.0.0.1, user:homer, task: insert ward admission id#122
+12/22/2011 12:38:35 pm, IP Add: 127.0.0.1, user:homer, task: edit cnotes id#121, date_in:
+12/22/2011 12:43:28 pm, IP Add: 127.0.0.1, user:homer, task: edit cnotes id#121, date_in:
+12/22/2011 12:44:51 pm, IP Add: 127.0.0.1, user:homer, task: edit cnotes id#121, date_in:
+12/22/2011 12:45:08 pm, IP Add: 127.0.0.1, user:homer, task: edit abstract id#121, date_in:
+12/22/2011 12:49:04 pm, IP Add: 127.0.0.1, user:homer, task: edit abstract id#121, date_in:
+12/22/2011 12:49:13 pm, IP Add: 127.0.0.1, user:homer, task: edit dsummary id#121, date_in:
+12/22/2011 12:49:21 pm, IP Add: 127.0.0.1, user:homer, task: edit sagip id#121, date_in:
+12/22/2011 01:25:45 pm, IP Add: 127.0.0.1, user:homer, task: edit others id#121, date_in:
+12/22/2011 01:25:59 pm, IP Add: 127.0.0.1, user:homer, task: edit cnotes id#121, date_in:
+12/22/2011 01:30:05 pm, IP Add: 127.0.0.1, user:homer, task: edit cnotes id#121, date_in:
+12/22/2011 01:30:19 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#121, patient#:20, date_in:2011-12-18
+12/22/2011 01:31:56 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#121, patient#:20, date_in:2011-12-18
+12/22/2011 01:32:01 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#121, patient#:20, date_in:2011-12-18
+03/16/2012 08:53:32 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#1819, patient#:2312, date_in:2012-02-29
+03/16/2012 09:57:29 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#1821, patient#:2314, date_in:2012-02-29
+03/16/2012 09:57:58 am, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#1821, patient#:2314, date_in:2012-02-29
+03/18/2012 11:00:00 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#1548, patient#:, date_in:
+03/18/2012 11:01:05 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#1700, patient#:, date_in:
+03/18/2012 11:01:21 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#1700, patient#:, date_in:
+03/18/2012 11:01:39 pm, IP Add: 127.0.0.1, user:homer, task: edit cnotes id#1700, date_in:
+03/18/2012 11:02:10 pm, IP Add: 127.0.0.1, user:homer, task: edit abstract id#1700, date_in:
+03/18/2012 11:02:33 pm, IP Add: 127.0.0.1, user:homer, task: edit abstract id#1700, date_in:
+03/18/2012 11:31:40 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#1752, patient#:, date_in:
+03/18/2012 11:32:01 pm, IP Add: 127.0.0.1, user:homer, task: edit cnotes id#1752, date_in:
+03/18/2012 11:32:15 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#1752, patient#:, date_in:
+03/18/2012 11:33:27 pm, IP Add: 127.0.0.1, user:homer, task: edit abstract id#1752, date_in:
+03/18/2012 11:33:40 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#1752, patient#:, date_in:
+03/18/2012 11:34:02 pm, IP Add: 127.0.0.1, user:homer, task: edit abstract id#1752, date_in:
+03/18/2012 11:35:10 pm, IP Add: 127.0.0.1, user:homer, task: insert ward admission id#1843
+03/18/2012 11:35:38 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#1843, patient#:, date_in:
+03/19/2012 08:28:24 am, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#1700, date_in:
+03/19/2012 08:29:04 am, IP Add: 127.0.0.1, user:homer, task: edit cbc2 id#1700, date_in:
+03/20/2012 12:00:41 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#1125, patient#:, date_in:
+03/20/2012 12:01:00 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#1125, patient#:, date_in:
+03/20/2012 12:01:20 pm, IP Add: 127.0.0.1, user:homer, task: edit pcpdx id#1125, date_in:
+03/20/2012 12:14:27 pm, IP Add: 127.0.0.1, user:homer, task: insert ward admission id#1844
+03/22/2012 11:17:10 am, IP Add: 127.0.0.1, user:homer, task: insert ward admission id#1845
+03/31/2012 02:22:36 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#1643, patient#:, date_in:
+03/31/2012 02:28:41 pm, IP Add: 127.0.0.1, user:homer, task: edit ward admission id#1643, patient#:, date_in:
+04/02/2012 11:45:48 am, IP Add: 127.0.0.1, user:homer, task: edit abstract id#1700
+04/02/2012 12:07:48 pm, IP Add: 127.0.0.1, user:homer, task: edit abstract id#1813

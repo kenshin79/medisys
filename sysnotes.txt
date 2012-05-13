@@ -1,0 +1,8 @@
+<div style="margin-left:10px; font-size:large;">
+<b>***May 2012: Watch out for announcements on the online quiz!</b> <br/>
+<b>****Inquire from your LU resident monitors Dr Allen Tria and Dr Abi Uy for more details.</b><br/>  
+Note to ALL Medisys users: Please use <b>CHROME</b> or <b>SAFARI</b> Browser<br/>
+Not All functions working with <span style="color:red;">FireFox</span>.<br/>
+Thank you.<br/>
+- Medicine Sysadmin
+</div>

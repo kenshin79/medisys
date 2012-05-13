@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   	<script type="text/javascript" src="/medisys/js/jquery.js"></script>
+   	<script type="text/javascript" src="/medisys/js/my_jscripts.js"></script>
+<script>
+$(document).ready(function(){
+	showQuiz();
+});
+function validateUser(form){
+	a = form.user.value;
+	b = form.answer.value;
+	if (((a=="")||((a==null)||((b=="")||(b==null))))){
+		alert('Please provide answer and your name. Thank you.');
+		return false;
+	}
+	return true;
+}
+</script>
+<title>Submit Answers to Quiz</title>
+</head>
+<body>
+<div id = "quizcopy" ></div>
+<h1 style= "text-align:center">Write your answers to quiz below and SUBMIT!</h1>
+<form name = "getanswer" method = "POST" action = "answers.php">
+<div align="center"><textarea  cols=100 rows=20 name=answer></textarea>
+<br/>User Type:<select name = utype>
+<option value = "Clerk">Clerk (LU6)</option>
+<option value = "Intern">Intern (LU7)</option>
+</select>Your name:<input type="text" name = "user" size=20>
+<input type="submit" value="Submit Answers" onclick = "return validateUser(this.form)"> 
+</div>
+</body>
+</html>

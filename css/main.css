@@ -1,0 +1,252 @@
+    table, th, td, h1, h2, h3, h4{
+    border: 1px solid black;
+    border-collapse:collapse;
+    background-color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+    th{
+    background-color:#EEE8AA;
+
+    }
+    td {
+    vertical-align:top;
+    font-family:serif;
+    }
+	.innerTable{
+    border-collapse:collapse;
+    border: 1px solid black;
+
+    
+	}
+
+
+    .evenRow{
+        background-color:red;
+	}
+
+    #census_table table{
+
+    border: 1px solid;
+    border-color:black;
+    }
+    .gendata_col{
+    width:100px;
+
+    } 
+
+    .refs{
+    width:80px;
+
+    }
+
+    .plist{
+    width:475px;
+
+    } 
+
+    .buttons_col{
+    width:100px;
+    }
+
+    .allCaps{
+    text-transform:uppercase;
+    font-weight:bold;
+    }
+
+    .oddRow{
+    background-color:#0099cc;
+
+    }
+
+    .menubb{
+    font-size:large;
+    color:red;
+    height:30px;
+    width:250px;
+    }
+    .menubbb{
+    font-size:large;
+    color:red;
+    height:30px;
+    width:170px;
+    }
+    .forms_buttons{
+    font-size:small;
+    font-weight:bold;
+    color:red;
+    height:30px;
+    width:100px;
+    }
+    
+    .summary_table{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left: -450px;
+    margin-top: -400px
+
+    }
+    .hover {
+    cursor: pointer;
+    background-color: #FFF;
+    }
+    .highlight{
+    background-color: yellow;
+    color: red;
+
+    }
+    
+    #main_display{
+    width:1000px;
+    height:1000px;
+    background-color:none;
+    border-left:1px solid black ;
+    border-right:1px solid black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left: -500px;
+    margin-top: +50px;
+    }
+
+    #ward_banner1{
+    width:300px;
+    height:40px;
+    background-color:#7F171F;
+    font-size:1.25em;
+    font-weight:bold;
+    color:#F0E68C;
+    border-left:none;
+    border-right:1px solid white;
+    border-top:1px solid white;    
+    position:absolute;
+    top:0%;
+    left:0%;
+    
+    }
+
+    #ward_banner2{
+    width:550px;
+    height:40px;
+    background-color:#7F171F;
+    font-size:1.25em;
+    font-weight:bold;
+    color:#F0E68C;
+    border-left:1px solid white;
+    border-right:1px solid white;
+    border-top:1px solid white;    
+    position:absolute;
+    top:0%;
+    left:0%;
+    
+    }
+
+
+    #ward_body{
+    width:1000px;
+    height:960px;
+    background-color:white;
+    position:absolute;
+    
+    top:0%;
+    left:0%;
+    margin-top:40px;
+    }
+
+    #micu_banner{
+    width:250px;
+    height:40px;
+    background-color:#DAA520;
+    border-left:1px solid white;
+    border-right:1px solid white;
+    border-top:1px solid white;    
+
+    font-size:1.25em;
+    font-weight:bold;
+    color:#F0E68C;
+    position:absolute;
+    top:0%;
+    left:0%;
+    margin-left:300px;
+    }
+
+    #micu_body{
+    width:1000px;
+    height:960px;
+    background-color:white;
+    position:absolute;
+    top:0%;
+    left:0%;
+    margin-top:40px;
+    
+    }
+    #er_banner{
+    width:200px;
+    height:40px;
+    background-color:#556B2F;
+    border-left:1px solid white;
+    border-right:1px solid white;
+    border-top:1px solid white;    
+    font-size:1.25em;
+    font-weight:bold;
+    color:#F0E68C;
+    position:absolute;
+    top:0%;
+    left:0%;
+    margin-left:550px;
+    }
+
+    #er_body{
+    width:1000px;
+    height:960px;
+    background-color:white;
+    position:absolute;
+    top:0%;
+    left:0%;
+    margin-top:40px;
+    
+    }
+
+    #selected_banner1{
+    width:250px;
+    height:40px;
+    background-color:#191970;
+    border-left:1px solid white;
+    border-top:1px solid white;    
+    font-size:1.25em;
+    font-weight:bold;
+    color:#F0E68C;
+    position:absolute;
+    top:0%;
+    left:0%;
+    margin-left:750px;
+
+    }
+    #selected_banner2{
+    width:450px;
+    height:40px;
+    background-color:#191970;
+    border-left:1px solid white;
+    border-top:1px solid white;    
+    font-size:1.25em;
+    font-weight:bold;
+    color:#F0E68C;
+    position:absolute;
+    top:0%;
+    left:0%;
+    margin-left:550px;
+
+    }
+
+    #selected_body{
+    width:1000px;
+    height:960px;
+    background-color:white;
+    position:absolute;
+    top:0%;
+    left:0%;
+    margin-top:40px;
+ 
+    }
+
+    
