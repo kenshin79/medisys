@@ -14,7 +14,7 @@
 		font-size:large;
 		color:red;
 		height:50px;
-		width:210px;
+		width:210px
 	     }
 	</style>
 	<link rel="stylesheet" type="text/css" href="/medisys/css/menu.css" />
