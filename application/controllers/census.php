@@ -246,7 +246,8 @@ function gm_census(){
 	      				'disch'=>$this->Admission_model->count_dispo($my_service, "Discharged", $my_date1, $my_date2),	
 
 				 );  	
-              $data['c_admissions'] = $this->Admission_model->gm_report($my_service, $my_date1, $my_date2);
+              $data['c_admissions'] = $this->Admission_model->gm_report($my_service, $my_date1, $my_date2, "All");
+              $data['p_admissions'] = $this->Admission_model->gm_report($my_service, $my_date1, $my_date2, "Primary");
        }
        $this->load->view('list/show_admissions', $data); 
 } 	

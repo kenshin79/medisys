@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Er_census_bu_model extends CI_Model {
-          var $er_id="";
+          var $eb_id="";
 	  var $date_in="";
 	  var $date_out="";
 	  var $dispo="";
@@ -41,6 +41,7 @@ class Er_census_bu_model extends CI_Model {
 	  var $imaging2="";
 	  var $ecg2="";
 	  var $others2="";
+	  /*
           var $er_bu_array = array(
 					$eb_id,
 	   				$date_in,
@@ -83,7 +84,7 @@ class Er_census_bu_model extends CI_Model {
 	   				$ecg2,
 	   				$others2,
 			);
-
+*/
 
 
 function __construct() {
@@ -103,4 +104,4 @@ function insert_one_admission_bu($er_data){
 }  
 
 
-
+}

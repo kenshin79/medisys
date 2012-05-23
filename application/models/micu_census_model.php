@@ -75,6 +75,20 @@ class Micu_census_model extends CI_Model {
       	$this->db->update('micu_census', $data);
       
       }
+      //get micu bed admissions
+      function get_micu_bed_admission($bed, $dispo, $date1, $date2){
+      	$this->db->select('micu_id');
+      	$datewhere = array(
+      			'date_in >=' => $date1,
+      			'date_in <=' => $date2
+      	);
+      	$this->db->where($datewhere);
+      	$this->db->where('bed', $bed);
+      	if ($dispo)
+      		$this->db->where('dispo', $dispo);
+      	$query = $this->db->get('micu_census');
+      	return $query->result();
+      }
       
       
       

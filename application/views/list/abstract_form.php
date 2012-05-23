@@ -260,7 +260,7 @@ if (!strcmp($one_gm, "y"))
         else
             echo form_input('reason', '');
         echo "</th></tr>";
-        echo "<tr><th style=\"text-align:left;; \">8. Brief History of Present Illness/OB History <br/><textarea  style=\"font-size:10px;\" name=\"history\" rows = \"24\" cols = \"190\" wrap = \"on\" >";
+        echo "<tr><th style=\"text-align:left;; \">8. Brief History of Present Illness/OB History <br/><textarea  style=\"font-size:10px;\" name=\"history\" rows = \"23\" cols = \"170\" wrap = \"on\" >";
 //HPI
         if ($row->abstract)
             echo revert_form_input($eabstract[7]);

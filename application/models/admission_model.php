@@ -63,17 +63,7 @@ function get_allclean(){
 //function clean_adm($aid, $date_in, $date_out, $sic, $plist, $meds, $refs, $erefs, $notes, $pcpdx){
 function clean_adm($aid, $abstract, $dsummary, $sagip, $home, $cnotes ){
     $data = array(
-    /*
-    	'sic'=>clean_form_input($sic),
-    	'date_in'=>clean_form_input($date_in),
-    	'date_out'=>clean_form_input($date_out),
-    	'plist'=>clean_form_input($plist),
-    	'meds'=>clean_form_input($meds),
-    	'refs'=>clean_form_input($refs),
-    	'erefs'=>clean_form_input($erefs),
-    	'notes'=>clean_form_input($notes),
-    	'pcpdx'=>clean_form_input($pcpdx),		
-    */
+
     	'abstract'=>clean_form_input($abstract),
     	'dsummary'=>clean_form_input($dsummary),
     	'sagip'=>clean_form_input($sagip),
@@ -93,6 +83,22 @@ function get_one_admission($aid){
          $this->db->where('a_id', $aid);
          $query = $this->db->get('admissions');
          return $query->result();
+}
+
+//get ward bed admissions
+function get_ward_bed_admission($ward, $bed, $dispo, $date1, $date2){
+	$this->db->select('a_id');
+	$datewhere = array(
+			'date_in >=' => $date1,
+			'date_in <=' => $date2
+	);
+	$this->db->where($datewhere);
+	$this->db->where('location', $ward);
+	$this->db->where('bed', $bed);
+	if ($dispo)
+		$this->db->where('dispo', $dispo);	
+	$query = $this->db->get('admissions');
+	return $query->result();
 }
 
       
@@ -140,6 +146,7 @@ function count_dispo($serv, $disp, $date1, $date2){
         $this->db->where('date_in >=', $date1); 
 	$this->db->where('date_in <=', $date2);
 	$this->db->where('dispo', $disp);
+	$this->db->where('type', 'Primary');
 	$query = $this->db->get('admissions');
 	return $query->num_rows();
 }	
@@ -150,6 +157,7 @@ function count_refs($serv, $refs, $date1, $date2){
 		$this->db->where('service', $serv);
         $this->db->where('date_in >=', $date1); 
 	$this->db->where('date_in <=', $date2);
+	$this->db->where('type', 'Primary');
 	$this->db->like('refs', $refs);
 	$query = $this->db->get('admissions');
 	return $query->num_rows();
@@ -161,6 +169,7 @@ function count_erefs($serv, $erefs, $date1, $date2){
 		$this->db->where('service', $serv);
         $this->db->where('date_in >=', $date1); 
 	$this->db->where('date_in <=', $date2);
+	$this->db->where('type', 'Primary');
 	$this->db->like('erefs', $erefs);
 	$query = $this->db->get('admissions');
 	return $query->num_rows();
@@ -262,7 +271,7 @@ function edit_one_admission($id){
           
 	  }
           //GM service report
-          function gm_report($service, $date1, $date2)
+          function gm_report($service, $date1, $date2, $type)
           {
            $datewhere = array(
 		  			   'date_in >=' => $date1,
@@ -274,6 +283,8 @@ function edit_one_admission($id){
 	    $this->db->join('patients', 'patients.p_id = admissions.p_id', 'inner');
 	    $this->db->join('residents', 'residents.r_id = admissions.r_id', 'inner');
             $this->db->where($datewhere);
+        if (!strcmp($type, 'Primary'))    
+            $this->db->where('type', 'Primary');
 	    $this->db->order_by('dispo asc, service asc, type desc,  date_in desc');
 	    $query = $this->db->get();
 	    return $query->result();

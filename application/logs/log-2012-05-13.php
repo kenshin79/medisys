@@ -1553,3 +1553,2056 @@ ERROR - 2012-05-13 13:03:17 --> Severity: Warning  --> Division by zero C:\xampp
 DEBUG - 2012-05-13 13:03:17 --> File loaded: application/views/list/show_admissions.php
 DEBUG - 2012-05-13 13:03:17 --> Final output sent to browser
 DEBUG - 2012-05-13 13:03:17 --> Total execution time: 2.5926
+DEBUG - 2012-05-13 14:45:25 --> Config Class Initialized
+DEBUG - 2012-05-13 14:45:25 --> Hooks Class Initialized
+DEBUG - 2012-05-13 14:45:25 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 14:45:25 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 14:45:25 --> URI Class Initialized
+DEBUG - 2012-05-13 14:45:25 --> Router Class Initialized
+DEBUG - 2012-05-13 14:45:25 --> No URI present. Default controller set.
+DEBUG - 2012-05-13 14:45:25 --> Output Class Initialized
+DEBUG - 2012-05-13 14:45:25 --> Security Class Initialized
+DEBUG - 2012-05-13 14:45:25 --> Input Class Initialized
+DEBUG - 2012-05-13 14:45:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 14:45:25 --> Language Class Initialized
+DEBUG - 2012-05-13 14:45:25 --> Loader Class Initialized
+DEBUG - 2012-05-13 14:45:25 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 14:45:25 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 14:45:25 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 14:45:26 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 14:45:26 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 14:45:26 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 14:45:26 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 14:45:26 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 14:45:26 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 14:45:26 --> Session Class Initialized
+DEBUG - 2012-05-13 14:45:26 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 14:45:26 --> Session routines successfully run
+DEBUG - 2012-05-13 14:45:26 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:26 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:26 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:26 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:26 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:27 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:27 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:27 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:27 --> Controller Class Initialized
+DEBUG - 2012-05-13 20:45:27 --> File loaded: application/views/main_menu.php
+DEBUG - 2012-05-13 20:45:27 --> Final output sent to browser
+DEBUG - 2012-05-13 20:45:28 --> Total execution time: 2.3130
+DEBUG - 2012-05-13 14:45:45 --> Config Class Initialized
+DEBUG - 2012-05-13 14:45:45 --> Hooks Class Initialized
+DEBUG - 2012-05-13 14:45:45 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 14:45:45 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 14:45:45 --> URI Class Initialized
+DEBUG - 2012-05-13 14:45:45 --> Router Class Initialized
+DEBUG - 2012-05-13 14:45:45 --> Output Class Initialized
+DEBUG - 2012-05-13 14:45:45 --> Security Class Initialized
+DEBUG - 2012-05-13 14:45:45 --> Input Class Initialized
+DEBUG - 2012-05-13 14:45:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 14:45:45 --> Language Class Initialized
+DEBUG - 2012-05-13 14:45:45 --> Loader Class Initialized
+DEBUG - 2012-05-13 14:45:45 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 14:45:45 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 14:45:45 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 14:45:45 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 14:45:45 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 14:45:45 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 14:45:45 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 14:45:45 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 14:45:46 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 14:45:46 --> Session Class Initialized
+DEBUG - 2012-05-13 14:45:46 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 14:45:46 --> Session routines successfully run
+DEBUG - 2012-05-13 14:45:46 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:46 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:46 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:46 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:46 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:46 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:46 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:47 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:47 --> Controller Class Initialized
+DEBUG - 2012-05-13 14:45:47 --> File loaded: application/views/query/manage_a.php
+DEBUG - 2012-05-13 14:45:47 --> Final output sent to browser
+DEBUG - 2012-05-13 14:45:47 --> Total execution time: 2.0727
+DEBUG - 2012-05-13 14:45:52 --> Config Class Initialized
+DEBUG - 2012-05-13 14:45:52 --> Hooks Class Initialized
+DEBUG - 2012-05-13 14:45:52 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 14:45:52 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 14:45:52 --> URI Class Initialized
+DEBUG - 2012-05-13 14:45:52 --> Router Class Initialized
+DEBUG - 2012-05-13 14:45:52 --> Output Class Initialized
+DEBUG - 2012-05-13 14:45:52 --> Security Class Initialized
+DEBUG - 2012-05-13 14:45:52 --> Input Class Initialized
+DEBUG - 2012-05-13 14:45:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 14:45:52 --> Language Class Initialized
+DEBUG - 2012-05-13 14:45:52 --> Loader Class Initialized
+DEBUG - 2012-05-13 14:45:53 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 14:45:53 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 14:45:53 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 14:45:53 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 14:45:53 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 14:45:53 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 14:45:53 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 14:45:53 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 14:45:53 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 14:45:53 --> Session Class Initialized
+DEBUG - 2012-05-13 14:45:53 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 14:45:53 --> Session routines successfully run
+DEBUG - 2012-05-13 14:45:53 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:53 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:53 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:54 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:54 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:54 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:54 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:54 --> Model Class Initialized
+DEBUG - 2012-05-13 14:45:54 --> Controller Class Initialized
+DEBUG - 2012-05-13 14:45:54 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:45:54 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:45:54 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:45:55 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 14:45:55 --> Final output sent to browser
+DEBUG - 2012-05-13 14:45:55 --> Total execution time: 2.5771
+DEBUG - 2012-05-13 14:50:24 --> Config Class Initialized
+DEBUG - 2012-05-13 14:50:24 --> Hooks Class Initialized
+DEBUG - 2012-05-13 14:50:24 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 14:50:24 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 14:50:24 --> URI Class Initialized
+DEBUG - 2012-05-13 14:50:24 --> Router Class Initialized
+DEBUG - 2012-05-13 14:50:24 --> Output Class Initialized
+DEBUG - 2012-05-13 14:50:24 --> Security Class Initialized
+DEBUG - 2012-05-13 14:50:24 --> Input Class Initialized
+DEBUG - 2012-05-13 14:50:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 14:50:24 --> Language Class Initialized
+DEBUG - 2012-05-13 14:50:24 --> Loader Class Initialized
+DEBUG - 2012-05-13 14:50:25 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 14:50:25 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 14:50:25 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 14:50:25 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 14:50:25 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 14:50:25 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 14:50:25 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 14:50:25 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 14:50:25 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 14:50:25 --> Session Class Initialized
+DEBUG - 2012-05-13 14:50:25 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 14:50:25 --> Session routines successfully run
+DEBUG - 2012-05-13 14:50:25 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:25 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:25 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:25 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:26 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:26 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:26 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:26 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:26 --> Controller Class Initialized
+DEBUG - 2012-05-13 14:50:26 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:50:26 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:50:26 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:50:44 --> Config Class Initialized
+DEBUG - 2012-05-13 14:50:44 --> Hooks Class Initialized
+DEBUG - 2012-05-13 14:50:45 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 14:50:45 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 14:50:45 --> URI Class Initialized
+DEBUG - 2012-05-13 14:50:45 --> Router Class Initialized
+DEBUG - 2012-05-13 14:50:45 --> Output Class Initialized
+DEBUG - 2012-05-13 14:50:45 --> Security Class Initialized
+DEBUG - 2012-05-13 14:50:45 --> Input Class Initialized
+DEBUG - 2012-05-13 14:50:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 14:50:45 --> Language Class Initialized
+DEBUG - 2012-05-13 14:50:45 --> Loader Class Initialized
+DEBUG - 2012-05-13 14:50:45 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 14:50:45 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 14:50:45 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 14:50:45 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 14:50:45 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 14:50:45 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 14:50:45 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 14:50:45 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 14:50:45 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 14:50:45 --> Session Class Initialized
+DEBUG - 2012-05-13 14:50:45 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 14:50:46 --> Session routines successfully run
+DEBUG - 2012-05-13 14:50:46 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:46 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:46 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:46 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:46 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:46 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:46 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:47 --> Model Class Initialized
+DEBUG - 2012-05-13 14:50:47 --> Controller Class Initialized
+DEBUG - 2012-05-13 14:50:47 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:50:47 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:50:47 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:50:47 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 14:50:47 --> Final output sent to browser
+DEBUG - 2012-05-13 14:50:47 --> Total execution time: 2.2780
+DEBUG - 2012-05-13 14:51:27 --> Config Class Initialized
+DEBUG - 2012-05-13 14:51:27 --> Hooks Class Initialized
+DEBUG - 2012-05-13 14:51:27 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 14:51:27 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 14:51:27 --> URI Class Initialized
+DEBUG - 2012-05-13 14:51:27 --> Router Class Initialized
+DEBUG - 2012-05-13 14:51:27 --> Output Class Initialized
+DEBUG - 2012-05-13 14:51:27 --> Security Class Initialized
+DEBUG - 2012-05-13 14:51:27 --> Input Class Initialized
+DEBUG - 2012-05-13 14:51:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 14:51:27 --> Language Class Initialized
+DEBUG - 2012-05-13 14:51:27 --> Loader Class Initialized
+DEBUG - 2012-05-13 14:51:27 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 14:51:27 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 14:51:28 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 14:51:28 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 14:51:28 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 14:51:28 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 14:51:28 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 14:51:28 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 14:51:28 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 14:51:28 --> Session Class Initialized
+DEBUG - 2012-05-13 14:51:28 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 14:51:28 --> Session routines successfully run
+DEBUG - 2012-05-13 14:51:28 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:28 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:28 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:28 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:28 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:28 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:29 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:29 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:29 --> Controller Class Initialized
+DEBUG - 2012-05-13 14:51:29 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:51:29 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:51:29 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:51:29 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 14:51:30 --> Final output sent to browser
+DEBUG - 2012-05-13 14:51:30 --> Total execution time: 2.3181
+DEBUG - 2012-05-13 14:51:34 --> Config Class Initialized
+DEBUG - 2012-05-13 14:51:34 --> Hooks Class Initialized
+DEBUG - 2012-05-13 14:51:34 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 14:51:34 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 14:51:34 --> URI Class Initialized
+DEBUG - 2012-05-13 14:51:34 --> Router Class Initialized
+DEBUG - 2012-05-13 14:51:34 --> No URI present. Default controller set.
+DEBUG - 2012-05-13 14:51:34 --> Output Class Initialized
+DEBUG - 2012-05-13 14:51:35 --> Security Class Initialized
+DEBUG - 2012-05-13 14:51:35 --> Input Class Initialized
+DEBUG - 2012-05-13 14:51:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 14:51:35 --> Language Class Initialized
+DEBUG - 2012-05-13 14:51:35 --> Loader Class Initialized
+DEBUG - 2012-05-13 14:51:35 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 14:51:35 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 14:51:35 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 14:51:35 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 14:51:35 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 14:51:35 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 14:51:35 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 14:51:35 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 14:51:35 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 14:51:35 --> Session Class Initialized
+DEBUG - 2012-05-13 14:51:35 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 14:51:35 --> Session routines successfully run
+DEBUG - 2012-05-13 14:51:35 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:35 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:35 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:36 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:36 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:36 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:36 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:36 --> Model Class Initialized
+DEBUG - 2012-05-13 14:51:36 --> Controller Class Initialized
+DEBUG - 2012-05-13 20:51:36 --> File loaded: application/views/main_menu.php
+DEBUG - 2012-05-13 20:51:37 --> Final output sent to browser
+DEBUG - 2012-05-13 20:51:37 --> Total execution time: 2.1398
+DEBUG - 2012-05-13 14:52:11 --> Config Class Initialized
+DEBUG - 2012-05-13 14:52:11 --> Hooks Class Initialized
+DEBUG - 2012-05-13 14:52:11 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 14:52:11 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 14:52:11 --> URI Class Initialized
+DEBUG - 2012-05-13 14:52:11 --> Router Class Initialized
+DEBUG - 2012-05-13 14:52:11 --> Output Class Initialized
+DEBUG - 2012-05-13 14:52:11 --> Security Class Initialized
+DEBUG - 2012-05-13 14:52:11 --> Input Class Initialized
+DEBUG - 2012-05-13 14:52:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 14:52:11 --> Language Class Initialized
+DEBUG - 2012-05-13 14:52:12 --> Loader Class Initialized
+DEBUG - 2012-05-13 14:52:12 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 14:52:12 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 14:52:12 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 14:52:12 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 14:52:12 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 14:52:12 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 14:52:12 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 14:52:12 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 14:52:12 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 14:52:12 --> Session Class Initialized
+DEBUG - 2012-05-13 14:52:12 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 14:52:12 --> Session routines successfully run
+DEBUG - 2012-05-13 14:52:12 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:12 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:12 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:13 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:13 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:13 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:13 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:13 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:13 --> Controller Class Initialized
+DEBUG - 2012-05-13 14:52:13 --> File loaded: application/views/query/manage_a.php
+DEBUG - 2012-05-13 14:52:13 --> Final output sent to browser
+DEBUG - 2012-05-13 14:52:13 --> Total execution time: 1.9889
+DEBUG - 2012-05-13 14:52:28 --> Config Class Initialized
+DEBUG - 2012-05-13 14:52:28 --> Hooks Class Initialized
+DEBUG - 2012-05-13 14:52:28 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 14:52:28 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 14:52:28 --> URI Class Initialized
+DEBUG - 2012-05-13 14:52:28 --> Router Class Initialized
+DEBUG - 2012-05-13 14:52:28 --> Output Class Initialized
+DEBUG - 2012-05-13 14:52:28 --> Security Class Initialized
+DEBUG - 2012-05-13 14:52:28 --> Input Class Initialized
+DEBUG - 2012-05-13 14:52:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 14:52:28 --> Language Class Initialized
+DEBUG - 2012-05-13 14:52:28 --> Loader Class Initialized
+DEBUG - 2012-05-13 14:52:28 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 14:52:28 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 14:52:28 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 14:52:28 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 14:52:29 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 14:52:29 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 14:52:29 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 14:52:29 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 14:52:29 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 14:52:29 --> Session Class Initialized
+DEBUG - 2012-05-13 14:52:29 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 14:52:29 --> Session routines successfully run
+DEBUG - 2012-05-13 14:52:29 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:29 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:29 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:29 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:29 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:29 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:30 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:30 --> Model Class Initialized
+DEBUG - 2012-05-13 14:52:30 --> Controller Class Initialized
+DEBUG - 2012-05-13 14:52:30 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:52:30 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:52:30 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:52:33 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 14:52:33 --> Final output sent to browser
+DEBUG - 2012-05-13 14:52:33 --> Total execution time: 4.7022
+DEBUG - 2012-05-13 14:58:17 --> Config Class Initialized
+DEBUG - 2012-05-13 14:58:17 --> Hooks Class Initialized
+DEBUG - 2012-05-13 14:58:17 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 14:58:17 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 14:58:17 --> URI Class Initialized
+DEBUG - 2012-05-13 14:58:17 --> Router Class Initialized
+DEBUG - 2012-05-13 14:58:17 --> Output Class Initialized
+DEBUG - 2012-05-13 14:58:17 --> Security Class Initialized
+DEBUG - 2012-05-13 14:58:17 --> Input Class Initialized
+DEBUG - 2012-05-13 14:58:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 14:58:17 --> Language Class Initialized
+DEBUG - 2012-05-13 14:58:18 --> Loader Class Initialized
+DEBUG - 2012-05-13 14:58:18 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 14:58:18 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 14:58:19 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 14:58:19 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 14:58:19 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 14:58:19 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 14:58:19 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 14:58:19 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 14:58:20 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 14:58:20 --> Session Class Initialized
+DEBUG - 2012-05-13 14:58:20 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 14:58:20 --> Session routines successfully run
+DEBUG - 2012-05-13 14:58:21 --> Model Class Initialized
+DEBUG - 2012-05-13 14:58:21 --> Model Class Initialized
+DEBUG - 2012-05-13 14:58:21 --> Model Class Initialized
+DEBUG - 2012-05-13 14:58:22 --> Model Class Initialized
+DEBUG - 2012-05-13 14:58:22 --> Model Class Initialized
+DEBUG - 2012-05-13 14:58:22 --> Model Class Initialized
+DEBUG - 2012-05-13 14:58:23 --> Model Class Initialized
+DEBUG - 2012-05-13 14:58:24 --> Model Class Initialized
+DEBUG - 2012-05-13 14:58:24 --> Controller Class Initialized
+DEBUG - 2012-05-13 14:58:24 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:58:24 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:58:24 --> XSS Filtering completed
+DEBUG - 2012-05-13 14:58:28 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 14:58:28 --> Final output sent to browser
+DEBUG - 2012-05-13 14:58:28 --> Total execution time: 9.8049
+DEBUG - 2012-05-13 15:20:53 --> Config Class Initialized
+DEBUG - 2012-05-13 15:20:53 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:20:54 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:20:54 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:20:54 --> URI Class Initialized
+DEBUG - 2012-05-13 15:20:54 --> Router Class Initialized
+DEBUG - 2012-05-13 15:20:55 --> Output Class Initialized
+DEBUG - 2012-05-13 15:20:55 --> Security Class Initialized
+DEBUG - 2012-05-13 15:20:55 --> Input Class Initialized
+DEBUG - 2012-05-13 15:20:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:20:55 --> Language Class Initialized
+DEBUG - 2012-05-13 15:20:56 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:20:56 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:20:56 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:20:56 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:20:57 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:20:57 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:20:57 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:20:57 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:20:58 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:20:58 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:20:59 --> Session Class Initialized
+DEBUG - 2012-05-13 15:21:00 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:21:00 --> Session garbage collection performed.
+DEBUG - 2012-05-13 15:21:00 --> Session routines successfully run
+DEBUG - 2012-05-13 15:21:00 --> Model Class Initialized
+DEBUG - 2012-05-13 15:21:01 --> Model Class Initialized
+DEBUG - 2012-05-13 15:21:01 --> Model Class Initialized
+DEBUG - 2012-05-13 15:21:02 --> Model Class Initialized
+DEBUG - 2012-05-13 15:21:02 --> Model Class Initialized
+DEBUG - 2012-05-13 15:21:02 --> Model Class Initialized
+DEBUG - 2012-05-13 15:21:03 --> Model Class Initialized
+DEBUG - 2012-05-13 15:21:04 --> Model Class Initialized
+DEBUG - 2012-05-13 15:21:04 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:21:04 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:21:05 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:21:05 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:21:10 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 15:21:10 --> Final output sent to browser
+DEBUG - 2012-05-13 15:21:10 --> Total execution time: 14.4471
+DEBUG - 2012-05-13 15:26:59 --> Config Class Initialized
+DEBUG - 2012-05-13 15:26:59 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:26:59 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:26:59 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:27:00 --> URI Class Initialized
+DEBUG - 2012-05-13 15:27:00 --> Router Class Initialized
+DEBUG - 2012-05-13 15:27:00 --> Output Class Initialized
+DEBUG - 2012-05-13 15:27:00 --> Security Class Initialized
+DEBUG - 2012-05-13 15:27:00 --> Input Class Initialized
+DEBUG - 2012-05-13 15:27:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:27:01 --> Language Class Initialized
+DEBUG - 2012-05-13 15:27:01 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:27:01 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:27:01 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:27:01 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:27:02 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:27:02 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:27:02 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:27:03 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:27:03 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:27:03 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:27:03 --> Session Class Initialized
+DEBUG - 2012-05-13 15:27:03 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:27:03 --> Session routines successfully run
+DEBUG - 2012-05-13 15:27:03 --> Model Class Initialized
+DEBUG - 2012-05-13 15:27:04 --> Model Class Initialized
+DEBUG - 2012-05-13 15:27:04 --> Model Class Initialized
+DEBUG - 2012-05-13 15:27:04 --> Model Class Initialized
+DEBUG - 2012-05-13 15:27:05 --> Model Class Initialized
+DEBUG - 2012-05-13 15:27:05 --> Model Class Initialized
+DEBUG - 2012-05-13 15:27:06 --> Model Class Initialized
+DEBUG - 2012-05-13 15:27:07 --> Model Class Initialized
+DEBUG - 2012-05-13 15:27:07 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:27:07 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:27:07 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:27:07 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:27:11 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 15:27:12 --> Final output sent to browser
+DEBUG - 2012-05-13 15:27:12 --> Total execution time: 11.0493
+DEBUG - 2012-05-13 15:39:10 --> Config Class Initialized
+DEBUG - 2012-05-13 15:39:10 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:39:10 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:39:10 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:39:10 --> URI Class Initialized
+DEBUG - 2012-05-13 15:39:10 --> Router Class Initialized
+DEBUG - 2012-05-13 15:39:10 --> Output Class Initialized
+DEBUG - 2012-05-13 15:39:10 --> Security Class Initialized
+DEBUG - 2012-05-13 15:39:10 --> Input Class Initialized
+DEBUG - 2012-05-13 15:39:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:39:10 --> Language Class Initialized
+DEBUG - 2012-05-13 15:39:10 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:39:10 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:39:10 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:39:10 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:39:11 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:39:11 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:39:11 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:39:11 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:39:11 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:39:11 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:39:11 --> Session Class Initialized
+DEBUG - 2012-05-13 15:39:11 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:39:11 --> Session routines successfully run
+DEBUG - 2012-05-13 15:39:11 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:11 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:11 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:12 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:12 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:12 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:12 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:12 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:12 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:39:12 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:39:12 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:39:12 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:39:16 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 15:39:16 --> Final output sent to browser
+DEBUG - 2012-05-13 15:39:16 --> Total execution time: 5.0740
+DEBUG - 2012-05-13 15:39:32 --> Config Class Initialized
+DEBUG - 2012-05-13 15:39:32 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:39:33 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:39:33 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:39:33 --> URI Class Initialized
+DEBUG - 2012-05-13 15:39:33 --> Router Class Initialized
+DEBUG - 2012-05-13 15:39:33 --> Output Class Initialized
+DEBUG - 2012-05-13 15:39:33 --> Security Class Initialized
+DEBUG - 2012-05-13 15:39:33 --> Input Class Initialized
+DEBUG - 2012-05-13 15:39:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:39:33 --> Language Class Initialized
+DEBUG - 2012-05-13 15:39:33 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:39:33 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:39:33 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:39:33 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:39:33 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:39:33 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:39:33 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:39:33 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:39:33 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:39:33 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:39:34 --> Session Class Initialized
+DEBUG - 2012-05-13 15:39:34 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:39:34 --> Session garbage collection performed.
+DEBUG - 2012-05-13 15:39:34 --> Session routines successfully run
+DEBUG - 2012-05-13 15:39:34 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:34 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:34 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:34 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:34 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:34 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:35 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:35 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:35 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:39:35 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:39:35 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:39:35 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:39:35 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 15:39:35 --> Final output sent to browser
+DEBUG - 2012-05-13 15:39:35 --> Total execution time: 2.4930
+DEBUG - 2012-05-13 15:39:43 --> Config Class Initialized
+DEBUG - 2012-05-13 15:39:43 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:39:43 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:39:43 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:39:43 --> URI Class Initialized
+DEBUG - 2012-05-13 15:39:43 --> Router Class Initialized
+DEBUG - 2012-05-13 15:39:43 --> No URI present. Default controller set.
+DEBUG - 2012-05-13 15:39:43 --> Output Class Initialized
+DEBUG - 2012-05-13 15:39:43 --> Security Class Initialized
+DEBUG - 2012-05-13 15:39:43 --> Input Class Initialized
+DEBUG - 2012-05-13 15:39:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:39:43 --> Language Class Initialized
+DEBUG - 2012-05-13 15:39:43 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:39:43 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:39:43 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:39:44 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:39:44 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:39:44 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:39:44 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:39:44 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:39:44 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:39:44 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:39:44 --> Session Class Initialized
+DEBUG - 2012-05-13 15:39:44 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:39:44 --> Session routines successfully run
+DEBUG - 2012-05-13 15:39:44 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:44 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:44 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:44 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:44 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:44 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:45 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:45 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:45 --> Controller Class Initialized
+DEBUG - 2012-05-13 21:39:45 --> File loaded: application/views/main_menu.php
+DEBUG - 2012-05-13 21:39:45 --> Final output sent to browser
+DEBUG - 2012-05-13 21:39:45 --> Total execution time: 2.2312
+DEBUG - 2012-05-13 15:39:48 --> Config Class Initialized
+DEBUG - 2012-05-13 15:39:48 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:39:48 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:39:48 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:39:48 --> URI Class Initialized
+DEBUG - 2012-05-13 15:39:48 --> Router Class Initialized
+DEBUG - 2012-05-13 15:39:48 --> Output Class Initialized
+DEBUG - 2012-05-13 15:39:48 --> Security Class Initialized
+DEBUG - 2012-05-13 15:39:48 --> Input Class Initialized
+DEBUG - 2012-05-13 15:39:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:39:48 --> Language Class Initialized
+DEBUG - 2012-05-13 15:39:49 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:39:49 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:39:49 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:39:49 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:39:49 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:39:49 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:39:49 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:39:49 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:39:49 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:39:49 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:39:49 --> Session Class Initialized
+DEBUG - 2012-05-13 15:39:49 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:39:49 --> Session routines successfully run
+DEBUG - 2012-05-13 15:39:49 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:49 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:49 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:50 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:50 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:50 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:50 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:50 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:50 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:39:50 --> File loaded: application/views/query/manage_a.php
+DEBUG - 2012-05-13 15:39:51 --> Final output sent to browser
+DEBUG - 2012-05-13 15:39:51 --> Total execution time: 2.1887
+DEBUG - 2012-05-13 15:39:56 --> Config Class Initialized
+DEBUG - 2012-05-13 15:39:56 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:39:56 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:39:56 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:39:56 --> URI Class Initialized
+DEBUG - 2012-05-13 15:39:56 --> Router Class Initialized
+DEBUG - 2012-05-13 15:39:56 --> Output Class Initialized
+DEBUG - 2012-05-13 15:39:56 --> Security Class Initialized
+DEBUG - 2012-05-13 15:39:56 --> Input Class Initialized
+DEBUG - 2012-05-13 15:39:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:39:56 --> Language Class Initialized
+DEBUG - 2012-05-13 15:39:56 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:39:56 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:39:56 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:39:57 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:39:57 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:39:57 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:39:57 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:39:57 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:39:57 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:39:57 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:39:57 --> Session Class Initialized
+DEBUG - 2012-05-13 15:39:57 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:39:57 --> Session routines successfully run
+DEBUG - 2012-05-13 15:39:57 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:57 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:57 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:57 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:58 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:58 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:58 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:58 --> Model Class Initialized
+DEBUG - 2012-05-13 15:39:58 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:39:58 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:39:58 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:39:58 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:39:59 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 15:39:59 --> Final output sent to browser
+DEBUG - 2012-05-13 15:39:59 --> Total execution time: 2.4670
+DEBUG - 2012-05-13 15:40:01 --> Config Class Initialized
+DEBUG - 2012-05-13 15:40:01 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:40:01 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:40:01 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:40:01 --> URI Class Initialized
+DEBUG - 2012-05-13 15:40:01 --> Router Class Initialized
+DEBUG - 2012-05-13 15:40:01 --> No URI present. Default controller set.
+DEBUG - 2012-05-13 15:40:01 --> Output Class Initialized
+DEBUG - 2012-05-13 15:40:01 --> Security Class Initialized
+DEBUG - 2012-05-13 15:40:01 --> Input Class Initialized
+DEBUG - 2012-05-13 15:40:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:40:01 --> Language Class Initialized
+DEBUG - 2012-05-13 15:40:02 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:40:02 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:40:02 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:40:02 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:40:02 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:40:02 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:40:02 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:40:02 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:40:02 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:40:02 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:40:02 --> Session Class Initialized
+DEBUG - 2012-05-13 15:40:02 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:40:02 --> Session garbage collection performed.
+DEBUG - 2012-05-13 15:40:02 --> Session routines successfully run
+DEBUG - 2012-05-13 15:40:02 --> Model Class Initialized
+DEBUG - 2012-05-13 15:40:02 --> Model Class Initialized
+DEBUG - 2012-05-13 15:40:02 --> Model Class Initialized
+DEBUG - 2012-05-13 15:40:03 --> Model Class Initialized
+DEBUG - 2012-05-13 15:40:03 --> Model Class Initialized
+DEBUG - 2012-05-13 15:40:03 --> Model Class Initialized
+DEBUG - 2012-05-13 15:40:03 --> Model Class Initialized
+DEBUG - 2012-05-13 15:40:03 --> Model Class Initialized
+DEBUG - 2012-05-13 15:40:04 --> Controller Class Initialized
+DEBUG - 2012-05-13 21:40:04 --> File loaded: application/views/main_menu.php
+DEBUG - 2012-05-13 21:40:04 --> Final output sent to browser
+DEBUG - 2012-05-13 21:40:04 --> Total execution time: 2.5504
+DEBUG - 2012-05-13 15:43:56 --> Config Class Initialized
+DEBUG - 2012-05-13 15:43:56 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:43:56 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:43:56 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:43:56 --> URI Class Initialized
+DEBUG - 2012-05-13 15:43:56 --> Router Class Initialized
+DEBUG - 2012-05-13 15:43:56 --> Output Class Initialized
+DEBUG - 2012-05-13 15:43:56 --> Security Class Initialized
+DEBUG - 2012-05-13 15:43:56 --> Input Class Initialized
+DEBUG - 2012-05-13 15:43:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:43:57 --> Language Class Initialized
+DEBUG - 2012-05-13 15:43:57 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:43:57 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:43:57 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:43:57 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:43:57 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:43:57 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:43:57 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:43:57 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:43:57 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:43:57 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:43:57 --> Session Class Initialized
+DEBUG - 2012-05-13 15:43:57 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:43:57 --> Session routines successfully run
+DEBUG - 2012-05-13 15:43:57 --> Model Class Initialized
+DEBUG - 2012-05-13 15:43:57 --> Model Class Initialized
+DEBUG - 2012-05-13 15:43:57 --> Model Class Initialized
+DEBUG - 2012-05-13 15:43:58 --> Model Class Initialized
+DEBUG - 2012-05-13 15:43:58 --> Model Class Initialized
+DEBUG - 2012-05-13 15:43:58 --> Model Class Initialized
+DEBUG - 2012-05-13 15:43:58 --> Model Class Initialized
+DEBUG - 2012-05-13 15:43:58 --> Model Class Initialized
+DEBUG - 2012-05-13 15:43:58 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:44:04 --> Config Class Initialized
+DEBUG - 2012-05-13 15:44:04 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:44:04 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:44:04 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:44:04 --> URI Class Initialized
+DEBUG - 2012-05-13 15:44:04 --> Router Class Initialized
+DEBUG - 2012-05-13 15:44:04 --> Output Class Initialized
+DEBUG - 2012-05-13 15:44:05 --> Security Class Initialized
+DEBUG - 2012-05-13 15:44:05 --> Input Class Initialized
+DEBUG - 2012-05-13 15:44:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:44:05 --> Language Class Initialized
+DEBUG - 2012-05-13 15:44:05 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:44:05 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:44:05 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:44:05 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:44:05 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:44:05 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:44:05 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:44:05 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:44:05 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:44:05 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:44:05 --> Session Class Initialized
+DEBUG - 2012-05-13 15:44:05 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:44:06 --> Session routines successfully run
+DEBUG - 2012-05-13 15:44:06 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:06 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:06 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:06 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:06 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:06 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:06 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:07 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:07 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:44:16 --> Config Class Initialized
+DEBUG - 2012-05-13 15:44:16 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:44:16 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:44:16 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:44:16 --> URI Class Initialized
+DEBUG - 2012-05-13 15:44:16 --> Router Class Initialized
+DEBUG - 2012-05-13 15:44:16 --> Output Class Initialized
+DEBUG - 2012-05-13 15:44:16 --> Security Class Initialized
+DEBUG - 2012-05-13 15:44:16 --> Input Class Initialized
+DEBUG - 2012-05-13 15:44:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:44:16 --> Language Class Initialized
+DEBUG - 2012-05-13 15:44:16 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:44:16 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:44:16 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:44:16 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:44:16 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:44:17 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:44:17 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:44:17 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:44:17 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:44:17 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:44:17 --> Session Class Initialized
+DEBUG - 2012-05-13 15:44:17 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:44:17 --> Session routines successfully run
+DEBUG - 2012-05-13 15:44:17 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:17 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:17 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:17 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:17 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:18 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:18 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:18 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:18 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:44:24 --> Config Class Initialized
+DEBUG - 2012-05-13 15:44:24 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:44:24 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:44:24 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:44:25 --> URI Class Initialized
+DEBUG - 2012-05-13 15:44:25 --> Router Class Initialized
+DEBUG - 2012-05-13 15:44:25 --> Output Class Initialized
+DEBUG - 2012-05-13 15:44:25 --> Security Class Initialized
+DEBUG - 2012-05-13 15:44:25 --> Input Class Initialized
+DEBUG - 2012-05-13 15:44:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:44:25 --> Language Class Initialized
+DEBUG - 2012-05-13 15:44:25 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:44:25 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:44:25 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:44:25 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:44:25 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:44:25 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:44:25 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:44:25 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:44:25 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:44:26 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:44:26 --> Session Class Initialized
+DEBUG - 2012-05-13 15:44:26 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:44:26 --> Session routines successfully run
+DEBUG - 2012-05-13 15:44:26 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:26 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:26 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:26 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:26 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:26 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:27 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:27 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:27 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:44:31 --> Config Class Initialized
+DEBUG - 2012-05-13 15:44:31 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:44:31 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:44:31 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:44:31 --> URI Class Initialized
+DEBUG - 2012-05-13 15:44:31 --> Router Class Initialized
+DEBUG - 2012-05-13 15:44:32 --> Output Class Initialized
+DEBUG - 2012-05-13 15:44:32 --> Security Class Initialized
+DEBUG - 2012-05-13 15:44:32 --> Input Class Initialized
+DEBUG - 2012-05-13 15:44:32 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:44:32 --> Language Class Initialized
+DEBUG - 2012-05-13 15:44:32 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:44:32 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:44:32 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:44:32 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:44:32 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:44:32 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:44:32 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:44:32 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:44:32 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:44:32 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:44:32 --> Session Class Initialized
+DEBUG - 2012-05-13 15:44:32 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:44:33 --> Session routines successfully run
+DEBUG - 2012-05-13 15:44:33 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:33 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:33 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:33 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:33 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:33 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:33 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:34 --> Model Class Initialized
+DEBUG - 2012-05-13 15:44:34 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:47:16 --> Config Class Initialized
+DEBUG - 2012-05-13 15:47:16 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:47:16 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:47:16 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:47:16 --> URI Class Initialized
+DEBUG - 2012-05-13 15:47:16 --> Router Class Initialized
+DEBUG - 2012-05-13 15:47:16 --> Output Class Initialized
+DEBUG - 2012-05-13 15:47:16 --> Security Class Initialized
+DEBUG - 2012-05-13 15:47:16 --> Input Class Initialized
+DEBUG - 2012-05-13 15:47:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:47:16 --> Language Class Initialized
+DEBUG - 2012-05-13 15:47:16 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:47:16 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:47:16 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:47:16 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:47:16 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:47:17 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:47:17 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:47:17 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:47:17 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:47:17 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:47:17 --> Session Class Initialized
+DEBUG - 2012-05-13 15:47:17 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:47:17 --> Session routines successfully run
+DEBUG - 2012-05-13 15:47:17 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:17 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:17 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:17 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:18 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:18 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:18 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:18 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:18 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:47:18 --> File loaded: application/views/query/manage_a.php
+DEBUG - 2012-05-13 15:47:18 --> Final output sent to browser
+DEBUG - 2012-05-13 15:47:19 --> Total execution time: 2.3908
+DEBUG - 2012-05-13 15:47:25 --> Config Class Initialized
+DEBUG - 2012-05-13 15:47:25 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:47:25 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:47:25 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:47:25 --> URI Class Initialized
+DEBUG - 2012-05-13 15:47:25 --> Router Class Initialized
+DEBUG - 2012-05-13 15:47:25 --> Output Class Initialized
+DEBUG - 2012-05-13 15:47:25 --> Security Class Initialized
+DEBUG - 2012-05-13 15:47:25 --> Input Class Initialized
+DEBUG - 2012-05-13 15:47:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:47:25 --> Language Class Initialized
+DEBUG - 2012-05-13 15:47:25 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:47:25 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:47:25 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:47:25 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:47:26 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:47:26 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:47:26 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:47:26 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:47:26 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:47:26 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:47:26 --> Session Class Initialized
+DEBUG - 2012-05-13 15:47:26 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:47:26 --> Session routines successfully run
+DEBUG - 2012-05-13 15:47:26 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:26 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:26 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:27 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:27 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:27 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:27 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:27 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:27 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:47:27 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:47:27 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:47:27 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:47:33 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 15:47:33 --> Final output sent to browser
+DEBUG - 2012-05-13 15:47:33 --> Total execution time: 6.7531
+DEBUG - 2012-05-13 15:47:45 --> Config Class Initialized
+DEBUG - 2012-05-13 15:47:45 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:47:45 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:47:45 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:47:45 --> URI Class Initialized
+DEBUG - 2012-05-13 15:47:45 --> Router Class Initialized
+DEBUG - 2012-05-13 15:47:46 --> Output Class Initialized
+DEBUG - 2012-05-13 15:47:46 --> Security Class Initialized
+DEBUG - 2012-05-13 15:47:46 --> Input Class Initialized
+DEBUG - 2012-05-13 15:47:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:47:46 --> Language Class Initialized
+DEBUG - 2012-05-13 15:47:46 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:47:46 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:47:46 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:47:46 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:47:46 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:47:46 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:47:46 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:47:46 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:47:46 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:47:46 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:47:47 --> Session Class Initialized
+DEBUG - 2012-05-13 15:47:47 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:47:47 --> Session routines successfully run
+DEBUG - 2012-05-13 15:47:47 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:47 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:47 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:47 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:47 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:47 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:47 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:48 --> Model Class Initialized
+DEBUG - 2012-05-13 15:47:48 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:47:48 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:47:48 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:47:48 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:47:52 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 15:47:52 --> Final output sent to browser
+DEBUG - 2012-05-13 15:47:52 --> Total execution time: 5.5353
+DEBUG - 2012-05-13 15:49:46 --> Config Class Initialized
+DEBUG - 2012-05-13 15:49:46 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:49:47 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:49:47 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:49:47 --> URI Class Initialized
+DEBUG - 2012-05-13 15:49:47 --> Router Class Initialized
+DEBUG - 2012-05-13 15:49:47 --> Output Class Initialized
+DEBUG - 2012-05-13 15:49:47 --> Security Class Initialized
+DEBUG - 2012-05-13 15:49:47 --> Input Class Initialized
+DEBUG - 2012-05-13 15:49:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:49:47 --> Language Class Initialized
+DEBUG - 2012-05-13 15:49:47 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:49:47 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:49:47 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:49:47 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:49:47 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:49:47 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:49:47 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:49:48 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:49:48 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:49:48 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:49:48 --> Session Class Initialized
+DEBUG - 2012-05-13 15:49:48 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:49:48 --> Session routines successfully run
+DEBUG - 2012-05-13 15:49:48 --> Model Class Initialized
+DEBUG - 2012-05-13 15:49:48 --> Model Class Initialized
+DEBUG - 2012-05-13 15:49:48 --> Model Class Initialized
+DEBUG - 2012-05-13 15:49:49 --> Model Class Initialized
+DEBUG - 2012-05-13 15:49:50 --> Model Class Initialized
+DEBUG - 2012-05-13 15:49:50 --> Model Class Initialized
+DEBUG - 2012-05-13 15:49:51 --> Model Class Initialized
+DEBUG - 2012-05-13 15:49:52 --> Model Class Initialized
+DEBUG - 2012-05-13 15:49:52 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:49:52 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:49:52 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:49:52 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:49:58 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 15:49:58 --> Final output sent to browser
+DEBUG - 2012-05-13 15:49:59 --> Total execution time: 10.7044
+DEBUG - 2012-05-13 15:53:32 --> Config Class Initialized
+DEBUG - 2012-05-13 15:53:32 --> Hooks Class Initialized
+DEBUG - 2012-05-13 15:53:32 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 15:53:32 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 15:53:33 --> URI Class Initialized
+DEBUG - 2012-05-13 15:53:33 --> Router Class Initialized
+DEBUG - 2012-05-13 15:53:33 --> Output Class Initialized
+DEBUG - 2012-05-13 15:53:34 --> Security Class Initialized
+DEBUG - 2012-05-13 15:53:34 --> Input Class Initialized
+DEBUG - 2012-05-13 15:53:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 15:53:35 --> Language Class Initialized
+DEBUG - 2012-05-13 15:53:35 --> Loader Class Initialized
+DEBUG - 2012-05-13 15:53:35 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 15:53:35 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 15:53:36 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 15:53:36 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 15:53:36 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 15:53:37 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 15:53:37 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 15:53:37 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 15:53:38 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 15:53:38 --> Session Class Initialized
+DEBUG - 2012-05-13 15:53:38 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 15:53:39 --> Session routines successfully run
+DEBUG - 2012-05-13 15:53:39 --> Model Class Initialized
+DEBUG - 2012-05-13 15:53:39 --> Model Class Initialized
+DEBUG - 2012-05-13 15:53:39 --> Model Class Initialized
+DEBUG - 2012-05-13 15:53:40 --> Model Class Initialized
+DEBUG - 2012-05-13 15:53:41 --> Model Class Initialized
+DEBUG - 2012-05-13 15:53:41 --> Model Class Initialized
+DEBUG - 2012-05-13 15:53:42 --> Model Class Initialized
+DEBUG - 2012-05-13 15:53:43 --> Model Class Initialized
+DEBUG - 2012-05-13 15:53:43 --> Controller Class Initialized
+DEBUG - 2012-05-13 15:53:43 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:53:43 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:53:44 --> XSS Filtering completed
+DEBUG - 2012-05-13 15:53:51 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 15:53:51 --> Final output sent to browser
+DEBUG - 2012-05-13 15:53:51 --> Total execution time: 16.2097
+DEBUG - 2012-05-13 16:26:05 --> Config Class Initialized
+DEBUG - 2012-05-13 16:26:05 --> Hooks Class Initialized
+DEBUG - 2012-05-13 16:26:05 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 16:26:05 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 16:26:06 --> URI Class Initialized
+DEBUG - 2012-05-13 16:26:06 --> Router Class Initialized
+DEBUG - 2012-05-13 16:26:06 --> No URI present. Default controller set.
+DEBUG - 2012-05-13 16:26:06 --> Output Class Initialized
+DEBUG - 2012-05-13 16:26:06 --> Security Class Initialized
+DEBUG - 2012-05-13 16:26:06 --> Input Class Initialized
+DEBUG - 2012-05-13 16:26:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 16:26:06 --> Language Class Initialized
+DEBUG - 2012-05-13 16:26:06 --> Loader Class Initialized
+DEBUG - 2012-05-13 16:26:06 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 16:26:07 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 16:26:07 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 16:26:07 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 16:26:07 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 16:26:07 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 16:26:07 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 16:26:07 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 16:26:08 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 16:26:08 --> Session Class Initialized
+DEBUG - 2012-05-13 16:26:08 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 16:26:08 --> A session cookie was not found.
+DEBUG - 2012-05-13 16:26:08 --> Session routines successfully run
+DEBUG - 2012-05-13 16:26:08 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:08 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:08 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:10 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:10 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:10 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:12 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:13 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:13 --> Controller Class Initialized
+DEBUG - 2012-05-13 16:26:43 --> Config Class Initialized
+DEBUG - 2012-05-13 16:26:43 --> Hooks Class Initialized
+DEBUG - 2012-05-13 16:26:43 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 16:26:43 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 16:26:43 --> URI Class Initialized
+DEBUG - 2012-05-13 16:26:43 --> Router Class Initialized
+DEBUG - 2012-05-13 16:26:43 --> No URI present. Default controller set.
+DEBUG - 2012-05-13 16:26:43 --> Output Class Initialized
+DEBUG - 2012-05-13 16:26:43 --> Security Class Initialized
+DEBUG - 2012-05-13 16:26:43 --> Input Class Initialized
+DEBUG - 2012-05-13 16:26:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 16:26:43 --> Language Class Initialized
+DEBUG - 2012-05-13 16:26:43 --> Loader Class Initialized
+DEBUG - 2012-05-13 16:26:43 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 16:26:43 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 16:26:43 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 16:26:43 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 16:26:43 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 16:26:43 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 16:26:43 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 16:26:43 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 16:26:44 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 16:26:44 --> Session Class Initialized
+DEBUG - 2012-05-13 16:26:44 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 16:26:44 --> Session garbage collection performed.
+DEBUG - 2012-05-13 16:26:44 --> Session routines successfully run
+DEBUG - 2012-05-13 16:26:44 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:44 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:44 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:44 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:44 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:44 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:44 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:45 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:45 --> Controller Class Initialized
+DEBUG - 2012-05-13 22:26:45 --> File loaded: application/views/main_menu.php
+DEBUG - 2012-05-13 22:26:45 --> Final output sent to browser
+DEBUG - 2012-05-13 22:26:45 --> Total execution time: 2.3843
+DEBUG - 2012-05-13 16:26:51 --> Config Class Initialized
+DEBUG - 2012-05-13 16:26:51 --> Hooks Class Initialized
+DEBUG - 2012-05-13 16:26:51 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 16:26:51 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 16:26:51 --> URI Class Initialized
+DEBUG - 2012-05-13 16:26:51 --> Router Class Initialized
+DEBUG - 2012-05-13 16:26:51 --> Output Class Initialized
+DEBUG - 2012-05-13 16:26:51 --> Security Class Initialized
+DEBUG - 2012-05-13 16:26:51 --> Input Class Initialized
+DEBUG - 2012-05-13 16:26:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 16:26:51 --> Language Class Initialized
+DEBUG - 2012-05-13 16:26:51 --> Loader Class Initialized
+DEBUG - 2012-05-13 16:26:51 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 16:26:51 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 16:26:51 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 16:26:51 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 16:26:51 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 16:26:51 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 16:26:52 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 16:26:52 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 16:26:52 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 16:26:52 --> Session Class Initialized
+DEBUG - 2012-05-13 16:26:52 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 16:26:52 --> Session routines successfully run
+DEBUG - 2012-05-13 16:26:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:53 --> Model Class Initialized
+DEBUG - 2012-05-13 16:26:53 --> Controller Class Initialized
+DEBUG - 2012-05-13 16:26:53 --> File loaded: application/views/query/manage_a.php
+DEBUG - 2012-05-13 16:26:53 --> Final output sent to browser
+DEBUG - 2012-05-13 16:26:53 --> Total execution time: 2.2185
+DEBUG - 2012-05-13 16:26:59 --> Config Class Initialized
+DEBUG - 2012-05-13 16:26:59 --> Hooks Class Initialized
+DEBUG - 2012-05-13 16:26:59 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 16:26:59 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 16:26:59 --> URI Class Initialized
+DEBUG - 2012-05-13 16:26:59 --> Router Class Initialized
+DEBUG - 2012-05-13 16:26:59 --> Output Class Initialized
+DEBUG - 2012-05-13 16:26:59 --> Security Class Initialized
+DEBUG - 2012-05-13 16:26:59 --> Input Class Initialized
+DEBUG - 2012-05-13 16:26:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 16:27:00 --> Language Class Initialized
+DEBUG - 2012-05-13 16:27:00 --> Loader Class Initialized
+DEBUG - 2012-05-13 16:27:00 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 16:27:00 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 16:27:00 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 16:27:00 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 16:27:00 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 16:27:00 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 16:27:00 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 16:27:00 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 16:27:00 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 16:27:00 --> Session Class Initialized
+DEBUG - 2012-05-13 16:27:00 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 16:27:00 --> Session routines successfully run
+DEBUG - 2012-05-13 16:27:00 --> Model Class Initialized
+DEBUG - 2012-05-13 16:27:00 --> Model Class Initialized
+DEBUG - 2012-05-13 16:27:00 --> Model Class Initialized
+DEBUG - 2012-05-13 16:27:01 --> Model Class Initialized
+DEBUG - 2012-05-13 16:27:01 --> Model Class Initialized
+DEBUG - 2012-05-13 16:27:01 --> Model Class Initialized
+DEBUG - 2012-05-13 16:27:01 --> Model Class Initialized
+DEBUG - 2012-05-13 16:27:01 --> Model Class Initialized
+DEBUG - 2012-05-13 16:27:01 --> Controller Class Initialized
+DEBUG - 2012-05-13 16:27:01 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:27:01 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:27:01 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:27:05 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 16:27:05 --> Final output sent to browser
+DEBUG - 2012-05-13 16:27:05 --> Total execution time: 5.5354
+DEBUG - 2012-05-13 16:30:39 --> Config Class Initialized
+DEBUG - 2012-05-13 16:30:39 --> Hooks Class Initialized
+DEBUG - 2012-05-13 16:30:39 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 16:30:39 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 16:30:39 --> URI Class Initialized
+DEBUG - 2012-05-13 16:30:39 --> Router Class Initialized
+DEBUG - 2012-05-13 16:30:39 --> Output Class Initialized
+DEBUG - 2012-05-13 16:30:39 --> Security Class Initialized
+DEBUG - 2012-05-13 16:30:40 --> Input Class Initialized
+DEBUG - 2012-05-13 16:30:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 16:30:40 --> Language Class Initialized
+DEBUG - 2012-05-13 16:30:40 --> Loader Class Initialized
+DEBUG - 2012-05-13 16:30:40 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 16:30:41 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 16:30:41 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 16:30:41 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 16:30:41 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 16:30:41 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 16:30:41 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 16:30:41 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 16:30:41 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 16:30:41 --> Session Class Initialized
+DEBUG - 2012-05-13 16:30:41 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 16:30:41 --> Session routines successfully run
+DEBUG - 2012-05-13 16:30:42 --> Model Class Initialized
+DEBUG - 2012-05-13 16:30:42 --> Model Class Initialized
+DEBUG - 2012-05-13 16:30:42 --> Model Class Initialized
+DEBUG - 2012-05-13 16:30:42 --> Model Class Initialized
+DEBUG - 2012-05-13 16:30:42 --> Model Class Initialized
+DEBUG - 2012-05-13 16:30:42 --> Model Class Initialized
+DEBUG - 2012-05-13 16:30:42 --> Model Class Initialized
+DEBUG - 2012-05-13 16:30:42 --> Model Class Initialized
+DEBUG - 2012-05-13 16:30:42 --> Controller Class Initialized
+DEBUG - 2012-05-13 16:30:42 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:30:42 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:30:43 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:30:46 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 16:30:46 --> Final output sent to browser
+DEBUG - 2012-05-13 16:30:46 --> Total execution time: 7.2887
+DEBUG - 2012-05-13 16:34:40 --> Config Class Initialized
+DEBUG - 2012-05-13 16:34:40 --> Hooks Class Initialized
+DEBUG - 2012-05-13 16:34:40 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 16:34:40 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 16:34:40 --> URI Class Initialized
+DEBUG - 2012-05-13 16:34:40 --> Router Class Initialized
+DEBUG - 2012-05-13 16:34:40 --> No URI present. Default controller set.
+DEBUG - 2012-05-13 16:34:40 --> Output Class Initialized
+DEBUG - 2012-05-13 16:34:40 --> Security Class Initialized
+DEBUG - 2012-05-13 16:34:40 --> Input Class Initialized
+DEBUG - 2012-05-13 16:34:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 16:34:40 --> Language Class Initialized
+DEBUG - 2012-05-13 16:34:40 --> Loader Class Initialized
+DEBUG - 2012-05-13 16:34:40 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 16:34:40 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 16:34:41 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 16:34:41 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 16:34:41 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 16:34:41 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 16:34:41 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 16:34:41 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 16:34:41 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 16:34:41 --> Session Class Initialized
+DEBUG - 2012-05-13 16:34:41 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 16:34:41 --> Session routines successfully run
+DEBUG - 2012-05-13 16:34:41 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:41 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:41 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:41 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:41 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:41 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:42 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:42 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:42 --> Controller Class Initialized
+DEBUG - 2012-05-13 22:34:42 --> File loaded: application/views/main_menu.php
+DEBUG - 2012-05-13 22:34:42 --> Final output sent to browser
+DEBUG - 2012-05-13 22:34:42 --> Total execution time: 2.0779
+DEBUG - 2012-05-13 16:34:46 --> Config Class Initialized
+DEBUG - 2012-05-13 16:34:46 --> Hooks Class Initialized
+DEBUG - 2012-05-13 16:34:46 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 16:34:46 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 16:34:46 --> URI Class Initialized
+DEBUG - 2012-05-13 16:34:46 --> Router Class Initialized
+DEBUG - 2012-05-13 16:34:46 --> Output Class Initialized
+DEBUG - 2012-05-13 16:34:46 --> Security Class Initialized
+DEBUG - 2012-05-13 16:34:46 --> Input Class Initialized
+DEBUG - 2012-05-13 16:34:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 16:34:46 --> Language Class Initialized
+DEBUG - 2012-05-13 16:34:46 --> Loader Class Initialized
+DEBUG - 2012-05-13 16:34:46 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 16:34:46 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 16:34:46 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 16:34:46 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 16:34:46 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 16:34:46 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 16:34:46 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 16:34:46 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 16:34:46 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 16:34:46 --> Session Class Initialized
+DEBUG - 2012-05-13 16:34:46 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 16:34:47 --> Session routines successfully run
+DEBUG - 2012-05-13 16:34:47 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:47 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:47 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:47 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:47 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:47 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:47 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:47 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:47 --> Controller Class Initialized
+DEBUG - 2012-05-13 16:34:48 --> File loaded: application/views/query/search_p.php
+DEBUG - 2012-05-13 16:34:48 --> Final output sent to browser
+DEBUG - 2012-05-13 16:34:48 --> Total execution time: 2.0687
+DEBUG - 2012-05-13 16:34:50 --> Config Class Initialized
+DEBUG - 2012-05-13 16:34:50 --> Hooks Class Initialized
+DEBUG - 2012-05-13 16:34:50 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 16:34:50 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 16:34:50 --> URI Class Initialized
+DEBUG - 2012-05-13 16:34:50 --> Config Class Initialized
+DEBUG - 2012-05-13 16:34:50 --> Hooks Class Initialized
+DEBUG - 2012-05-13 16:34:50 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 16:34:50 --> Router Class Initialized
+DEBUG - 2012-05-13 16:34:50 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 16:34:51 --> Output Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> URI Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> Security Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> Router Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> Input Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 16:34:51 --> Output Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> Language Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> Security Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> Loader Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> Input Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 16:34:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 16:34:51 --> Language Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 16:34:51 --> Loader Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 16:34:51 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 16:34:51 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 16:34:51 --> Session Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 16:34:51 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 16:34:51 --> Session routines successfully run
+DEBUG - 2012-05-13 16:34:51 --> Session Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Session routines successfully run
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:52 --> Controller Class Initialized
+DEBUG - 2012-05-13 16:34:53 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:34:53 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:53 --> Controller Class Initialized
+DEBUG - 2012-05-13 16:34:53 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:34:53 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:34:53 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:34:53 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:34:53 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:34:53 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:34:53 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:34:53 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:34:53 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:34:54 --> File loaded: application/views/list/show_patients.php
+DEBUG - 2012-05-13 16:34:54 --> File loaded: application/views/list/show_patients.php
+DEBUG - 2012-05-13 16:34:54 --> Final output sent to browser
+DEBUG - 2012-05-13 16:34:54 --> Final output sent to browser
+DEBUG - 2012-05-13 16:34:54 --> Total execution time: 4.0874
+DEBUG - 2012-05-13 16:34:54 --> Total execution time: 3.9330
+DEBUG - 2012-05-13 16:34:57 --> Config Class Initialized
+DEBUG - 2012-05-13 16:34:57 --> Hooks Class Initialized
+DEBUG - 2012-05-13 16:34:57 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 16:34:57 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 16:34:57 --> URI Class Initialized
+DEBUG - 2012-05-13 16:34:57 --> Router Class Initialized
+DEBUG - 2012-05-13 16:34:57 --> Output Class Initialized
+DEBUG - 2012-05-13 16:34:57 --> Security Class Initialized
+DEBUG - 2012-05-13 16:34:57 --> Input Class Initialized
+DEBUG - 2012-05-13 16:34:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 16:34:57 --> Language Class Initialized
+DEBUG - 2012-05-13 16:34:57 --> Loader Class Initialized
+DEBUG - 2012-05-13 16:34:57 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 16:34:58 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 16:34:58 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 16:34:58 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 16:34:58 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 16:34:58 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 16:34:58 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 16:34:58 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 16:34:58 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 16:34:58 --> Session Class Initialized
+DEBUG - 2012-05-13 16:34:58 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 16:34:58 --> Session routines successfully run
+DEBUG - 2012-05-13 16:34:58 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:58 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:58 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:58 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:58 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:58 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:59 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:59 --> Model Class Initialized
+DEBUG - 2012-05-13 16:34:59 --> Controller Class Initialized
+DEBUG - 2012-05-13 16:34:59 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:34:59 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:34:59 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:34:59 --> XSS Filtering completed
+ERROR - 2012-05-13 16:34:59 --> Severity: Notice  --> Undefined variable: p_admissions C:\xampp\htdocs\medisys\application\views\list\show_admissions.php 81
+DEBUG - 2012-05-13 16:34:59 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 16:34:59 --> Final output sent to browser
+DEBUG - 2012-05-13 16:34:59 --> Total execution time: 2.4789
+DEBUG - 2012-05-13 16:38:22 --> Config Class Initialized
+DEBUG - 2012-05-13 16:38:22 --> Hooks Class Initialized
+DEBUG - 2012-05-13 16:38:22 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 16:38:22 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 16:38:22 --> URI Class Initialized
+DEBUG - 2012-05-13 16:38:22 --> Router Class Initialized
+DEBUG - 2012-05-13 16:38:22 --> Output Class Initialized
+DEBUG - 2012-05-13 16:38:22 --> Security Class Initialized
+DEBUG - 2012-05-13 16:38:22 --> Input Class Initialized
+DEBUG - 2012-05-13 16:38:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 16:38:22 --> Language Class Initialized
+DEBUG - 2012-05-13 16:38:22 --> Loader Class Initialized
+DEBUG - 2012-05-13 16:38:22 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 16:38:22 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 16:38:22 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 16:38:22 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 16:38:22 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 16:38:22 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 16:38:22 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 16:38:22 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 16:38:23 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 16:38:23 --> Session Class Initialized
+DEBUG - 2012-05-13 16:38:23 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 16:38:23 --> Session routines successfully run
+DEBUG - 2012-05-13 16:38:23 --> Model Class Initialized
+DEBUG - 2012-05-13 16:38:23 --> Model Class Initialized
+DEBUG - 2012-05-13 16:38:23 --> Model Class Initialized
+DEBUG - 2012-05-13 16:38:23 --> Model Class Initialized
+DEBUG - 2012-05-13 16:38:23 --> Model Class Initialized
+DEBUG - 2012-05-13 16:38:23 --> Model Class Initialized
+DEBUG - 2012-05-13 16:38:23 --> Model Class Initialized
+DEBUG - 2012-05-13 16:38:24 --> Model Class Initialized
+DEBUG - 2012-05-13 16:38:24 --> Controller Class Initialized
+DEBUG - 2012-05-13 16:38:24 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:38:24 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:38:24 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:38:24 --> XSS Filtering completed
+DEBUG - 2012-05-13 16:38:24 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 16:38:24 --> Final output sent to browser
+DEBUG - 2012-05-13 16:38:24 --> Total execution time: 2.4110
+DEBUG - 2012-05-13 17:05:22 --> Config Class Initialized
+DEBUG - 2012-05-13 17:05:22 --> Hooks Class Initialized
+DEBUG - 2012-05-13 17:05:22 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 17:05:22 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 17:05:22 --> URI Class Initialized
+DEBUG - 2012-05-13 17:05:22 --> Router Class Initialized
+DEBUG - 2012-05-13 17:05:22 --> No URI present. Default controller set.
+DEBUG - 2012-05-13 17:05:22 --> Output Class Initialized
+DEBUG - 2012-05-13 17:05:22 --> Security Class Initialized
+DEBUG - 2012-05-13 17:05:22 --> Input Class Initialized
+DEBUG - 2012-05-13 17:05:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 17:05:22 --> Language Class Initialized
+DEBUG - 2012-05-13 17:05:22 --> Loader Class Initialized
+DEBUG - 2012-05-13 17:05:22 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 17:05:22 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 17:05:22 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 17:05:22 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 17:05:22 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 17:05:22 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 17:05:22 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 17:05:23 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 17:05:23 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 17:05:23 --> Session Class Initialized
+DEBUG - 2012-05-13 17:05:23 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 17:05:23 --> Session routines successfully run
+DEBUG - 2012-05-13 17:05:23 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:23 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:23 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:23 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:23 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:23 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:24 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:24 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:24 --> Controller Class Initialized
+DEBUG - 2012-05-13 23:05:24 --> File loaded: application/views/main_menu.php
+DEBUG - 2012-05-13 23:05:24 --> Final output sent to browser
+DEBUG - 2012-05-13 23:05:24 --> Total execution time: 2.4532
+DEBUG - 2012-05-13 17:05:35 --> Config Class Initialized
+DEBUG - 2012-05-13 17:05:35 --> Hooks Class Initialized
+DEBUG - 2012-05-13 17:05:35 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 17:05:35 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 17:05:35 --> URI Class Initialized
+DEBUG - 2012-05-13 17:05:35 --> Router Class Initialized
+DEBUG - 2012-05-13 17:05:35 --> Output Class Initialized
+DEBUG - 2012-05-13 17:05:35 --> Security Class Initialized
+DEBUG - 2012-05-13 17:05:35 --> Input Class Initialized
+DEBUG - 2012-05-13 17:05:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 17:05:35 --> Language Class Initialized
+DEBUG - 2012-05-13 17:05:35 --> Loader Class Initialized
+DEBUG - 2012-05-13 17:05:35 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 17:05:35 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 17:05:35 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 17:05:35 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 17:05:35 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 17:05:35 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 17:05:35 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 17:05:36 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 17:05:36 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 17:05:36 --> Session Class Initialized
+DEBUG - 2012-05-13 17:05:36 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 17:05:36 --> Session routines successfully run
+DEBUG - 2012-05-13 17:05:36 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:36 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:36 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:36 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:36 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:36 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:36 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:37 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:37 --> Controller Class Initialized
+DEBUG - 2012-05-13 17:05:37 --> File loaded: application/views/query/manage_a.php
+DEBUG - 2012-05-13 17:05:37 --> Final output sent to browser
+DEBUG - 2012-05-13 17:05:37 --> Total execution time: 2.1875
+DEBUG - 2012-05-13 17:05:41 --> Config Class Initialized
+DEBUG - 2012-05-13 17:05:41 --> Hooks Class Initialized
+DEBUG - 2012-05-13 17:05:41 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 17:05:41 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 17:05:41 --> URI Class Initialized
+DEBUG - 2012-05-13 17:05:42 --> Router Class Initialized
+DEBUG - 2012-05-13 17:05:42 --> Output Class Initialized
+DEBUG - 2012-05-13 17:05:42 --> Security Class Initialized
+DEBUG - 2012-05-13 17:05:42 --> Input Class Initialized
+DEBUG - 2012-05-13 17:05:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 17:05:42 --> Language Class Initialized
+DEBUG - 2012-05-13 17:05:42 --> Loader Class Initialized
+DEBUG - 2012-05-13 17:05:42 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 17:05:42 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 17:05:42 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 17:05:42 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 17:05:42 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 17:05:42 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 17:05:42 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 17:05:42 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 17:05:42 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 17:05:42 --> Session Class Initialized
+DEBUG - 2012-05-13 17:05:42 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 17:05:42 --> Session routines successfully run
+DEBUG - 2012-05-13 17:05:43 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:43 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:43 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:43 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:43 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:43 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:43 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:43 --> Model Class Initialized
+DEBUG - 2012-05-13 17:05:43 --> Controller Class Initialized
+DEBUG - 2012-05-13 17:05:43 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:05:44 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:05:44 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:05:46 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 17:05:46 --> Final output sent to browser
+DEBUG - 2012-05-13 17:05:46 --> Total execution time: 4.7001
+DEBUG - 2012-05-13 17:12:06 --> Config Class Initialized
+DEBUG - 2012-05-13 17:12:06 --> Hooks Class Initialized
+DEBUG - 2012-05-13 17:12:07 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 17:12:07 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 17:12:07 --> URI Class Initialized
+DEBUG - 2012-05-13 17:12:07 --> Router Class Initialized
+DEBUG - 2012-05-13 17:12:07 --> Output Class Initialized
+DEBUG - 2012-05-13 17:12:07 --> Security Class Initialized
+DEBUG - 2012-05-13 17:12:07 --> Input Class Initialized
+DEBUG - 2012-05-13 17:12:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 17:12:07 --> Language Class Initialized
+DEBUG - 2012-05-13 17:12:07 --> Loader Class Initialized
+DEBUG - 2012-05-13 17:12:07 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 17:12:07 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 17:12:07 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 17:12:07 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 17:12:07 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 17:12:07 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 17:12:07 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 17:12:07 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 17:12:07 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 17:12:07 --> Session Class Initialized
+DEBUG - 2012-05-13 17:12:08 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 17:12:08 --> Session routines successfully run
+DEBUG - 2012-05-13 17:12:08 --> Model Class Initialized
+DEBUG - 2012-05-13 17:12:08 --> Model Class Initialized
+DEBUG - 2012-05-13 17:12:08 --> Model Class Initialized
+DEBUG - 2012-05-13 17:12:08 --> Model Class Initialized
+DEBUG - 2012-05-13 17:12:08 --> Model Class Initialized
+DEBUG - 2012-05-13 17:12:08 --> Model Class Initialized
+DEBUG - 2012-05-13 17:12:08 --> Model Class Initialized
+DEBUG - 2012-05-13 17:12:08 --> Model Class Initialized
+DEBUG - 2012-05-13 17:12:09 --> Controller Class Initialized
+DEBUG - 2012-05-13 17:12:09 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:12:09 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:12:09 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:12:11 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 17:12:11 --> Final output sent to browser
+DEBUG - 2012-05-13 17:12:11 --> Total execution time: 4.8636
+DEBUG - 2012-05-13 17:15:07 --> Config Class Initialized
+DEBUG - 2012-05-13 17:15:07 --> Hooks Class Initialized
+DEBUG - 2012-05-13 17:15:07 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 17:15:07 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 17:15:07 --> URI Class Initialized
+DEBUG - 2012-05-13 17:15:07 --> Router Class Initialized
+DEBUG - 2012-05-13 17:15:07 --> Output Class Initialized
+DEBUG - 2012-05-13 17:15:08 --> Security Class Initialized
+DEBUG - 2012-05-13 17:15:08 --> Input Class Initialized
+DEBUG - 2012-05-13 17:15:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 17:15:08 --> Language Class Initialized
+DEBUG - 2012-05-13 17:15:08 --> Loader Class Initialized
+DEBUG - 2012-05-13 17:15:08 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 17:15:08 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 17:15:08 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 17:15:08 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 17:15:08 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 17:15:08 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 17:15:08 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 17:15:08 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 17:15:08 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 17:15:08 --> Session Class Initialized
+DEBUG - 2012-05-13 17:15:08 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 17:15:08 --> Session routines successfully run
+DEBUG - 2012-05-13 17:15:08 --> Model Class Initialized
+DEBUG - 2012-05-13 17:15:08 --> Model Class Initialized
+DEBUG - 2012-05-13 17:15:08 --> Model Class Initialized
+DEBUG - 2012-05-13 17:15:09 --> Model Class Initialized
+DEBUG - 2012-05-13 17:15:09 --> Model Class Initialized
+DEBUG - 2012-05-13 17:15:09 --> Model Class Initialized
+DEBUG - 2012-05-13 17:15:09 --> Model Class Initialized
+DEBUG - 2012-05-13 17:15:09 --> Model Class Initialized
+DEBUG - 2012-05-13 17:15:09 --> Controller Class Initialized
+DEBUG - 2012-05-13 17:15:09 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:15:09 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:15:09 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:15:12 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 17:15:12 --> Final output sent to browser
+DEBUG - 2012-05-13 17:15:12 --> Total execution time: 4.7097
+DEBUG - 2012-05-13 17:18:42 --> Config Class Initialized
+DEBUG - 2012-05-13 17:18:42 --> Hooks Class Initialized
+DEBUG - 2012-05-13 17:18:42 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 17:18:42 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 17:18:42 --> URI Class Initialized
+DEBUG - 2012-05-13 17:18:42 --> Router Class Initialized
+DEBUG - 2012-05-13 17:18:43 --> Output Class Initialized
+DEBUG - 2012-05-13 17:18:43 --> Security Class Initialized
+DEBUG - 2012-05-13 17:18:43 --> Input Class Initialized
+DEBUG - 2012-05-13 17:18:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 17:18:43 --> Language Class Initialized
+DEBUG - 2012-05-13 17:18:43 --> Loader Class Initialized
+DEBUG - 2012-05-13 17:18:43 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 17:18:43 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 17:18:43 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 17:18:43 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 17:18:43 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 17:18:43 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 17:18:43 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 17:18:43 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 17:18:43 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 17:18:43 --> Session Class Initialized
+DEBUG - 2012-05-13 17:18:43 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 17:18:43 --> Session routines successfully run
+DEBUG - 2012-05-13 17:18:43 --> Model Class Initialized
+DEBUG - 2012-05-13 17:18:44 --> Model Class Initialized
+DEBUG - 2012-05-13 17:18:44 --> Model Class Initialized
+DEBUG - 2012-05-13 17:18:44 --> Model Class Initialized
+DEBUG - 2012-05-13 17:18:44 --> Model Class Initialized
+DEBUG - 2012-05-13 17:18:44 --> Model Class Initialized
+DEBUG - 2012-05-13 17:18:44 --> Model Class Initialized
+DEBUG - 2012-05-13 17:18:44 --> Model Class Initialized
+DEBUG - 2012-05-13 17:18:44 --> Controller Class Initialized
+DEBUG - 2012-05-13 17:18:44 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:18:44 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:18:44 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:18:47 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 17:18:47 --> Final output sent to browser
+DEBUG - 2012-05-13 17:18:47 --> Total execution time: 4.8100
+DEBUG - 2012-05-13 17:22:07 --> Config Class Initialized
+DEBUG - 2012-05-13 17:22:07 --> Hooks Class Initialized
+DEBUG - 2012-05-13 17:22:07 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 17:22:08 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 17:22:08 --> URI Class Initialized
+DEBUG - 2012-05-13 17:22:08 --> Router Class Initialized
+DEBUG - 2012-05-13 17:22:08 --> Output Class Initialized
+DEBUG - 2012-05-13 17:22:08 --> Security Class Initialized
+DEBUG - 2012-05-13 17:22:08 --> Input Class Initialized
+DEBUG - 2012-05-13 17:22:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 17:22:08 --> Language Class Initialized
+DEBUG - 2012-05-13 17:22:08 --> Loader Class Initialized
+DEBUG - 2012-05-13 17:22:08 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 17:22:08 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 17:22:08 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 17:22:08 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 17:22:08 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 17:22:08 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 17:22:08 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 17:22:08 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 17:22:08 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 17:22:08 --> Session Class Initialized
+DEBUG - 2012-05-13 17:22:09 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 17:22:09 --> Session routines successfully run
+DEBUG - 2012-05-13 17:22:09 --> Model Class Initialized
+DEBUG - 2012-05-13 17:22:09 --> Model Class Initialized
+DEBUG - 2012-05-13 17:22:09 --> Model Class Initialized
+DEBUG - 2012-05-13 17:22:09 --> Model Class Initialized
+DEBUG - 2012-05-13 17:22:09 --> Model Class Initialized
+DEBUG - 2012-05-13 17:22:09 --> Model Class Initialized
+DEBUG - 2012-05-13 17:22:09 --> Model Class Initialized
+DEBUG - 2012-05-13 17:22:09 --> Model Class Initialized
+DEBUG - 2012-05-13 17:22:09 --> Controller Class Initialized
+DEBUG - 2012-05-13 17:22:10 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:22:10 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:22:10 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:22:12 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 17:22:12 --> Final output sent to browser
+DEBUG - 2012-05-13 17:22:12 --> Total execution time: 4.5427
+DEBUG - 2012-05-13 17:26:44 --> Config Class Initialized
+DEBUG - 2012-05-13 17:26:45 --> Hooks Class Initialized
+DEBUG - 2012-05-13 17:26:45 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 17:26:45 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 17:26:45 --> URI Class Initialized
+DEBUG - 2012-05-13 17:26:45 --> Router Class Initialized
+DEBUG - 2012-05-13 17:26:45 --> Output Class Initialized
+DEBUG - 2012-05-13 17:26:45 --> Security Class Initialized
+DEBUG - 2012-05-13 17:26:45 --> Input Class Initialized
+DEBUG - 2012-05-13 17:26:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 17:26:45 --> Language Class Initialized
+DEBUG - 2012-05-13 17:26:45 --> Loader Class Initialized
+DEBUG - 2012-05-13 17:26:45 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 17:26:45 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 17:26:45 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 17:26:46 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 17:26:46 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 17:26:46 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 17:26:46 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 17:26:46 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 17:26:46 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 17:26:46 --> Session Class Initialized
+DEBUG - 2012-05-13 17:26:46 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 17:26:46 --> Session routines successfully run
+DEBUG - 2012-05-13 17:26:46 --> Model Class Initialized
+DEBUG - 2012-05-13 17:26:46 --> Model Class Initialized
+DEBUG - 2012-05-13 17:26:46 --> Model Class Initialized
+DEBUG - 2012-05-13 17:26:46 --> Model Class Initialized
+DEBUG - 2012-05-13 17:26:46 --> Model Class Initialized
+DEBUG - 2012-05-13 17:26:47 --> Model Class Initialized
+DEBUG - 2012-05-13 17:26:47 --> Model Class Initialized
+DEBUG - 2012-05-13 17:26:47 --> Model Class Initialized
+DEBUG - 2012-05-13 17:26:47 --> Controller Class Initialized
+DEBUG - 2012-05-13 17:26:47 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:26:47 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:26:47 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:26:49 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 17:26:50 --> Final output sent to browser
+DEBUG - 2012-05-13 17:26:50 --> Total execution time: 5.1405
+DEBUG - 2012-05-13 17:36:24 --> Config Class Initialized
+DEBUG - 2012-05-13 17:36:24 --> Hooks Class Initialized
+DEBUG - 2012-05-13 17:36:24 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 17:36:24 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 17:36:24 --> URI Class Initialized
+DEBUG - 2012-05-13 17:36:24 --> Router Class Initialized
+DEBUG - 2012-05-13 17:36:24 --> Output Class Initialized
+DEBUG - 2012-05-13 17:36:24 --> Security Class Initialized
+DEBUG - 2012-05-13 17:36:24 --> Input Class Initialized
+DEBUG - 2012-05-13 17:36:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 17:36:24 --> Language Class Initialized
+DEBUG - 2012-05-13 17:36:24 --> Loader Class Initialized
+DEBUG - 2012-05-13 17:36:24 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 17:36:24 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 17:36:24 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 17:36:24 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 17:36:24 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 17:36:24 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 17:36:25 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 17:36:25 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 17:36:25 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 17:36:25 --> Session Class Initialized
+DEBUG - 2012-05-13 17:36:25 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 17:36:25 --> Session routines successfully run
+DEBUG - 2012-05-13 17:36:25 --> Model Class Initialized
+DEBUG - 2012-05-13 17:36:25 --> Model Class Initialized
+DEBUG - 2012-05-13 17:36:25 --> Model Class Initialized
+DEBUG - 2012-05-13 17:36:25 --> Model Class Initialized
+DEBUG - 2012-05-13 17:36:25 --> Model Class Initialized
+DEBUG - 2012-05-13 17:36:25 --> Model Class Initialized
+DEBUG - 2012-05-13 17:36:26 --> Model Class Initialized
+DEBUG - 2012-05-13 17:36:26 --> Model Class Initialized
+DEBUG - 2012-05-13 17:36:26 --> Controller Class Initialized
+DEBUG - 2012-05-13 17:36:26 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:36:26 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:36:26 --> XSS Filtering completed
+ERROR - 2012-05-13 17:36:28 --> Severity: Notice  --> Undefined variable: hd8 C:\xampp\htdocs\medisys\application\views\list\show_admissions.php 208
+ERROR - 2012-05-13 17:36:28 --> Severity: Notice  --> Undefined variable: hd7 C:\xampp\htdocs\medisys\application\views\list\show_admissions.php 206
+ERROR - 2012-05-13 17:36:28 --> Severity: Notice  --> Undefined variable: hd5 C:\xampp\htdocs\medisys\application\views\list\show_admissions.php 202
+ERROR - 2012-05-13 17:36:28 --> Severity: Notice  --> Undefined variable: hd6 C:\xampp\htdocs\medisys\application\views\list\show_admissions.php 204
+DEBUG - 2012-05-13 17:36:29 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 17:36:29 --> Final output sent to browser
+DEBUG - 2012-05-13 17:36:29 --> Total execution time: 4.9259
+DEBUG - 2012-05-13 17:37:40 --> Config Class Initialized
+DEBUG - 2012-05-13 17:37:40 --> Hooks Class Initialized
+DEBUG - 2012-05-13 17:37:40 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 17:37:40 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 17:37:40 --> URI Class Initialized
+DEBUG - 2012-05-13 17:37:40 --> Router Class Initialized
+DEBUG - 2012-05-13 17:37:40 --> Output Class Initialized
+DEBUG - 2012-05-13 17:37:40 --> Security Class Initialized
+DEBUG - 2012-05-13 17:37:40 --> Input Class Initialized
+DEBUG - 2012-05-13 17:37:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 17:37:40 --> Language Class Initialized
+DEBUG - 2012-05-13 17:37:40 --> Loader Class Initialized
+DEBUG - 2012-05-13 17:37:40 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 17:37:41 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 17:37:41 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 17:37:41 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 17:37:41 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 17:37:41 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 17:37:41 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 17:37:41 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 17:37:41 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 17:37:41 --> Session Class Initialized
+DEBUG - 2012-05-13 17:37:41 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 17:37:41 --> Session routines successfully run
+DEBUG - 2012-05-13 17:37:41 --> Model Class Initialized
+DEBUG - 2012-05-13 17:37:41 --> Model Class Initialized
+DEBUG - 2012-05-13 17:37:41 --> Model Class Initialized
+DEBUG - 2012-05-13 17:37:41 --> Model Class Initialized
+DEBUG - 2012-05-13 17:37:41 --> Model Class Initialized
+DEBUG - 2012-05-13 17:37:42 --> Model Class Initialized
+DEBUG - 2012-05-13 17:37:42 --> Model Class Initialized
+DEBUG - 2012-05-13 17:37:42 --> Model Class Initialized
+DEBUG - 2012-05-13 17:37:42 --> Controller Class Initialized
+DEBUG - 2012-05-13 17:37:42 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:37:42 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:37:42 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:37:45 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 17:37:45 --> Final output sent to browser
+DEBUG - 2012-05-13 17:37:45 --> Total execution time: 4.9462
+DEBUG - 2012-05-13 17:38:36 --> Config Class Initialized
+DEBUG - 2012-05-13 17:38:36 --> Hooks Class Initialized
+DEBUG - 2012-05-13 17:38:36 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 17:38:36 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 17:38:36 --> URI Class Initialized
+DEBUG - 2012-05-13 17:38:36 --> Router Class Initialized
+DEBUG - 2012-05-13 17:38:36 --> Output Class Initialized
+DEBUG - 2012-05-13 17:38:36 --> Security Class Initialized
+DEBUG - 2012-05-13 17:38:36 --> Input Class Initialized
+DEBUG - 2012-05-13 17:38:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 17:38:36 --> Language Class Initialized
+DEBUG - 2012-05-13 17:38:36 --> Loader Class Initialized
+DEBUG - 2012-05-13 17:38:36 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 17:38:36 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 17:38:36 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 17:38:37 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 17:38:37 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 17:38:37 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 17:38:37 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 17:38:37 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 17:38:37 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 17:38:37 --> Session Class Initialized
+DEBUG - 2012-05-13 17:38:37 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 17:38:37 --> Session routines successfully run
+DEBUG - 2012-05-13 17:38:37 --> Model Class Initialized
+DEBUG - 2012-05-13 17:38:37 --> Model Class Initialized
+DEBUG - 2012-05-13 17:38:37 --> Model Class Initialized
+DEBUG - 2012-05-13 17:38:37 --> Model Class Initialized
+DEBUG - 2012-05-13 17:38:37 --> Model Class Initialized
+DEBUG - 2012-05-13 17:38:38 --> Model Class Initialized
+DEBUG - 2012-05-13 17:38:38 --> Model Class Initialized
+DEBUG - 2012-05-13 17:38:38 --> Model Class Initialized
+DEBUG - 2012-05-13 17:38:38 --> Controller Class Initialized
+DEBUG - 2012-05-13 17:38:38 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:38:38 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:38:38 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:38:40 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 17:38:41 --> Final output sent to browser
+DEBUG - 2012-05-13 17:38:41 --> Total execution time: 4.6820
+DEBUG - 2012-05-13 17:42:58 --> Config Class Initialized
+DEBUG - 2012-05-13 17:42:58 --> Hooks Class Initialized
+DEBUG - 2012-05-13 17:42:58 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 17:42:58 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 17:42:58 --> URI Class Initialized
+DEBUG - 2012-05-13 17:42:58 --> Router Class Initialized
+DEBUG - 2012-05-13 17:42:59 --> Output Class Initialized
+DEBUG - 2012-05-13 17:42:59 --> Security Class Initialized
+DEBUG - 2012-05-13 17:42:59 --> Input Class Initialized
+DEBUG - 2012-05-13 17:42:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 17:42:59 --> Language Class Initialized
+DEBUG - 2012-05-13 17:42:59 --> Loader Class Initialized
+DEBUG - 2012-05-13 17:42:59 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 17:42:59 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 17:42:59 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 17:42:59 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 17:42:59 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 17:42:59 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 17:42:59 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 17:42:59 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 17:42:59 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 17:42:59 --> Session Class Initialized
+DEBUG - 2012-05-13 17:42:59 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 17:42:59 --> Session routines successfully run
+DEBUG - 2012-05-13 17:43:00 --> Model Class Initialized
+DEBUG - 2012-05-13 17:43:00 --> Model Class Initialized
+DEBUG - 2012-05-13 17:43:00 --> Model Class Initialized
+DEBUG - 2012-05-13 17:43:00 --> Model Class Initialized
+DEBUG - 2012-05-13 17:43:00 --> Model Class Initialized
+DEBUG - 2012-05-13 17:43:00 --> Model Class Initialized
+DEBUG - 2012-05-13 17:43:00 --> Model Class Initialized
+DEBUG - 2012-05-13 17:43:01 --> Model Class Initialized
+DEBUG - 2012-05-13 17:43:01 --> Controller Class Initialized
+DEBUG - 2012-05-13 17:43:01 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:43:01 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:43:01 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:43:03 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 17:43:03 --> Final output sent to browser
+DEBUG - 2012-05-13 17:43:04 --> Total execution time: 5.2457
+DEBUG - 2012-05-13 17:53:44 --> Config Class Initialized
+DEBUG - 2012-05-13 17:53:45 --> Hooks Class Initialized
+DEBUG - 2012-05-13 17:53:45 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 17:53:45 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 17:53:45 --> URI Class Initialized
+DEBUG - 2012-05-13 17:53:45 --> Router Class Initialized
+DEBUG - 2012-05-13 17:53:45 --> Output Class Initialized
+DEBUG - 2012-05-13 17:53:45 --> Security Class Initialized
+DEBUG - 2012-05-13 17:53:45 --> Input Class Initialized
+DEBUG - 2012-05-13 17:53:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 17:53:45 --> Language Class Initialized
+DEBUG - 2012-05-13 17:53:45 --> Loader Class Initialized
+DEBUG - 2012-05-13 17:53:45 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 17:53:45 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 17:53:45 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 17:53:45 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 17:53:45 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 17:53:45 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 17:53:45 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 17:53:45 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 17:53:45 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 17:53:46 --> Session Class Initialized
+DEBUG - 2012-05-13 17:53:46 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 17:53:46 --> Session routines successfully run
+DEBUG - 2012-05-13 17:53:46 --> Model Class Initialized
+DEBUG - 2012-05-13 17:53:46 --> Model Class Initialized
+DEBUG - 2012-05-13 17:53:46 --> Model Class Initialized
+DEBUG - 2012-05-13 17:53:46 --> Model Class Initialized
+DEBUG - 2012-05-13 17:53:46 --> Model Class Initialized
+DEBUG - 2012-05-13 17:53:46 --> Model Class Initialized
+DEBUG - 2012-05-13 17:53:46 --> Model Class Initialized
+DEBUG - 2012-05-13 17:53:47 --> Model Class Initialized
+DEBUG - 2012-05-13 17:53:47 --> Controller Class Initialized
+DEBUG - 2012-05-13 17:53:47 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:53:47 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:53:47 --> XSS Filtering completed
+ERROR - 2012-05-13 17:53:49 --> Severity: Notice  --> Undefined variable: md2 C:\xampp\htdocs\medisys\application\views\list\show_admissions.php 221
+ERROR - 2012-05-13 17:53:49 --> Severity: Notice  --> Undefined variable: md5 C:\xampp\htdocs\medisys\application\views\list\show_admissions.php 227
+ERROR - 2012-05-13 17:53:49 --> Severity: Notice  --> Undefined variable: md8 C:\xampp\htdocs\medisys\application\views\list\show_admissions.php 233
+ERROR - 2012-05-13 17:53:49 --> Severity: Notice  --> Undefined variable: md3 C:\xampp\htdocs\medisys\application\views\list\show_admissions.php 223
+ERROR - 2012-05-13 17:53:49 --> Severity: Notice  --> Undefined variable: md1 C:\xampp\htdocs\medisys\application\views\list\show_admissions.php 219
+ERROR - 2012-05-13 17:53:49 --> Severity: Notice  --> Undefined variable: md4 C:\xampp\htdocs\medisys\application\views\list\show_admissions.php 225
+ERROR - 2012-05-13 17:53:49 --> Severity: Notice  --> Undefined variable: md6 C:\xampp\htdocs\medisys\application\views\list\show_admissions.php 229
+ERROR - 2012-05-13 17:53:49 --> Severity: Notice  --> Undefined variable: md7 C:\xampp\htdocs\medisys\application\views\list\show_admissions.php 231
+ERROR - 2012-05-13 17:53:49 --> Severity: Notice  --> Undefined variable: md9 C:\xampp\htdocs\medisys\application\views\list\show_admissions.php 235
+DEBUG - 2012-05-13 17:53:50 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 17:53:50 --> Final output sent to browser
+DEBUG - 2012-05-13 17:53:50 --> Total execution time: 5.0909
+DEBUG - 2012-05-13 17:56:19 --> Config Class Initialized
+DEBUG - 2012-05-13 17:56:19 --> Hooks Class Initialized
+DEBUG - 2012-05-13 17:56:19 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 17:56:19 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 17:56:19 --> URI Class Initialized
+DEBUG - 2012-05-13 17:56:19 --> Router Class Initialized
+DEBUG - 2012-05-13 17:56:19 --> Output Class Initialized
+DEBUG - 2012-05-13 17:56:19 --> Security Class Initialized
+DEBUG - 2012-05-13 17:56:20 --> Input Class Initialized
+DEBUG - 2012-05-13 17:56:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 17:56:20 --> Language Class Initialized
+DEBUG - 2012-05-13 17:56:20 --> Loader Class Initialized
+DEBUG - 2012-05-13 17:56:20 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 17:56:20 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 17:56:20 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 17:56:20 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 17:56:20 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 17:56:20 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 17:56:20 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 17:56:20 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 17:56:20 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 17:56:20 --> Session Class Initialized
+DEBUG - 2012-05-13 17:56:20 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 17:56:20 --> Session routines successfully run
+DEBUG - 2012-05-13 17:56:21 --> Model Class Initialized
+DEBUG - 2012-05-13 17:56:21 --> Model Class Initialized
+DEBUG - 2012-05-13 17:56:21 --> Model Class Initialized
+DEBUG - 2012-05-13 17:56:21 --> Model Class Initialized
+DEBUG - 2012-05-13 17:56:21 --> Model Class Initialized
+DEBUG - 2012-05-13 17:56:21 --> Model Class Initialized
+DEBUG - 2012-05-13 17:56:21 --> Model Class Initialized
+DEBUG - 2012-05-13 17:56:21 --> Model Class Initialized
+DEBUG - 2012-05-13 17:56:21 --> Controller Class Initialized
+DEBUG - 2012-05-13 17:56:21 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:56:22 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:56:22 --> XSS Filtering completed
+DEBUG - 2012-05-13 17:56:24 --> File loaded: application/views/list/show_admissions.php
+DEBUG - 2012-05-13 17:56:24 --> Final output sent to browser
+DEBUG - 2012-05-13 17:56:24 --> Total execution time: 5.4735
+DEBUG - 2012-05-13 18:00:22 --> Config Class Initialized
+DEBUG - 2012-05-13 18:00:22 --> Hooks Class Initialized
+DEBUG - 2012-05-13 18:00:22 --> Utf8 Class Initialized
+DEBUG - 2012-05-13 18:00:22 --> UTF-8 Support Enabled
+DEBUG - 2012-05-13 18:00:23 --> URI Class Initialized
+DEBUG - 2012-05-13 18:00:23 --> Router Class Initialized
+DEBUG - 2012-05-13 18:00:23 --> No URI present. Default controller set.
+DEBUG - 2012-05-13 18:00:23 --> Output Class Initialized
+DEBUG - 2012-05-13 18:00:23 --> Security Class Initialized
+DEBUG - 2012-05-13 18:00:23 --> Input Class Initialized
+DEBUG - 2012-05-13 18:00:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-13 18:00:23 --> Language Class Initialized
+DEBUG - 2012-05-13 18:00:23 --> Loader Class Initialized
+DEBUG - 2012-05-13 18:00:23 --> Config file loaded: application/config/my_constants.php
+DEBUG - 2012-05-13 18:00:23 --> Helper loaded: form_helper
+DEBUG - 2012-05-13 18:00:23 --> Helper loaded: date_helper
+DEBUG - 2012-05-13 18:00:23 --> Helper loaded: url_helper
+DEBUG - 2012-05-13 18:00:23 --> Helper loaded: login_helper
+DEBUG - 2012-05-13 18:00:23 --> Helper loaded: admission_helper
+DEBUG - 2012-05-13 18:00:23 --> Helper loaded: cookie_helper
+DEBUG - 2012-05-13 18:00:23 --> Helper loaded: census_table_helper
+DEBUG - 2012-05-13 18:00:23 --> Database Driver Class Initialized
+DEBUG - 2012-05-13 18:00:23 --> Session Class Initialized
+DEBUG - 2012-05-13 18:00:24 --> Helper loaded: string_helper
+DEBUG - 2012-05-13 18:00:24 --> Session routines successfully run
+DEBUG - 2012-05-13 18:00:24 --> Model Class Initialized
+DEBUG - 2012-05-13 18:00:24 --> Model Class Initialized
+DEBUG - 2012-05-13 18:00:24 --> Model Class Initialized
+DEBUG - 2012-05-13 18:00:24 --> Model Class Initialized
+DEBUG - 2012-05-13 18:00:24 --> Model Class Initialized
+DEBUG - 2012-05-13 18:00:24 --> Model Class Initialized
+DEBUG - 2012-05-13 18:00:24 --> Model Class Initialized
+DEBUG - 2012-05-13 18:00:24 --> Model Class Initialized
+DEBUG - 2012-05-13 18:00:25 --> Controller Class Initialized
