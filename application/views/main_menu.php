@@ -221,6 +221,7 @@ if (($uservice == 11) || ($uservice == 22) || ($uservice == 33) || ($uservice ==
     echo "(Update Pre-operative Census)</td></tr>";
     echo form_close();
 }
+/*
 //Subspec
 if (($uservice >= 110) && ($uservice !=999)){
 	echo "<tr><td>".form_open('menu');
@@ -239,6 +240,7 @@ if (($uservice >= 110) && ($uservice !=999)){
 	echo "(".$sub." Interface)</td></tr>";
 	echo form_close();
 }
+*/
 //Manage Admissions
 echo "<tr><td>".form_open('menu');
 $vars = array('my_service'=>'', 'my_dispo'=>'', 'one_gm'=>'n', 'stp1'=>'');
