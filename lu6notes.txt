@@ -1,4 +1,0 @@
-<div style="margin-left:10px;">
-<h2>LU6 Clerks Bulletin</h2>
-
-</div>
