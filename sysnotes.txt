@@ -1,8 +1,17 @@
 <div style="margin-left:10px; font-size:large;">
-<b>***May 2012: Watch out for announcements on the online quiz!</b> <br/>
-<b>****Inquire from your LU resident monitors Dr Allen Tria and Dr Abi Uy for more details.</b><br/>  
-Note to ALL Medisys users: Please use <b>CHROME</b> or <b>SAFARI</b> Browser<br/>
-Not All functions working with <span style="color:red;">FireFox</span>.<br/>
+<li>Announcements</li>
+<li>
+<b>#1 (05/25/12) Update: HOME MEDS FORM increased to 16 items.</b></li>
+<ul>
+<b>Note: If errors noted on (old) home meds form, just SAVE the HOME MEDS form, view it again and delete unwanted lines and SAVE AGAIN. Everything will return to normal.</b></ul>
+<li>
+<b>#2 May 2012: Watch out for announcements on the online quiz!</b></li>
+<ul>
+<b>Inquire from your LU resident monitors Dr Allen Tria and Dr Abi Uy for more details.</b></ul>
+<li>
+#3 Note to ALL Medisys users: Please use <b>CHROME</b> or <b>SAFARI</b> Browser</li>
+<ul>
+Not All functions working with <span style="color:red;">FireFox</span>.</ul>
 Thank you.<br/>
 - Medicine Sysadmin
 </div>

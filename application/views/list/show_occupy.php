@@ -267,7 +267,7 @@ for ($x=1; $x<51; $x++)
 	$age = compute_age_adm(revert_form_input($row3->date_in), revert_form_input($row3->p_bday));	
 	if ($row3->bed == $x){
                 if ($y == 0) 
-		    echo "<tr><td class = \"".$class."\"><font size=5>".$x."</font></td><td class = \"".$class."\">GM: ".$row3->service."</td><td class = \"".$class."\">".revert_form_input($row3->p_name)." ".$age."/".$row3->p_sex."</td><td class = \"".$class."\">".$hd."</td></tr>";
+		    echo "<tr><td class = \"".$class."\"><font size=5>".$x."</font></td><td class = \"".$class."\">GM: ".$row3->service."</td><td class = \"".$class."\"><a href=\"\">".revert_form_input($row3->p_name)." ".$age."/".$row3->p_sex."</a></td><td class = \"".$class."\">".$hd."</td></tr>";
 		else
 		    echo "<tr><td class = \"".$class."\"><font size=5>".$x."</font></td><td class = \"".$class."\">GM: ".$row3->service."</td><td class = \"".$class."\">".revert_form_input($row3->p_name)." ".$age."/".$row3->p_sex."</td><td class = \"".$class."\">".$hd."</td></tr>";
 	        $y++;

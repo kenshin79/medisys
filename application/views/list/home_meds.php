@@ -117,7 +117,7 @@ foreach ($p_admission as $row){
 
     echo "<font size = 1>PGH Form No. P-371002 </font>";    
     echo "<table>";
-    echo "<tr><th><div style=\"float:left\"><img src=\"/medisys/img/pghlogo.bmp\" style=\"width:80px; height:50px; \" /></div><div style=\"float:none\"><img src=\"/medisys/img/pghlabel.bmp\" style=\"width:300px; height:50px\" /></div><div style=\"float:right;\"></div></th></tr>";
+    echo "<tr><th><div style=\"float:left\"><img src=\"/medisys/img/pghlogo.bmp\" style=\"width:80px; height:40px; \" /></div><div style=\"float:none\"><img src=\"/medisys/img/pghlabel.bmp\" style=\"width:300px; height:40px\" /></div><div style=\"float:right;\"></div></th></tr>";
     echo "<tr><th style=\"width:1000px\"><div align= \"center\" style=\"text-align:center; text-decoration:underline; \"><font size=4>HOME MEDICATION SHEET</div></th></tr>";
     echo "</table>";
 
@@ -162,15 +162,16 @@ foreach ($p_admission as $row){
 		 echo revert_form_input($name->r_name)." M.D.";
     echo "</th></tr></table>";
     echo "Final Diagnosis:<br />";
-    echo "<textarea cols=\"80\" rows=\"7\">";
+    echo "<textarea cols=\"80\" rows=\"4\">";
 //Plist
     echo revert_form_input($row->plist);
     echo "</textarea>";
+	echo "<div align=\"center\">";
     echo "<table border=3 style=\"border-color:black; border-style:solid;\">";
-    echo "<tr><th>MEDICATION<br />(GAMOT)</th><th>TIME (ORAS NG PAG-INOM)</th><th>DURATION<br />(HANGGANAN)</th></tr>";
-    echo "<tr><td></td><td><table border=1 style=\"border-color:black; border-style:solid;\"><tr><td style=\"width:40px\">6 am</td><td style=\"width:40px\">8 am</td><td style=\"width:40px\">1 pm</td><td style=\"width:40px\">6 pm</td><td style=\"width:40px\">8 pm</td><td style=\"width:40px\">10 pm</td></tr></table></td><td></td></tr>";
+    echo "<tr><th>No.</th><th>MEDICATION<br />(GAMOT)</th><th>TIME (ORAS NG PAG-INOM)</th><th>DURATION<br />(HANGGANAN)</th></tr>";
+    echo "<tr><td></td><td></td><td><table border=1 style=\"border-color:black; border-style:solid;\"><tr><td style=\"width:40px\">6 am</td><td style=\"width:40px\">8 am</td><td style=\"width:40px\">1 pm</td><td style=\"width:40px\">6 pm</td><td style=\"width:40px\">8 pm</td><td style=\"width:40px\">10 pm</td></tr></table></td><td></td></tr>";
 //row1
-    echo "<tr><td><input name=\"med1\" type=\"text\" style=\"width:250px\"  value=\"";
+    echo "<tr><td>1</td><td><input name=\"med1\" type=\"text\" style=\"width:250px\"  value=\"";
     if ($row->home)
         echo revert_form_input($ehome[1]);
     echo "\"/></td>";
@@ -234,7 +235,7 @@ foreach ($p_admission as $row){
     echo "\"></td></tr>";
 
 //row2
-    echo "<tr><td><input name=\"med2\" type=\"text\" style=\"width:250px\"  value=\"";
+    echo "<tr><td>2</td><td><input name=\"med2\" type=\"text\" style=\"width:250px\"  value=\"";
     if ($row->home)
         echo revert_form_input($ehome[9]);
     echo "\"/></td>";
@@ -298,7 +299,7 @@ foreach ($p_admission as $row){
     echo "\"></td></tr>";
 
 //row3
-    echo "<tr><td><input name=\"med3\" type=\"text\" style=\"width:250px\"  value=\"";
+    echo "<tr><td>3</td><td><input name=\"med3\" type=\"text\" style=\"width:250px\"  value=\"";
     if ($row->home)
         echo revert_form_input($ehome[17]);
     echo "\"/></td>";
@@ -362,7 +363,7 @@ foreach ($p_admission as $row){
     echo "\"></td></tr>";
 
 //row4
-    echo "<tr><td><input name=\"med4\" type=\"text\" style=\"width:250px\"  value=\"";
+    echo "<tr><td>4</td><td><input name=\"med4\" type=\"text\" style=\"width:250px\"  value=\"";
     if ($row->home)
         echo revert_form_input($ehome[25]);
     echo "\"/></td>";
@@ -426,7 +427,7 @@ foreach ($p_admission as $row){
     echo "\"></td></tr>";
 
 //row5
-    echo "<tr><td><input name=\"med5\" type=\"text\" style=\"width:250px\"  value=\"";
+    echo "<tr><td>5</td><td><input name=\"med5\" type=\"text\" style=\"width:250px\"  value=\"";
     if ($row->home)
         echo revert_form_input($ehome[33]);
     echo "\"/></td>";
@@ -490,7 +491,7 @@ foreach ($p_admission as $row){
     echo "\"></td></tr>";
 
 //row6
-    echo "<tr><td><input name=\"med6\" type=\"text\" style=\"width:250px\"  value=\"";
+    echo "<tr><td>6</td><td><input name=\"med6\" type=\"text\" style=\"width:250px\"  value=\"";
     if ($row->home)
         echo revert_form_input($ehome[41]);
     echo "\"/></td>";
@@ -554,7 +555,7 @@ foreach ($p_admission as $row){
     echo "\"></td></tr>";
 
 //row7
-    echo "<tr><td><input name=\"med7\" type=\"text\" style=\"width:250px\"  value=\"";
+    echo "<tr><td>7</td><td><input name=\"med7\" type=\"text\" style=\"width:250px\"  value=\"";
     if ($row->home)
         echo revert_form_input($ehome[49]);
     echo "\"/></td>";
@@ -618,7 +619,7 @@ foreach ($p_admission as $row){
     echo "\"></td></tr>";
 
 //row8
-    echo "<tr><td><input name=\"med8\" type=\"text\" style=\"width:250px\"  value=\"";
+    echo "<tr><td>8</td><td><input name=\"med8\" type=\"text\" style=\"width:250px\"  value=\"";
     if ($row->home)
         echo revert_form_input($ehome[57]);
     echo "\"/></td>";
@@ -680,14 +681,527 @@ foreach ($p_admission as $row){
     if ($row->home)
         echo revert_form_input($ehome[64]);
     echo "\"></td></tr>";
-    echo "</table>";
+	//end of 8 meds
+//row9
+    echo "<tr><td>9</td><td><input name=\"med9\" type=\"text\" style=\"width:250px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[65]);
+    echo "\"/></td>";
+    if ($row->home){
+        if (!strcmp($ehome[66], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td><table border=1 style=\"border-color:black; border-style:solid;\"><tr><td style=\"width:40px\">".form_checkbox('i6am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[67], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('i8am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[68], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('i1pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[69], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('i6pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[70], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('i8pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[71], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('i10pm', 'yes', $take)."</td></tr></table></td>";
+    echo "<td><input name=\"long9\" type=\"text\" style=\"width:100px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[72]);
+    echo "\"></td></tr>";
 
+//row10
+    echo "<tr><td>10</td><td><input name=\"med10\" type=\"text\" style=\"width:250px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[73]);
+    echo "\"/></td>";
+    if ($row->home){
+        if (!strcmp($ehome[74], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td><table border=1 style=\"border-color:black; border-style:solid;\"><tr><td style=\"width:40px\">".form_checkbox('j6am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[75], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('j8am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[76], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('j1pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[77], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('j6pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[78], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('j8pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[79], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('j10pm', 'yes', $take)."</td></tr></table></td>";
+    echo "<td><input name=\"long10\" type=\"text\" style=\"width:100px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[80]);
+    echo "\"></td></tr>";
+
+//row11
+    echo "<tr><td>11</td><td><input name=\"med11\" type=\"text\" style=\"width:250px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[81]);
+    echo "\"/></td>";
+    if ($row->home){
+        if (!strcmp($ehome[82], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td><table border=1 style=\"border-color:black; border-style:solid;\"><tr><td style=\"width:40px\">".form_checkbox('k6am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[83], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('k8am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[84], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('k1pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[85], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('k6pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[86], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('k8pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[87], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('k10pm', 'yes', $take)."</td></tr></table></td>";
+    echo "<td><input name=\"long11\" type=\"text\" style=\"width:100px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[88]);
+    echo "\"></td></tr>";
+
+//row12
+    echo "<tr><td>12</td><td><input name=\"med12\" type=\"text\" style=\"width:250px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[89]);
+    echo "\"/></td>";
+    if ($row->home){
+        if (!strcmp($ehome[90], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td><table border=1 style=\"border-color:black; border-style:solid;\"><tr><td style=\"width:40px\">".form_checkbox('l6am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[91], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('l8am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[92], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('l1pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[93], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('l6pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[94], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('l8pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[95], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('l10pm', 'yes', $take)."</td></tr></table></td>";
+    echo "<td><input name=\"long12\" type=\"text\" style=\"width:100px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[96]);
+    echo "\"></td></tr>";
+
+//row13
+    echo "<tr><td>13</td><td><input name=\"med13\" type=\"text\" style=\"width:250px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[97]);
+    echo "\"/></td>";
+    if ($row->home){
+        if (!strcmp($ehome[98], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td><table border=1 style=\"border-color:black; border-style:solid;\"><tr><td style=\"width:40px\">".form_checkbox('m6am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[99], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('m8am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[100], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('m1pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[101], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('m6pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[102], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('m8pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[103], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('m10pm', 'yes', $take)."</td></tr></table></td>";
+    echo "<td><input name=\"long13\" type=\"text\" style=\"width:100px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[104]);
+    echo "\"></td></tr>";
+
+//row14
+    echo "<tr><td>14</td><td><input name=\"med14\" type=\"text\" style=\"width:250px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[105]);
+    echo "\"/></td>";
+    if ($row->home){
+        if (!strcmp($ehome[106], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td><table border=1 style=\"border-color:black; border-style:solid;\"><tr><td style=\"width:40px\">".form_checkbox('n6am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[107], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('n8am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[108], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('n1pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[109], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('n6pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[110], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('n8pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[111], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('n10pm', 'yes', $take)."</td></tr></table></td>";
+    echo "<td><input name=\"long14\" type=\"text\" style=\"width:100px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[112]);
+    echo "\"></td></tr>";
+
+//row15
+    echo "<tr><td>15</td><td><input name=\"med15\" type=\"text\" style=\"width:250px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[113]);
+    echo "\"/></td>";
+    if ($row->home){
+        if (!strcmp($ehome[114], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td><table border=1 style=\"border-color:black; border-style:solid;\"><tr><td style=\"width:40px\">".form_checkbox('o6am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[115], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('o8am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[116], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('o1pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[117], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('o6pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[118], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('o8pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[119], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('o10pm', 'yes', $take)."</td></tr></table></td>";
+    echo "<td><input name=\"long15\" type=\"text\" style=\"width:100px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[120]);
+    echo "\"></td></tr>";
+
+//row16
+    echo "<tr><td>16</td><td><input name=\"med16\" type=\"text\" style=\"width:250px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[121]);
+    echo "\"/></td>";
+    if ($row->home){
+        if (!strcmp($ehome[122], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td><table border=1 style=\"border-color:black; border-style:solid;\"><tr><td style=\"width:40px\">".form_checkbox('p6am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[123], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('p8am', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[124], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('p1pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[125], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('p6pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[126], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('p8pm', 'yes', $take)."</td>";
+    if ($row->home){
+        if (!strcmp($ehome[127], 'yes'))
+	        $take = TRUE;
+	    else
+	        $take = FALSE;	
+    }
+    else
+        $take = FALSE;	
+    echo "<td style=\"width:40px\">".form_checkbox('p10pm', 'yes', $take)."</td></tr></table></td>";
+    echo "<td><input name=\"long16\" type=\"text\" style=\"width:100px\"  value=\"";
+    if ($row->home)
+        echo revert_form_input($ehome[128]);
+    echo "\"></td></tr>";	
+	
+    echo "</table>";
+    echo "</div>";
     echo "To comeback on <b>(Petsa ng pagbabalik)</b>:";
     echo "<table><tr><td>____________________________</td><td>(___: am/pm)</td><td style=\"width:150px\"></td><td>OPD at 1BO4-Room 3</td></tr>";
     echo "<tr><td>__________________________</td><td>(___: am/pm)</td><td></td><td>OPD at 1BO4-Room 1</td></tr>";
     echo "<tr><td>__________________________</td><td>(___:am/pm)</td><td></td><td>Subspecialty Clinic:_______________________</td></tr>";
     echo "<tr><td>__________________________</td><td>(___:am/pm)</td><td></td><td>Others:____________________________________</td></tr></table>";
-    echo "<br /><br />";
+    echo "<br />";
     echo "<div align=\"right\"><b>Resident's Signature:</b>_____________________________________</div>";
     if (!strcmp($one_gm, "y")){  
         $label = array('value'=>"***");

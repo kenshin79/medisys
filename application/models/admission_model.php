@@ -1154,151 +1154,297 @@ function get_admissiondata_by_id($aid){
                      fwrite($handle, $data);                
        
        }
-    function edit_home($aid){
+       function edit_home($aid){
         $out_date = clean_form_input($this->input->post('out_date', TRUE));
+        //meds1
         $med1 = clean_form_input($this->input->post('med1', TRUE));
         $a6am = clean_form_input($this->input->post('a6am', TRUE));
         $a8am = clean_form_input($this->input->post('a8am', TRUE));
         $a1pm = clean_form_input($this->input->post('a1pm', TRUE));
-	$a6pm = clean_form_input($this->input->post('a6pm', TRUE));
-	$a8pm = clean_form_input($this->input->post('a8pm', TRUE));
-	$a10pm = clean_form_input($this->input->post('a10pm', TRUE));
-	$long1 = clean_form_input($this->input->post('long1', TRUE));    
-	$med2 = clean_form_input($this->input->post('med2', TRUE));
+        $a6pm = clean_form_input($this->input->post('a6pm', TRUE));
+        $a8pm = clean_form_input($this->input->post('a8pm', TRUE));
+        $a10pm = clean_form_input($this->input->post('a10pm', TRUE));
+        $long1 = clean_form_input($this->input->post('long1', TRUE));
+        //meds2
+        $med2 = clean_form_input($this->input->post('med2', TRUE));
         $b6am = clean_form_input($this->input->post('b6am', TRUE));
         $b8am = clean_form_input($this->input->post('b8am', TRUE));
         $b1pm = clean_form_input($this->input->post('b1pm', TRUE));
-	$b6pm = clean_form_input($this->input->post('b6pm', TRUE));
-	$b8pm = clean_form_input($this->input->post('b8pm', TRUE));
-	$b10pm = clean_form_input($this->input->post('b10pm', TRUE));
-	$long2= clean_form_input($this->input->post('long2', TRUE));    
-	$med3 = clean_form_input($this->input->post('med3', TRUE));
+        $b6pm = clean_form_input($this->input->post('b6pm', TRUE));
+        $b8pm = clean_form_input($this->input->post('b8pm', TRUE));
+        $b10pm = clean_form_input($this->input->post('b10pm', TRUE));
+        $long2= clean_form_input($this->input->post('long2', TRUE));
+        //meds3
+        $med3 = clean_form_input($this->input->post('med3', TRUE));
         $c6am = clean_form_input($this->input->post('c6am', TRUE));
         $c8am = clean_form_input($this->input->post('c8am', TRUE));
         $c1pm = clean_form_input($this->input->post('c1pm', TRUE));
-	$c6pm = clean_form_input($this->input->post('c6pm', TRUE));
-	$c8pm = clean_form_input($this->input->post('c8pm', TRUE));
-	$c10pm = clean_form_input($this->input->post('c10pm', TRUE));
-	$long3= clean_form_input($this->input->post('long3', TRUE));    
-	$med4 = clean_form_input($this->input->post('med4', TRUE));
+        $c6pm = clean_form_input($this->input->post('c6pm', TRUE));
+        $c8pm = clean_form_input($this->input->post('c8pm', TRUE));
+        $c10pm = clean_form_input($this->input->post('c10pm', TRUE));
+        $long3= clean_form_input($this->input->post('long3', TRUE));
+        //meds4
+        $med4 = clean_form_input($this->input->post('med4', TRUE));
         $d6am = clean_form_input($this->input->post('d6am', TRUE));
         $d8am = clean_form_input($this->input->post('d8am', TRUE));
         $d1pm = clean_form_input($this->input->post('d1pm', TRUE));
-	$d6pm = clean_form_input($this->input->post('d6pm', TRUE));
-	$d8pm = clean_form_input($this->input->post('d8pm', TRUE));
-	$d10pm = clean_form_input($this->input->post('d10pm', TRUE));
-	$long4= clean_form_input($this->input->post('long4', TRUE));    
-	$med5 = clean_form_input($this->input->post('med5', TRUE));
+        $d6pm = clean_form_input($this->input->post('d6pm', TRUE));
+        $d8pm = clean_form_input($this->input->post('d8pm', TRUE));
+        $d10pm = clean_form_input($this->input->post('d10pm', TRUE));
+        $long4= clean_form_input($this->input->post('long4', TRUE));
+        //meds5
+        $med5 = clean_form_input($this->input->post('med5', TRUE));
         $e6am = clean_form_input($this->input->post('e6am', TRUE));
         $e8am = clean_form_input($this->input->post('e8am', TRUE));
         $e1pm = clean_form_input($this->input->post('e1pm', TRUE));
-	$e6pm = clean_form_input($this->input->post('e6pm', TRUE));
-	$e8pm = clean_form_input($this->input->post('e8pm', TRUE));
-	$e10pm = clean_form_input($this->input->post('e10pm', TRUE));
-	$long5= clean_form_input($this->input->post('long5', TRUE));    
-	$med6 = clean_form_input($this->input->post('med6', TRUE));
+        $e6pm = clean_form_input($this->input->post('e6pm', TRUE));
+        $e8pm = clean_form_input($this->input->post('e8pm', TRUE));
+        $e10pm = clean_form_input($this->input->post('e10pm', TRUE));
+        $long5= clean_form_input($this->input->post('long5', TRUE));
+        //meds6
+        $med6 = clean_form_input($this->input->post('med6', TRUE));
         $f6am = clean_form_input($this->input->post('f6am', TRUE));
         $f8am = clean_form_input($this->input->post('f8am', TRUE));
         $f1pm = clean_form_input($this->input->post('f1pm', TRUE));
-	$f6pm = clean_form_input($this->input->post('f6pm', TRUE));
-	$f8pm = clean_form_input($this->input->post('f8pm', TRUE));
-	$f10pm = clean_form_input($this->input->post('f10pm', TRUE));
-	$long6= clean_form_input($this->input->post('long6', TRUE));    
-	$med7 = clean_form_input($this->input->post('med7', TRUE));
+        $f6pm = clean_form_input($this->input->post('f6pm', TRUE));
+        $f8pm = clean_form_input($this->input->post('f8pm', TRUE));
+        $f10pm = clean_form_input($this->input->post('f10pm', TRUE));
+        $long6= clean_form_input($this->input->post('long6', TRUE));
+        //meds7
+        $med7 = clean_form_input($this->input->post('med7', TRUE));
         $g6am = clean_form_input($this->input->post('g6am', TRUE));
         $g8am = clean_form_input($this->input->post('g8am', TRUE));
         $g1pm = clean_form_input($this->input->post('g1pm', TRUE));
-	$g6pm = clean_form_input($this->input->post('g6pm', TRUE));
-	$g8pm = clean_form_input($this->input->post('g8pm', TRUE));
-	$g10pm = clean_form_input($this->input->post('g10pm', TRUE));
-	$long7= clean_form_input($this->input->post('long7', TRUE));    
-	$med8 = clean_form_input($this->input->post('med8', TRUE));
+        $g6pm = clean_form_input($this->input->post('g6pm', TRUE));
+        $g8pm = clean_form_input($this->input->post('g8pm', TRUE));
+        $g10pm = clean_form_input($this->input->post('g10pm', TRUE));
+        $long7= clean_form_input($this->input->post('long7', TRUE));
+        //meds8
+        $med8 = clean_form_input($this->input->post('med8', TRUE));
         $h6am = clean_form_input($this->input->post('h6am', TRUE));
         $h8am = clean_form_input($this->input->post('h8am', TRUE));
         $h1pm = clean_form_input($this->input->post('h1pm', TRUE));
-	$h6pm = clean_form_input($this->input->post('h6pm', TRUE));
-	$h8pm = clean_form_input($this->input->post('h8pm', TRUE));
-	$h10pm = clean_form_input($this->input->post('h10pm', TRUE));
-	$long8= clean_form_input($this->input->post('long8', TRUE));    
-        
+        $h6pm = clean_form_input($this->input->post('h6pm', TRUE));
+        $h8pm = clean_form_input($this->input->post('h8pm', TRUE));
+        $h10pm = clean_form_input($this->input->post('h10pm', TRUE));
+        $long8= clean_form_input($this->input->post('long8', TRUE));
+		//meds9
+        $med9 = clean_form_input($this->input->post('med9', TRUE));
+        $i6am = clean_form_input($this->input->post('i6am', TRUE));
+        $i8am = clean_form_input($this->input->post('i8am', TRUE));
+        $i1pm = clean_form_input($this->input->post('i1pm', TRUE));
+        $i6pm = clean_form_input($this->input->post('i6pm', TRUE));
+        $i8pm = clean_form_input($this->input->post('i8pm', TRUE));
+        $i10pm = clean_form_input($this->input->post('i10pm', TRUE));
+        $long9 = clean_form_input($this->input->post('long9', TRUE));
+        //meds10
+        $med10 = clean_form_input($this->input->post('med10', TRUE));
+        $j6am = clean_form_input($this->input->post('j6am', TRUE));
+        $j8am = clean_form_input($this->input->post('j8am', TRUE));
+        $j1pm = clean_form_input($this->input->post('j1pm', TRUE));
+        $j6pm = clean_form_input($this->input->post('j6pm', TRUE));
+        $j8pm = clean_form_input($this->input->post('j8pm', TRUE));
+        $j10pm = clean_form_input($this->input->post('j10pm', TRUE));
+        $long10= clean_form_input($this->input->post('long10', TRUE));
+        //meds11
+        $med11 = clean_form_input($this->input->post('med11', TRUE));
+        $k6am = clean_form_input($this->input->post('k6am', TRUE));
+        $k8am = clean_form_input($this->input->post('k8am', TRUE));
+        $k1pm = clean_form_input($this->input->post('k1pm', TRUE));
+        $k6pm = clean_form_input($this->input->post('k6pm', TRUE));
+        $k8pm = clean_form_input($this->input->post('k8pm', TRUE));
+        $k10pm = clean_form_input($this->input->post('k10pm', TRUE));
+        $long11= clean_form_input($this->input->post('long11', TRUE));
+        //meds12
+        $med12 = clean_form_input($this->input->post('med12', TRUE));
+        $l6am = clean_form_input($this->input->post('l6am', TRUE));
+        $l8am = clean_form_input($this->input->post('l8am', TRUE));
+        $l1pm = clean_form_input($this->input->post('l1pm', TRUE));
+        $l6pm = clean_form_input($this->input->post('l6pm', TRUE));
+        $l8pm = clean_form_input($this->input->post('l8pm', TRUE));
+        $l10pm = clean_form_input($this->input->post('l10pm', TRUE));
+        $long12= clean_form_input($this->input->post('long12', TRUE));
+        //meds13
+        $med13 = clean_form_input($this->input->post('med13', TRUE));
+        $m6am = clean_form_input($this->input->post('m6am', TRUE));
+        $m8am = clean_form_input($this->input->post('m8am', TRUE));
+        $m1pm = clean_form_input($this->input->post('m1pm', TRUE));
+        $m6pm = clean_form_input($this->input->post('m6pm', TRUE));
+        $m8pm = clean_form_input($this->input->post('m8pm', TRUE));
+        $m10pm = clean_form_input($this->input->post('m10pm', TRUE));
+        $long13= clean_form_input($this->input->post('long13', TRUE));
+        //meds14
+        $med14 = clean_form_input($this->input->post('med14', TRUE));
+        $n6am = clean_form_input($this->input->post('n6am', TRUE));
+        $n8am = clean_form_input($this->input->post('n8am', TRUE));
+        $n1pm = clean_form_input($this->input->post('n1pm', TRUE));
+        $n6pm = clean_form_input($this->input->post('n6pm', TRUE));
+        $n8pm = clean_form_input($this->input->post('n8pm', TRUE));
+        $n10pm = clean_form_input($this->input->post('n10pm', TRUE));
+        $long14= clean_form_input($this->input->post('long14', TRUE));
+        //meds15
+        $med15 = clean_form_input($this->input->post('med15', TRUE));
+        $o6am = clean_form_input($this->input->post('o6am', TRUE));
+        $o8am = clean_form_input($this->input->post('o8am', TRUE));
+        $o1pm = clean_form_input($this->input->post('o1pm', TRUE));
+        $o6pm = clean_form_input($this->input->post('o6pm', TRUE));
+        $o8pm = clean_form_input($this->input->post('o8pm', TRUE));
+        $o10pm = clean_form_input($this->input->post('o10pm', TRUE));
+        $long15= clean_form_input($this->input->post('long15', TRUE));
+        //meds16
+        $med16 = clean_form_input($this->input->post('med16', TRUE));
+        $p6am = clean_form_input($this->input->post('p6am', TRUE));
+        $p8am = clean_form_input($this->input->post('p8am', TRUE));
+        $p1pm = clean_form_input($this->input->post('p1pm', TRUE));
+        $p6pm = clean_form_input($this->input->post('p6pm', TRUE));
+        $p8pm = clean_form_input($this->input->post('p8pm', TRUE));
+        $p10pm = clean_form_input($this->input->post('p10pm', TRUE));
+        $long16= clean_form_input($this->input->post('long16', TRUE));
+
         $home = array(
-		'out_date'=>$out_date,
-		'med1'=>$med1,
-		'a6am'=>$a6am,
-		'a8am'=>$a8am,
-		'a1pm'=>$a1pm,
-		'a6pm'=>$a6pm,
-		'a8pm'=>$a8pm,
-		'a10pm'=>$a10pm,
-		'long1'=>$long1,    
-		'med2'=>$med2,
-		'b6am'=>$b6am,
-		'b8am'=>$b8am,
-		'b1pm'=>$b1pm,
-		'b6pm'=>$b6pm,
-		'b8pm'=>$b8pm,
-		'b10pm'=>$b10pm,
-		'long2'=>$long2,    
-		'med3'=>$med3,
-		'c6am'=>$c6am,
-		'c8am'=>$c8am,
-		'c1pm'=>$c1pm,
-		'c6pm'=>$c6pm,
-		'c8pm'=>$c8pm,
-		'c10pm'=>$c10pm,
-		'long3'=>$long3,    
-		'med4'=>$med4,
-		'd6am'=>$d6am,
-		'd8am'=>$d8am,
-		'd1pm'=>$d1pm,
-		'd6pm'=>$d6pm,
-		'd8pm'=>$d8pm,
-		'd10pm'=>$d10pm,
-		'long4'=>$long4,    
-		'med5'=>$med5,
-		'e6am'=>$e6am,
-		'e8am'=>$e8am,
-		'e1pm'=>$e1pm,
-		'e6pm'=>$e6pm,
-		'e8pm'=>$e8pm,
-		'e10pm'=>$e10pm,
-		'long5'=>$long5,   
-		'med6'=>$med6,
-		'f6am'=>$f6am,
-		'f8am'=>$f8am,
-		'f1pm'=>$f1pm,
-		'f6pm'=>$f6pm,
-		'f8pm'=>$f8pm,
-		'f10pm'=>$f10pm,
-		'long6'=>$long6,   
-		'med7'=>$med7,
-		'g6am'=>$g6am,
-		'g8am'=>$g8am,
-		'g1pm'=>$g1pm,
-		'g6pm'=>$g6pm,
-		'g8pm'=>$g8pm,
-		'g10pm'=>$g10pm,
-		'long7'=>$long7,  
-		'med8'=>$med8,
-		'h6am'=>$h6am,
-		'h8am'=>$h8am,
-		'h1pm'=>$h1pm,
-		'h6pm'=>$h6pm,
-		'h8pm'=>$h8pm,
-		'h10pm'=>$h10pm,
-		'long8'=>$long8,    
-        );    
-	    $cs_home = implode(",", $home);
+        		'out_date'=>$out_date,
+        		'med1'=>$med1,
+        		'a6am'=>$a6am,
+        		'a8am'=>$a8am,
+        		'a1pm'=>$a1pm,
+        		'a6pm'=>$a6pm,
+        		'a8pm'=>$a8pm,
+        		'a10pm'=>$a10pm,
+        		'long1'=>$long1,
+        		'med2'=>$med2,
+        		'b6am'=>$b6am,
+        		'b8am'=>$b8am,
+        		'b1pm'=>$b1pm,
+        		'b6pm'=>$b6pm,
+        		'b8pm'=>$b8pm,
+        		'b10pm'=>$b10pm,
+        		'long2'=>$long2,
+        		'med3'=>$med3,
+        		'c6am'=>$c6am,
+        		'c8am'=>$c8am,
+        		'c1pm'=>$c1pm,
+        		'c6pm'=>$c6pm,
+        		'c8pm'=>$c8pm,
+        		'c10pm'=>$c10pm,
+        		'long3'=>$long3,
+        		'med4'=>$med4,
+        		'd6am'=>$d6am,
+        		'd8am'=>$d8am,
+        		'd1pm'=>$d1pm,
+        		'd6pm'=>$d6pm,
+        		'd8pm'=>$d8pm,
+        		'd10pm'=>$d10pm,
+        		'long4'=>$long4,
+        		'med5'=>$med5,
+        		'e6am'=>$e6am,
+        		'e8am'=>$e8am,
+        		'e1pm'=>$e1pm,
+        		'e6pm'=>$e6pm,
+        		'e8pm'=>$e8pm,
+        		'e10pm'=>$e10pm,
+        		'long5'=>$long5,
+        		'med6'=>$med6,
+        		'f6am'=>$f6am,
+        		'f8am'=>$f8am,
+        		'f1pm'=>$f1pm,
+        		'f6pm'=>$f6pm,
+        		'f8pm'=>$f8pm,
+        		'f10pm'=>$f10pm,
+        		'long6'=>$long6,
+        		'med7'=>$med7,
+        		'g6am'=>$g6am,
+        		'g8am'=>$g8am,
+        		'g1pm'=>$g1pm,
+        		'g6pm'=>$g6pm,
+        		'g8pm'=>$g8pm,
+        		'g10pm'=>$g10pm,
+        		'long7'=>$long7,
+        		'med8'=>$med8,
+        		'h6am'=>$h6am,
+        		'h8am'=>$h8am,
+        		'h1pm'=>$h1pm,
+        		'h6pm'=>$h6pm,
+        		'h8pm'=>$h8pm,
+        		'h10pm'=>$h10pm,
+        		'long8'=>$long8,
+				//next 8
+				'med9'=>$med9,
+        		'i6am'=>$i6am,
+        		'i8am'=>$i8am,
+        		'i1pm'=>$i1pm,
+        		'i6pm'=>$i6pm,
+        		'i8pm'=>$i8pm,
+        		'i10pm'=>$i10pm,
+        		'long9'=>$long9,
+        		'med10'=>$med10,
+        		'j6am'=>$j6am,
+        		'j8am'=>$j8am,
+        		'j1pm'=>$j1pm,
+        		'j6pm'=>$j6pm,
+        		'j8pm'=>$j8pm,
+        		'j10pm'=>$j10pm,
+        		'long10'=>$long10,
+        		'med11'=>$med11,
+        		'k6am'=>$k6am,
+        		'k8am'=>$k8am,
+        		'k1pm'=>$k1pm,
+        		'k6pm'=>$k6pm,
+        		'k8pm'=>$k8pm,
+        		'k10pm'=>$k10pm,
+        		'long11'=>$long11,
+        		'med12'=>$med12,
+        		'l6am'=>$l6am,
+        		'l8am'=>$l8am,
+        		'l1pm'=>$l1pm,
+        		'l6pm'=>$l6pm,
+        		'l8pm'=>$l8pm,
+        		'l10pm'=>$l10pm,
+        		'long12'=>$long12,
+        		'med13'=>$med13,
+        		'm6am'=>$m6am,
+        		'm8am'=>$m8am,
+        		'm1pm'=>$m1pm,
+        		'm6pm'=>$m6pm,
+        		'm8pm'=>$m8pm,
+        		'm10pm'=>$m10pm,
+        		'long13'=>$long13,
+        		'med14'=>$med14,
+        		'n6am'=>$n6am,
+        		'n8am'=>$n8am,
+        		'n1pm'=>$n1pm,
+        		'n6pm'=>$n6pm,
+        		'n8pm'=>$n8pm,
+        		'n10pm'=>$n10pm,
+        		'long14'=>$long14,
+        		'med15'=>$med15,
+        		'o6am'=>$o6am,
+        		'o8am'=>$o8am,
+        		'o1pm'=>$o1pm,
+        		'o6pm'=>$o6pm,
+        		'o8pm'=>$o8pm,
+        		'o10pm'=>$o10pm,
+        		'long15'=>$long15,
+        		'med16'=>$med16,
+        		'p6am'=>$p6am,
+        		'p8am'=>$p8am,
+        		'p1pm'=>$p1pm,
+        		'p6pm'=>$p6pm,
+        		'p8pm'=>$p8pm,
+        		'p10pm'=>$p10pm,
+        		'long16'=>$long16,
+				
+        );
+        $cs_home = implode(",", $home);
         $data = array('home'=>$cs_home);
         $this->db->where('a_id', $aid);
         $this->db->update('admissions', $data);
-             //log update task in text file
-                     $file = "ward_admission_log.txt"; 
-                     $handle = fopen($file, 'a+');
-                     date_default_timezone_set('Asia/Hong_Kong');
-                     $data = date('m/d/Y h:i:s a', time()).", IP Add: ".$this->session->userdata('ip_address').", user:".$_SERVER['PHP_AUTH_USER'].", task: edit home id#".$aid."\r\n"; 
-                     fwrite($handle, $data);                
-      }
+        //log update task in text file
+        $file = "ward_admission_log.txt";
+        $handle = fopen($file, 'a+');
+        date_default_timezone_set('Asia/Hong_Kong');
+        $data = date('m/d/Y h:i:s a', time()).", IP Add: ".$this->session->userdata('ip_address').", user:".$_SERVER['PHP_AUTH_USER'].", task: edit home id#".$aid."\r\n";
+        fwrite($handle, $data);
+       }
        function edit_cbc($aid)
        {
 	$cbc = array(
