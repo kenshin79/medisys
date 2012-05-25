@@ -1,9 +1,0 @@
-<div style="margin-left:10px">
-<h2>LU7 Interns Bulletin</h2>
-<ol>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ol> 
-</div>
