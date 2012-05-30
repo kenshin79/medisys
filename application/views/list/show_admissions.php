@@ -64,8 +64,9 @@ if (!strcmp($one_gm, "n")){
     $vars['my_date1'] = $my_date1;
     $vars['my_date2'] = $my_date2;   
 }
-
-echo "<div align=\"center\"><h1>Admissions Search Results and Figures as of ".mdate("%M-%d-%Y")."</h1></div>";
+//if from manage admissions
+if (!strcmp($one_gm, "n"))
+	echo "<div align=\"center\"><h1>Admissions Search Results and Figures as of ".mdate("%M-%d-%Y")."</h1></div>";
 
 $mc = array('value'=>'Make Gen Med Census!', 'class'=>'menubb');
 $ab = array('name'=>'main_showa', 'value'=>'Back to View Reports', 'class'=>'menubb');
@@ -710,21 +711,21 @@ if (!strcmp($one_gm, "n")){
 else{ 
         if (!strcmp($my_service, 'er')){
             if (!strcmp($one_gm, 'res'))
-                echo "<div align=\"center\"><h1>".$rname.": Total of ".$numrows." ER Admissions retrieved</h1></div>"; 
+                echo "<div align=\"center\"><h1>".revert_form_input($rname).": Total of ".$numrows." ER Admissions retrieved</h1></div>"; 
             elseif (!strcmp($one_gm, 'px'))
-                echo "<div align=\"center\"><h1>".$pname.": Total of ".$numrows." ER Admissions retrieved</h1></div>";
+                echo "<div align=\"center\"><h1>".revert_form_input($pname).": Total of ".$numrows." ER Admissions retrieved</h1></div>";
         }
         elseif (!strcmp($my_service, 'micu')){   
             if (!strcmp($one_gm, 'res'))         
-                echo "<div align=\"center\"><h1>".$rname.": Total of ".$numrows." MICU Admissions retrieved</h1></div>";
+                echo "<div align=\"center\"><h1>".revert_form_input($rname).": Total of ".$numrows." MICU Admissions retrieved</h1></div>";
             elseif (!strcmp($one_gm, 'px'))
-                echo "<div align=\"center\"><h1>".$pname.": Total of ".$numrows." MICU Admissions retrieved</h1></div>";
+                echo "<div align=\"center\"><h1>".revert_form_input($pname).": Total of ".$numrows." MICU Admissions retrieved</h1></div>";
         }
         else{           
             if (!strcmp($one_gm, 'res'))
-                echo "<div align=\"center\"><h1>".$rname.": Total of ".$numrows." Ward Admissions retrieved</h1></div>";   
+                echo "<div align=\"center\"><h1>".revert_form_input($rname).": Total of ".$numrows." Ward Admissions retrieved</h1></div>";   
             elseif (!strcmp($one_gm, 'px'))
-                echo "<div align=\"center\"><h1>".$pname.": Total of ".$numrows." Ward Admissions retrieved</h1></div>";      
+                echo "<div align=\"center\"><h1>".revert_form_input($pname).": Total of ".$numrows." Ward Admissions retrieved</h1></div>";      
         }    
  
         if ($c_admissions){
@@ -754,25 +755,25 @@ else{
             if (!strcmp($one_gm, 'res')){
                 $pdata = $this->Patient_model->get_one_patient($row->p_id);
 	            foreach ($pdata as $patient)
-                    echo "<td>".$patient->p_name."</td>";
+                    echo "<td>".revert_form_input($patient->p_name)."</td>";
             }    
             if (!strcmp($one_gm, 'px')){
                 echo "<td>";
                 if (strcmp($my_service, 'er')){
                     $jr = $this->Resident_model->get_resident_name($row->r_id); 
                     foreach ($jr as $name)
-        		  	    echo $name->r_name;
+        		  	    echo revert_form_input($name->r_name);
         		  	echo "</td>";    
                 }
                 else{
                     $jr = $this->Resident_model->get_resident_name($row->pod_id); 
                     foreach ($jr as $name)
-    		  	        echo $name->r_name;
+    		  	        echo revert_form_input($name->r_name);
     		  	    echo "</td>";    
                 }
             }
             if (strcmp($my_service, 'er'))
-                echo "</td><td>".$row->sic."</td>";
+                echo "</td><td>".revert_form_input($row->sic)."</td>";
             $hd = compute_hd($row->dispo, $row->date_in, $row->date_out);
             echo "<td>".$hd."</td></tr>";
             $x++;
