@@ -131,7 +131,8 @@ $config['dispo_list'] = array (
 			'Admitted to Wards'=>'Admitted to Wards',
                         'Admitted to MICU'=>'Admitted to MICU',
 			'Mortality'=>'Mortality',
-			'HAMA'=>'HAMA'
+			'HAMA'=>'HAMA',
+			'Absconded'=>'Absconded',
 			);		
 			
 $config['type_list'] = array (
