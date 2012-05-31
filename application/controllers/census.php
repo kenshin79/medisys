@@ -137,6 +137,7 @@ function gm_census(){
 	      				'hama'=>$this->Er_census_model->count_dispo("HAMA", $my_date1, $my_date2),	
 	      				'mort'=>$this->Er_census_model->count_dispo("Mortality", $my_date1, $my_date2),	
 	      				'disch'=>$this->Er_census_model->count_dispo("Discharged", $my_date1, $my_date2),	
+						'absc'=>$this->Er_census_model->count_dispo("Absconded", $my_date1, $my_date2)
 
 				 );  	
 	      $data['c_admissions'] = $this->Er_census_model->er_report($my_service, $my_date1, $my_date2);   
@@ -190,7 +191,7 @@ function gm_census(){
 	      				'hama'=>$this->Micu_census_model->count_dispo("HAMA", $my_date1, $my_date2),	
 	      				'mort'=>$this->Micu_census_model->count_dispo("Mortality", $my_date1, $my_date2),	
 	      				'disch'=>$this->Micu_census_model->count_dispo("Discharged", $my_date1, $my_date2),	
-
+						'absc'=>$this->Micu_census_model->count_dispo("Absconded", $my_date1, $my_date2)
 				 );  	
 	      $data['c_admissions'] = $this->Micu_census_model->micu_report($my_service, $my_date1, $my_date2);
        }       
@@ -244,6 +245,7 @@ function gm_census(){
 	      				'hama'=>$this->Admission_model->count_dispo($my_service, "HAMA", $my_date1, $my_date2),	
 	      				'mort'=>$this->Admission_model->count_dispo($my_service, "Mortality", $my_date1, $my_date2),	
 	      				'disch'=>$this->Admission_model->count_dispo($my_service, "Discharged", $my_date1, $my_date2),	
+						'absc'=>$this->Admission_model->count_dispo($my_service, "Absconded", $my_date1, $my_date2)
 
 				 );  	
               $data['c_admissions'] = $this->Admission_model->gm_report($my_service, $my_date1, $my_date2, "All");

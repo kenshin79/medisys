@@ -381,7 +381,7 @@ if (!strcmp($one_gm, "n")){
          echo "<h2>Dispositions of Admissions from ".$my_date1." to ".$my_date2."</h2>";
          echo "<div id = \"dispotable\" align=\"center\"></div>";	
          echo "<script type=\"text/javascript\">";
-         echo "var myData = new Array(['Admitted (".round((($dispos['admit']/$num)*100), 2)."%)', ".$dispos['admit']."], ['Discharged (".round((($dispos['disch']/$num)*100), 2)."%)', ".$dispos['disch']."], ['HAMA (".round((($dispos['hama']/$num)*100), 2)."%)', ".$dispos['hama']."], ['Mortality (".round((($dispos['mort']/$num)*100), 2)."%)', ".$dispos['mort']."], ['TOS (".round((($dispos['tos']/$num)*100), 2)."%)', ".$dispos['tos']."]";
+         echo "var myData = new Array(['Admitted (".round((($dispos['admit']/$num)*100), 2)."%)', ".$dispos['admit']."], ['Discharged (".round((($dispos['disch']/$num)*100), 2)."%)', ".$dispos['disch']."], ['HAMA (".round((($dispos['hama']/$num)*100), 2)."%)', ".$dispos['hama']."], ['Mortality (".round((($dispos['mort']/$num)*100), 2)."%)', ".$dispos['mort']."], ['TOS (".round((($dispos['tos']/$num)*100), 2)."%)', ".$dispos['tos']."], ['Absconded (".round((($dispos['absc']/$num)*100), 2)."%)', ".$dispos['absc']."] ";
 		 if (!strcmp($my_service, 'er') || !strcmp($my_service, 'micu')){
 		 	if (!strcmp($my_service, 'er'))	
 		 		echo ", ['Admitted to MICU (".round((($dispos['a_micu']/$num)*100), 2)."%)', ".$dispos['a_micu']."]";
