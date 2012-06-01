@@ -12,7 +12,9 @@
 	   }
 	</style>
 	<link rel="stylesheet" type="text/css" href="/medisys/css/show.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>calendar/calendar.css" />
 	<script type="text/javascript" src="/medisys/js/validate_form.js"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>calendar/calendar.js"></script>
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -55,6 +57,7 @@ $bvars = array('one_gm'=>$one_gm, 'my_service'=>$my_service, 'my_dispo'=>$my_dis
 $label = array('value'=>'Add this Patient', 'class'=>'menubb');
 make_buttons($my_service, $label, $bvars, "center", 'onClick = "return validatePedit(this.form)"');
 echo form_close();
+
 ?>
   </body>
 </html>
