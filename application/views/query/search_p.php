@@ -11,6 +11,8 @@
 	a{text-align:left; font-size:x-large; font-weight:bold;
 	   }
 	</style>
+	<script type="text/javascript" src="/medisys/calendar/calendar.js"></script>
+	<link rel="stylesheet" type="text/css" href="/medisys/calendar/calendar.css" />
     <script type="text/javascript" src="/medisys/js/jquery.js"></script>
   	<script type="text/javascript" src="/medisys/js/my_jscripts.js"></script>
 	<link rel="stylesheet" type="text/css" href="/medisys/css/menu.css" />

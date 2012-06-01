@@ -40,8 +40,24 @@ authorize_user($auth_list, $csess);
 		            echo "<tr><td>Case No.</td><td>".form_input('cnum', revert_form_input($row->cnum))."</td></tr>";
 		            echo "<tr><td>Name:</td><td>".form_input('p_name', revert_form_input($row->p_name))."</td></tr>";
 		            echo "<tr><td>Sex:</td><td>".form_dropdown('p_sex', $this->config->item('sex'), $row->p_sex)."</td></tr>";
-		            echo "<tr><td>Birth Date:</td><td>".form_input('p_bday', revert_form_input($row->p_bday))."</td></tr>";
-		            if (!strcmp(revert_form_input($row->adm_status), "Admitted"))
+		            //echo "<tr><td>Birth Date:</td><td>".form_input('p_bday', revert_form_input($row->p_bday))."</td></tr>";
+		            //date picker
+					echo "<tr><td>Birth Date:</td><td>";
+					require_once('calendar/classes/tc_calendar.php');
+					$myCalendar = new tc_calendar("p_bday", true, false);
+					$myCalendar->setIcon("calendar/images/iconCalendar.gif");
+					$dd = (int)substr($row->p_bday,8, 2);
+					$mm = (int)substr($row->p_bday, 5, 2);
+					$yy = (int)substr($row->p_bday, 0, 4);
+					$myCalendar->setDate($dd, $mm, $yy);
+     				$myCalendar->setPath("calendar/");
+					$myCalendar->setYearInterval(1900, 2015);
+					$myCalendar->dateAllow('1900-01-01', '2015-01-01');
+					$myCalendar->setDateFormat('j F Y');
+					$myCalendar->setAlignment('right', 'top');
+					$myCalendar->writeScript();					
+					echo "</td></tr>";
+					if (!strcmp(revert_form_input($row->adm_status), "Admitted"))
 		                    $adm_status = "Admitted";
 		            else
 		                    $adm_status = "Not Admitted";	  
