@@ -61,7 +61,7 @@ require_once('calendar/classes/tc_calendar.php');
 	  $myCalendar->setYearInterval(1900, 2015);
 	  $myCalendar->dateAllow('1900-01-01', '2015-01-01');
 	  $myCalendar->setDateFormat('j F Y');
-	  $myCalendar->setAlignment('right', 'bottom');
+	  $myCalendar->setAlignment('right', 'top');
 	  $myCalendar->writeScript();
 echo "</td></tr></table></td>";	  
 echo "<td><textarea name = \"p_add\" rows = \"8\" cols = \"35\"></textarea></td>";

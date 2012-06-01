@@ -67,12 +67,16 @@ class Patient_model extends CI_Model {
 		  return $query->result(); 
 	  }
 	  //update one patient
-	  function edit_one_patient($id){
+	  function edit_one_patient($id, $num){
 	
 		 $this->p_name = clean_form_input($this->input->post('p_name', TRUE));
 		 $this->cnum = clean_form_input($this->input->post('cnum', TRUE));
 		 $this->p_sex = clean_form_input($this->input->post('p_sex', TRUE));
-		 $this->p_bday = clean_form_input($this->input->post('p_bday', TRUE));
+		 $samp = "p_bday".$num;
+		 foreach($_POST as $k=>$v){			
+			if (!strcmp($k, $samp))
+				$this->p_bday = clean_form_input($v);
+		 }		
 		 $this->p_add = clean_form_input($this->input->post('p_add', TRUE));
 		 $this->p_plist = clean_form_input($this->input->post('p_plist', TRUE));
 		 $this->adm_status = clean_form_input($this->input->post('adm_status', TRUE));
