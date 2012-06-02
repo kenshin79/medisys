@@ -183,7 +183,7 @@ function validatePedit(form)
 		 var c=form.p_sex.value;
 		 var d=form.p_bday.value;
 		 
-	     if ((a==null || a=="")||((b==null || b=="")||(d==null || d==""))){
+	     if ((a==null || a=="")||((b==null || b=="")||(d==null || d=="0000-00-00"))){
 		 	 alert("Please FILL UP ALL patient information.");
 	         return false;
 	     }

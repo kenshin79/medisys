@@ -11,7 +11,9 @@
 	a{text-align:left; font-size:x-large; font-weight:bold;
 	   }
 	</style>
+	<link rel="stylesheet" type="text/css" href="/medisys/calendar/calendar.css" />	
 	<link rel="stylesheet" type="text/css" href="/medisys/css/show.css" />
+	<script type="text/javascript" src="/medisys/calendar/calendar.js"></script>	
 	<script type="text/javascript" src="/medisys/js/validate_form.js"></script>
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -46,42 +48,44 @@ echo "<table><tr><th>Admission Data</th><th>Problem List</th><th>Medications</th
 echo form_open('add/insert_admission'); 
 foreach($patients as $row){
 	echo "<tr><td><table id = \"leftcol\">";
-	echo "<tr><td>Case No. ".revert_form_input($row->cnum)."</td></tr>";
+	echo "<tr><td colspan=2>Case No. ".revert_form_input($row->cnum)."</td></tr>";
 	//make source row
-	make_source_row(0, $my_service, "ER", $loc_list);
+	echo "<tr><td colspan=2>Source:".form_dropdown('source', $this->config->item('loc_list'), "ER")."</td></tr>";
+	
+	//make_source_row(0, $my_service, "ER", $loc_list);
         //make type row
 	if (strcmp($my_service, 'er') && strcmp($my_service, 'micu')){
         if (!strcmp($my_service, 'preop')){
-			   echo "<tr><td>Type: Pre-operative</td></tr>";
+			   echo "<tr><td colspan=2>Type: Pre-operative</td></tr>";
                echo form_hidden('type', "Pre-operative");
 	    } 
         else
-   		       echo "<tr><td>Type:".form_dropdown('type', $this->config->item('type_list'), "Primary")."</td></tr>";
+   		       echo "<tr><td colspan=2>Type:".form_dropdown('type', $this->config->item('type_list'), "Primary")."</td></tr>";
    	}	       
          //make status row
-    echo "<tr><td>Status:".form_dropdown('dispo', $this->config->item('dispo_list'))."</td></tr>";
+    echo "<tr><td colspan=2>Status:".form_dropdown('dispo', $this->config->item('dispo_list'))."</td></tr>";
 	    //make pname row
-	echo "<tr><td>Name: ".revert_form_input($row->p_name)."</td></tr>";
+	echo "<tr><td colspan=2>Name: ".revert_form_input($row->p_name)."</td></tr>";
 	     //make Bday-Sex row
-	echo "<tr><td>Birth Date: ".revert_form_input($row->p_bday)."Sex: ".$row->p_sex."</td></tr>";
+	echo "<tr><td colspan=2>Birth Date: ".revert_form_input($row->p_bday)."Sex: ".$row->p_sex."</td></tr>";
 	     //make Service row
     if (strcmp($my_service, 'er') && strcmp($my_service, 'micu') && strcmp($my_service, 'preop')){ 
-        echo "<tr><td>GM Service: ".$my_service."</td></tr>";
+        echo "<tr><td colspan=2>GM Service: ".$my_service."</td></tr>";
         echo form_hidden('service', $my_service);
     }
     else    
-         echo "<tr><td>GM Service:".form_dropdown('service', $this->config->item('service_list'), 1)."</td></tr>";
+         echo "<tr><td colspan=2>GM Service:".form_dropdown('service', $this->config->item('service_list'), 1)."</td></tr>";
 	    //make Location-Bed row
     if (strcmp($my_service, 'er')){
          if (!strcmp($my_service, 'micu'))
-		        echo "<tr><td>Loc: MICU Bed ".form_dropdown('bed', $this->config->item('m_beds'))."</td></tr>";
+		        echo "<tr><td colspan=2>Loc: MICU Bed ".form_dropdown('bed', $this->config->item('m_beds'))."</td></tr>";
          else
-                echo "<tr><td>Loc:".form_dropdown('location', $this->config->item('loc_list'))."Bed".form_dropdown('bed', $this->config->item('bed_list'))."</td></tr>";
+                echo "<tr><td colspan=2>Loc:".form_dropdown('location', $this->config->item('loc_list'))."Bed".form_dropdown('bed', $this->config->item('bed_list'))."</td></tr>";
     }
 	//make Residents row
 		//ER POD
 	if (!strcmp($my_service, 'er')){
-         echo "<tr><td>POD: <select name = \"pod_id\">";
+         echo "<tr><td colspan=2>POD: <select name = \"pod_id\">";
          echo "<option value=\"1\">None</option>";
 	     foreach($residents as $res)
 	            echo "<option value=\"".$res->r_id."\">".revert_form_input($res->r_name)."</option>";
@@ -90,12 +94,12 @@ foreach($patients as $row){
 		//Ward and MICU (SRIC and RIC-SCU-SAPOD)
 	        //SRIC
     if (strcmp($my_service, 'er')){
-         echo "<tr><td>SRIC: <select name = \"sr_id\">";
+         echo "<tr><td colspan=2>SRIC: <select name = \"sr_id\">";
          echo "<option value=\"1\">None</option>";
 	     foreach($residents as $res)
 	           echo "<option value=\"".$res->r_id."\">".revert_form_input($res->r_name)."</option>";
 	     echo "</select></td></tr>";
-	     echo "<tr><td>";
+	     echo "<tr><td colspan=2>";
 	    //JRIC
          if (!strcmp($my_service, 'preop'))
           	echo "SAPOD:";
@@ -109,24 +113,34 @@ foreach($patients as $row){
 	     
 	      //SIC for Wards/MICU only
          if (strcmp($my_service, 'preop'))
-            echo "<tr><td>SIC:".form_input('sic', '')."</td></tr>";
+            echo "<tr><td colspan=2>SIC:".form_input('sic', '')."</td></tr>";
      }       
 	  //Date in
-	$today = mdate("%Y-%m-%d");
-	$a_datein = array(
-	    	      'name'=>'date_in',
-	    		  'size'=>'8',
-	    		  'value'=>$today,
-	 	      );
-	echo "<tr><td>Date-IN:".form_input($a_datein)." </td></tr>";
-	  //Date out 	  
-    $a_dateout = array(
-	    	      'name'=>'date_out',
-	    		  'size'=>'8',
-	    		  'value'=>'0000-00-00',
 
-		      );
-    echo "<tr><td>Date-OUT:".form_input($a_dateout)."</td></tr>";	  
+	  echo "<tr><td>Date-IN:</td><td>";
+	  require_once('calendar/classes/tc_calendar.php');
+	  $myCalendar = new tc_calendar("date_in", true, false);
+	  $myCalendar->setIcon(base_url()."calendar/images/iconCalendar.gif");
+	  $myCalendar->setDate(date('d'), date('m'), date('Y'));
+	  $myCalendar->setPath(base_url()."calendar/");
+	  $myCalendar->setYearInterval(1900, 2015);
+	  $myCalendar->dateAllow('1900-01-01', '2015-01-01');
+	  $myCalendar->setDateFormat('j F Y');
+	  $myCalendar->setAlignment('right', 'top');
+	  $myCalendar->writeScript();
+	  echo "</td></tr>"; 
+	  //Date out 	  
+
+	echo "<tr><td>Date-OUT:</td><td>";
+      $myCalendar = new tc_calendar("date_out", true, false);
+	  $myCalendar->setIcon(base_url()."calendar/images/iconCalendar.gif");
+	  $myCalendar->setPath(base_url()."calendar/");
+	  $myCalendar->setYearInterval(1900, 2015);
+	  $myCalendar->dateAllow('1900-01-01', '2015-01-01');
+	  $myCalendar->setDateFormat('j F Y');
+	  $myCalendar->setAlignment('right', 'top');
+	  $myCalendar->writeScript();	
+	echo "</td></tr>";
 	echo "</table>";
 	  //P list
     echo "<td><textarea name = \"plist\" rows = \"20\" cols = \"28\">".revert_form_input($row->p_plist)."</textarea></td>";

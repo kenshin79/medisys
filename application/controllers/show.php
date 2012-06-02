@@ -80,7 +80,8 @@ class Show extends CI_Controller {
 						   );
 		    $this->session->set_userdata($census);	
 	        $id = $this->input->post('epatient', TRUE);
-		    $this->Patient_model->edit_one_patient($id);
+			$num = $this->input->post('num', TRUE);
+		    $this->Patient_model->edit_one_patient($id, $num);
 		    $data['patient'] = $this->Patient_model->get_one_patient($id);
 		    $this->load->view('success/new_pform', $data);
 	  }

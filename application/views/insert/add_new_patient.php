@@ -12,9 +12,9 @@
 	   }
 	</style>
 	<link rel="stylesheet" type="text/css" href="/medisys/css/show.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>calendar/calendar.css" />
+	<link rel="stylesheet" type="text/css" href="/medisys/calendar/calendar.css" />
 	<script type="text/javascript" src="/medisys/js/validate_form.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>calendar/calendar.js"></script>
+	<script type="text/javascript" src="/medisys/calendar/calendar.js"></script>
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -50,7 +50,20 @@ echo "<tr><td>New!</td><td></td></tr>";
 echo "<tr><td>Case No.</td><td>".form_input('cnum','' )."</td></tr>";
 echo "<tr><td>Name:</td><td>".form_input('p_name', '')."</td></tr>";
 echo "<tr><td>Sex:</td><td>".form_dropdown('p_sex', $this->config->item('sex'), 'M')."</td></tr>";
-echo "<tr><td>Birth Date (yyyy-mm-dd):</td><td>".form_input('p_bday', '')."</td></tr></table></td>";
+//echo "<tr><td>Birth Date (yyyy-mm-dd):</td><td>".form_input('p_bday', '')."</td></tr></table></td>";
+//date picker
+ //get class into the page
+ echo "<tr><td>Birth Date:</td><td>";
+require_once('calendar/classes/tc_calendar.php');
+ $myCalendar = new tc_calendar("p_bday", true, false);
+	  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+	  $myCalendar->setPath("calendar/");
+	  $myCalendar->setYearInterval(1900, 2015);
+	  $myCalendar->dateAllow('1900-01-01', '2015-01-01');
+	  $myCalendar->setDateFormat('j F Y');
+	  $myCalendar->setAlignment('right', 'top');
+	  $myCalendar->writeScript();
+echo "</td></tr></table></td>";	  
 echo "<td><textarea name = \"p_add\" rows = \"8\" cols = \"35\"></textarea></td>";
 echo "<td><textarea name = \"p_plist\" rows = \"8\" cols = \"35\"></textarea></td></tr></table></div>";
 $bvars = array('one_gm'=>$one_gm, 'my_service'=>$my_service, 'my_dispo'=>$my_dispo);

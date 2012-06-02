@@ -30,18 +30,37 @@ authorize_user($auth_list, $csess);
     if ($patient){
             
             $x = 1;
-            echo "<div align=\"center\"><table><tr><th>General Data</th><th>Address</th><th>Problem List</th><th>Edit</th></tr>";
+			$y = 1;
+			echo "<div align=\"center\"><table><tr><th>General Data</th><th>Address</th><th>Problem List</th><th>Edit</th></tr>";
             foreach($patient as $row){
                     $vars['epatient'] = $row->p_id; 
-                    $vars['pname'] = revert_form_input($row->p_name);                          
+                    $vars['pname'] = revert_form_input($row->p_name);          
+					$vars['num']=$y;
 	                echo form_open('show/edit_patient'); 
                     echo "<tr><td><table>";
 		            echo "<tr><td>No.</td><td>".$x."</td></tr>";
 		            echo "<tr><td>Case No.</td><td>".form_input('cnum', revert_form_input($row->cnum))."</td></tr>";
 		            echo "<tr><td>Name:</td><td>".form_input('p_name', revert_form_input($row->p_name))."</td></tr>";
 		            echo "<tr><td>Sex:</td><td>".form_dropdown('p_sex', $this->config->item('sex'), $row->p_sex)."</td></tr>";
-		            echo "<tr><td>Birth Date:</td><td>".form_input('p_bday', revert_form_input($row->p_bday))."</td></tr>";
-		            if (!strcmp(revert_form_input($row->adm_status), "Admitted"))
+					//date picker
+					echo "<tr><td>Birth Date:</td><td>";
+					require_once('calendar/classes/tc_calendar.php');
+					$pbnum = "p_bday".$y;
+					$myCalendar = new tc_calendar($pbnum, true, false);
+					$myCalendar->setIcon("calendar/images/iconCalendar.gif");
+					$dd = (int)substr($row->p_bday,8, 2);
+					$mm = (int)substr($row->p_bday, 5, 2);
+					$yy = (int)substr($row->p_bday, 0, 4);
+					$myCalendar->setDate($dd, $mm, $yy);
+     				$myCalendar->setPath("calendar/");
+					$myCalendar->setYearInterval(1900, 2015);
+					$myCalendar->dateAllow('1900-01-01', '2015-01-01');
+					$myCalendar->setDateFormat('j F Y');
+					$myCalendar->setAlignment('right', 'top');
+					$myCalendar->writeScript();					
+					echo "</td></tr>";
+					$y++;
+					if (!strcmp(revert_form_input($row->adm_status), "Admitted"))
 		                    $adm_status = "Admitted";
 		            else
 		                    $adm_status = "Not Admitted";	  
@@ -126,7 +145,7 @@ authorize_user($auth_list, $csess);
 		            }
                     echo "</table></td></tr>";
 		            $x++;
-		  
+					
         }                        //wards
     	echo "</table></div>";
   }
