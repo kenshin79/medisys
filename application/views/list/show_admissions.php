@@ -422,8 +422,11 @@ if (!strcmp($one_gm, "n")){
          	echo "myChart.draw();";
          	echo "myChart.resize(500, 300)";
          	echo "</script>";
+			if (!$refs['micu'])
+				echo "No referrals to MICU";
          }
          echo "</div>";
+		 echo "<hr/>";
          //ER Discharges and hospital days graph   
          echo "<div id = \"edcontainer\" class=\"container\">";
          if (!strcmp($my_service, 'er')){     

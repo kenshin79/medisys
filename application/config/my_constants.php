@@ -34,10 +34,12 @@ $config['loc_list'] = array(
 			'Ward 14B'=>'Ward 14B',
 			'Ward 15'=>'Ward 15',
 			'Ward 16'=>'Ward 16',
+			'Rehab'=>'Rehab',
 			'OBAS'=>'OBAS',
 			'LR/DR'=>'LR/DR',
 			'PACU'=>'PACU',
 			'Spine'=>'Spine',
+			'IMU'=>'IMU',
 		
 			);
 
