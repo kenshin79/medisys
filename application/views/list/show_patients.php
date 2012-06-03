@@ -70,9 +70,10 @@ authorize_user($auth_list, $csess);
 		            echo "<td><textarea name = \"p_plist\" rows = \"8\" cols = \"35\">".revert_form_input($row->p_plist)."</textarea></td>";
 		                //edit patient data    
 		            echo "<td><table><tr><td>";
-                    $label = array('value'=>"Edit", 'style'=>'font-size:large; color:red;height:30px;width:170px');   
-                    make_buttons($my_service, $label, $vars, "center", 'onClick = "return validatePedit(this.form)"'); 
-		            echo "</td></tr>";
+                    $label = array('value'=>"Edit", 'style'=>'font-size:large; color:red;height:30px;width:170px');
+					$djs = "onClick = 'return validatePedit(this.form, this.form.".$pbnum.")'";
+		            make_buttons($my_service, $label, $vars, "center", $djs); 
+					echo "</td></tr>";
 		            echo form_close();
                         //patient admissions
 		            echo "<tr><td>".form_open('census/get_patient_admissions');

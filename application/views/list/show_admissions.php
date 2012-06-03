@@ -916,8 +916,10 @@ else{
 	    if (strcmp($_SERVER['PHP_AUTH_USER'], 'monitor')){
                 $label = array( 'name'=>"", 'value'=>"Edit Dispo Date", 'class'=>"");
                 echo "<tr><td>";
-                make_buttons($my_service, $label, $vars, "center", 'onClick = "return validateAedit(this.form)"');
-			    echo form_close();
+                //make_buttons($my_service, $label, $vars, "center", 'onClick = "return validateAedit(this.form)"');
+			    $djs = "onClick = 'return validateDateedit(\"".$row->dispo."\", \"".$row->date_in."\", this.form.".$donum.")'";
+				make_buttons($my_service, $label, $vars, "center", $djs);
+				echo form_close();
 			    echo "</td></tr>";		
 	    }
         //Forms Button Column

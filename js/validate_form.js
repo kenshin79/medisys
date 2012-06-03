@@ -176,13 +176,13 @@ function validateRedit(form)
 	  return c;  	 	    
      }	
 
-function validatePedit(form)
+function validatePedit(form, pbday)
     {
 	     var a=form.p_name.value;
 		 var b=form.cnum.value;
 		 var c=form.p_sex.value;
-		 var d=form.p_bday.value;
-		 
+		 //var d=form.p_bday.value;
+		 var d=pbday.value;
 	     if ((a==null || a=="")||((b==null || b=="")||(d==null || d=="0000-00-00"))){
 		 	 alert("Please FILL UP ALL patient information.");
 	         return false;
@@ -228,7 +228,7 @@ function validateDispo(form)
 	 var b=form.dispo.value; 
 	 var e=form.date_out.value;
 	 
-	 if ((b!='Admitted') && ((e=="")&&((e==null) &&(e=="0000-00-00")))) 
+	 if ((b!='Admitted') && ((e=="") || ((e==null) || (e=="0000-00-00")))) 
 	 {
 	    alert ("DATE-OUT should NOT BE EMPTY or '0000-00-00' if STATUS is NOT Admitted");
 	    return false;
@@ -282,6 +282,24 @@ function validateDispoDate2(form)
 	  
 	 
 	}	
+	
+function validateDateedit(dispo, datein, dateout){
+
+     if ((dispo!='Admitted') && ((dateout.value=="") || ((dateout.value==null) || (dateout.value=="0000-00-00")))) 
+	 {
+	    alert ("DATE-OUT should NOT BE EMPTY or '0000-00-00' if STATUS is NOT Admitted");
+	    return false;
+	  }
+     if ((datein > dateout.value) && (dispo != 'Admitted')) 
+	 {
+	    alert ("Disposition Date should be LATER than Admission date");
+	    return false;
+	  } 
+	 else
+		return true;
+
+
+}	
 function validateDischarge(form)
     {
 	 var a=form.dispo.value;

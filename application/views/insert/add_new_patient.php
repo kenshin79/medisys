@@ -50,7 +50,6 @@ echo "<tr><td>New!</td><td></td></tr>";
 echo "<tr><td>Case No.</td><td>".form_input('cnum','' )."</td></tr>";
 echo "<tr><td>Name:</td><td>".form_input('p_name', '')."</td></tr>";
 echo "<tr><td>Sex:</td><td>".form_dropdown('p_sex', $this->config->item('sex'), 'M')."</td></tr>";
-//echo "<tr><td>Birth Date (yyyy-mm-dd):</td><td>".form_input('p_bday', '')."</td></tr></table></td>";
 //date picker
  //get class into the page
  echo "<tr><td>Birth Date:</td><td>";
@@ -68,7 +67,8 @@ echo "<td><textarea name = \"p_add\" rows = \"8\" cols = \"35\"></textarea></td>
 echo "<td><textarea name = \"p_plist\" rows = \"8\" cols = \"35\"></textarea></td></tr></table></div>";
 $bvars = array('one_gm'=>$one_gm, 'my_service'=>$my_service, 'my_dispo'=>$my_dispo);
 $label = array('value'=>'Add this Patient', 'class'=>'menubb');
-make_buttons($my_service, $label, $bvars, "center", 'onClick = "return validatePedit(this.form)"');
+$djs = "onClick = 'return validatePedit(this.form, this.form.p_bday)'";
+make_buttons($my_service, $label, $bvars, "center", $djs);
 echo form_close();
 
 ?>
