@@ -9,7 +9,9 @@
     <title>Make/Edit Census Report by GM service</title>
 	<style type="text/css">
 	</style>
+	<link rel="stylesheet" type="text/css" href="/medisys/calendar/calendar.css" />		
 	<link rel="stylesheet" type="text/css" href="/medisys/css/main.css" />
+	<script type="text/javascript" src="/medisys/calendar/calendar.js"></script>		
 	<script type="text/javascript" src="/medisys/js/validate_form.js"></script>
 	<script type="text/javascript" src="/medisys/js/jquery.js"></script>
 	<script type="text/javascript" src="/medisys/js/my_jscripts.js"></script>

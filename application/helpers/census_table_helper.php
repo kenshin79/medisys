@@ -14,45 +14,45 @@
 
 //start of gendata column functions
 function make_case_num_row($serv, $x, $type, $cnum){
-	echo "<tr><td>UP";
+	echo "<tr><td colspan = 2>UP";
 	echo "[No. ".$x."]Case No: ".revert_form_input($cnum)."</a></td></tr>";
 }
 
 function make_source_row($form_type, $serv, $source, $loc_list){
 	if (strcmp($serv, 'er')){
 		if ($form_type == 0)
-			echo "<tr><td>Source: ".form_dropdown('source', $loc_list, "ER")."</td></tr>";
+			echo "<tr><td colspan = 2>Source: ".form_dropdown('source', $loc_list, "ER")."</td></tr>";
 		elseif ($form_type == 1)
-        		echo "<tr><td>Source: ".form_dropdown('source', $loc_list, $source)."</td></tr>";
+        		echo "<tr><td colspan = 2>Source: ".form_dropdown('source', $loc_list, $source)."</td></tr>";
 		else
-			echo "<tr><td>Source: ".$source."</td></tr>";
+			echo "<tr><td colspan = 2>Source: ".$source."</td></tr>";
 	}
 }
 function make_type_row($form_type, $serv, $type, $type_list){
 	if (strcmp($serv, 'er') && strcmp($serv, 'micu'))
-        	echo "<tr><td>Type:".form_dropdown('type', $type_list, $type)."</td></tr>";
+        	echo "<tr><td colspan = 2>Type:".form_dropdown('type', $type_list, $type)."</td></tr>";
 }
 function make_status_row($form_type, $serv, $dispo, $dispo_list){
-	echo "<tr><td>Status:".form_dropdown('dispo', $dispo_list, $dispo)."</td></tr>";
+	echo "<tr><td colspan = 2>Status:".form_dropdown('dispo', $dispo_list, $dispo)."</td></tr>";
 
 }
 function make_pname_row($pname){
-	echo "<tr><td class = \"allCaps\">Name: ".revert_form_input($pname)."</td></tr>";
+	echo "<tr><td class = \"allCaps\" colspan = 2>Name: ".revert_form_input($pname)."</td></tr>";
 }
 function make_agesex_row($age, $psex){
-	echo "<tr><td>Age:".$age." / ".$psex."</td></tr>";
+	echo "<tr><td colspan = 2>Age:".$age." / ".$psex."</td></tr>";
 }
 function make_gmservice_row($form_type, $service, $service_list){
-	echo "<tr><td>GM Service: ".form_dropdown('service', $service_list, $service)."</td></tr>";
+	echo "<tr><td colspan = 2>GM Service: ".form_dropdown('service', $service_list, $service)."</td></tr>";
 }
 function make_micu_location_row($form_type, $bed, $loc_list, $mbed_list){
-	echo "<tr><td>Loc: MICU Bed ".form_dropdown('bed', $mbed_list, $bed)."</td></tr>";
+	echo "<tr><td colspan = 2>Loc: MICU Bed ".form_dropdown('bed', $mbed_list, $bed)."</td></tr>";
 }	
 function make_ward_location_row($form_type, $location, $bed, $loc_list, $bed_list){
-	echo "<tr><td>Loc:".form_dropdown('location', $loc_list, $location)."Bed".form_dropdown('bed', $bed_list, $bed)."</td></tr>";
+	echo "<tr><td colspan = 2>Loc:".form_dropdown('location', $loc_list, $location)."Bed".form_dropdown('bed', $bed_list, $bed)."</td></tr>";
 }
 function make_pod_row($form_type, $podid, $pod, $residents){
-	echo "<tr><td>POD: <select name = \"pod_id\">";
+	echo "<tr><td colspan = 2>POD: <select name = \"pod_id\">";
 	echo "<option value =\"".$podid."\">";
 	foreach ($pod as $row)
 		echo revert_form_input($row->r_name);
@@ -62,7 +62,7 @@ function make_pod_row($form_type, $podid, $pod, $residents){
 	echo "</select></td></tr>";
 }
 function make_sric_row($form_type, $srid, $srname, $residents){
-	echo "<tr><td>SRIC: <select name = \"sr_id\">";
+	echo "<tr><td colspan = 2>SRIC: <select name = \"sr_id\">";
 	echo "<option value =\"".$srid."\">";
 	foreach ($srname as $row)
 		echo revert_form_input($row->r_name);
@@ -72,7 +72,7 @@ function make_sric_row($form_type, $srid, $srname, $residents){
 	echo "</select></td></tr>";
 }
 function make_jric_row($form_type, $jrid, $jrname, $residents){
-	echo "<tr><td>JRIC/SCU-SAPOD: <select name = \"r_id\">";
+	echo "<tr><td colspan = 2>JRIC/SCU-SAPOD: <select name = \"r_id\">";
 	echo "<option value =\"".$jrid."\">";
 	foreach ($jrname as $row)
 		echo revert_form_input($row->r_name);
@@ -82,7 +82,7 @@ function make_jric_row($form_type, $jrid, $jrname, $residents){
 	echo "</select></td></tr>";
 }
 function make_sic_row($form_type, $sic){
-	echo "<tr><td>SIC:".form_input('sic', revert_form_input($sic))."</td></tr>";
+	echo "<tr><td colspan = 2>SIC:".form_input('sic', revert_form_input($sic))."</td></tr>";
 }
 function make_datein_row($form_type, $date_in, $hd){
 	$a_datein = array(

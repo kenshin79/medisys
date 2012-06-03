@@ -212,7 +212,7 @@ function validateAdmit(form)
 	 
 	 if ((b=='Admitted') && (e!="0000-00-00"))
 	 {
-	    alert ("DATE-OUT should be left '0000-00-00' if patient is STILL Admitted");
+	    alert ("DATE-OUT should be left 'unset' if patient is STILL Admitted");
 	    return false;
 	  } 
 	 else 

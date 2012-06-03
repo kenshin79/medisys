@@ -30,7 +30,6 @@ $mbed_list = $this->config->item('m_beds');
 //contents of general data column	
          echo form_open('show/edit_admission'); 
 	      echo "<table>";
-
 	      $pdata = $this->Patient_model->get_one_patient($row->p_id);
 	      foreach ($pdata as $patient)
 	      {
@@ -71,8 +70,41 @@ $mbed_list = $this->config->item('m_beds');
 		      if (strcmp($my_service, "preop"))	
                       		make_sic_row(1, revert_form_input($row->sic));
               }
-	      make_datein_row(1, revert_form_input($row->date_in), $hd);
-	      make_dateout_row(1, revert_form_input($row->date_out));
+		  //date in picker
+		  echo "<tr><td>Date-IN:</td><td>";
+		  require_once('calendar/classes/tc_calendar.php');
+		  $myCalendar = new tc_calendar("date_in", true, false);
+		  $myCalendar->setIcon(base_url()."calendar/images/iconCalendar.gif");
+		  $dd = (int)substr($row->date_in,8, 2);
+		  $mm = (int)substr($row->date_in, 5, 2);
+		  $yy = (int)substr($row->date_in, 0, 4);
+		  $myCalendar->setDate($dd, $mm, $yy);
+		  $myCalendar->setPath(base_url()."calendar/");
+		  $myCalendar->setYearInterval(1900, 2015);
+		  $myCalendar->dateAllow('1900-01-01', '2015-01-01');
+		  $myCalendar->setDateFormat('j F Y');
+		  $myCalendar->setAlignment('right', 'top');
+		  $myCalendar->writeScript();
+	      echo "</td></tr>"; 		  
+		 
+		  //date out picker
+		  echo "<tr><td>Date-OUT:</td><td>";
+		  require_once('calendar/classes/tc_calendar.php');
+		  $myCalendar = new tc_calendar("date_out", true, false);
+		  $myCalendar->setIcon(base_url()."calendar/images/iconCalendar.gif");
+		  $dd = (int)substr($row->date_out,8, 2);
+		  $mm = (int)substr($row->date_out, 5, 2);
+		  $yy = (int)substr($row->date_out, 0, 4);
+		  $myCalendar->setDate($dd, $mm, $yy);
+		  $myCalendar->setPath(base_url()."calendar/");
+		  $myCalendar->setYearInterval(1900, 2015);
+		  $myCalendar->dateAllow('1900-01-01', '2015-01-01');
+		  $myCalendar->setDateFormat('j F Y');
+		  $myCalendar->setAlignment('right', 'top');
+		  $myCalendar->writeScript();
+	      echo "</td></tr>"; 		  		  
+		  
+		  
  
 	      echo "</table>";
 //end of gendata column
@@ -239,8 +271,7 @@ $mbed_list = $this->config->item('m_beds');
 //filler
 	echo "<tr><td height=\"85px\" class=\"filler\"></td></tr>";
          echo "</table></td>";	
-	 $x++;
-		  
+	 $x++;  
     }
     echo "</table></div>";
 	  

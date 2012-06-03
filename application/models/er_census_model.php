@@ -337,8 +337,7 @@ function insert_one_admission_bu($aid){
 		  if (is_array($erefs))
 	           $cs_erefs = clean_form_input(implode(",", $erefs));
 		  else
-		  	   $cs_erefs = "none";
-			   
+		  	   $cs_erefs = "none";   
 		  if (is_array($pcpdx))
 	           $cs_pcpdx = clean_form_input(implode(",", $pcpdx));
 		  else
@@ -348,12 +347,12 @@ function insert_one_admission_bu($aid){
 		  $data = array(
 				'p_id'=> $this->input->post('p_id', TRUE),
 				'pod_id'=> $this->input->post('pod_id', TRUE),
-				'date_in'=> clean_form_input($this->input->post('date_in', TRUE)),
-				'date_out'=> clean_form_input($this->input->post('date_out', TRUE)),
+				'date_in'=>$this->input->post('date_in', TRUE),
+				'date_out'=>$this->input->post('date_out', TRUE),
 				'dispo'=> $this->input->post('dispo', TRUE),
 				'service'=> $this->input->post('service', TRUE),		 
 				'plist'=> clean_form_input($this->input->post('plist', TRUE)),
-	        		'meds'=> clean_form_input($this->input->post('meds', TRUE)),
+	        	'meds'=> clean_form_input($this->input->post('meds', TRUE)),
 				'refs'=> $cs_refs,
 				'erefs'=> $cs_erefs,
 				'notes'=> $mynotes,

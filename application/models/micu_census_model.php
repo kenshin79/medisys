@@ -277,16 +277,15 @@ function get_micu_census($disp){
 	              $cs_erefs = clean_form_input(implode(",", $erefs));
 		  else
 		      $cs_erefs = "none";
-			   
-		  
+
 		  $mynotes = clean_form_input($this->input->post('pnotes', TRUE))."\n".clean_form_input($this->input->post('notes', TRUE));	
 		  $data = array(
 				'sr_id'=> $this->input->post('sr_id', TRUE),
 				'p_id'=> $this->input->post('p_id', TRUE),
 				'r_id'=> $this->input->post('r_id', TRUE),
-        			'sic' => clean_form_input($this->input->post('sic', TRUE)),
-				'date_in'=> clean_form_input($this->input->post('date_in', TRUE)),
-				'date_out'=> clean_form_input($this->input->post('date_out', TRUE)),
+        		'sic' => clean_form_input($this->input->post('sic', TRUE)),
+				'date_in'=>$this->input->post('date_in', TRUE),
+				'date_out'=>$this->input->post('date_out', TRUE), 
 				'dispo'=> $this->input->post('dispo', TRUE),
 				'service'=> $this->input->post('service', TRUE),		 
 				'bed'=> $this->input->post('bed', TRUE),
