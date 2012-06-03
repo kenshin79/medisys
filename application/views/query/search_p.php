@@ -8,8 +8,6 @@
     <meta name="keywords" content="">
     <title>Add Admission - Step 1: Search Patient</title>
     <style type="text/css">
-	a{text-align:left; font-size:x-large; font-weight:bold;
-	   }
 	</style>
 	<script type="text/javascript" src="/medisys/calendar/calendar.js"></script>
 	<link rel="stylesheet" type="text/css" href="/medisys/calendar/calendar.css" />

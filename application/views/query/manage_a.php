@@ -17,7 +17,9 @@
 		width:210px
 	     }
 	</style>
+	<link rel="stylesheet" type="text/css" href="/medisys/calendar/calendar.css" />		
 	<link rel="stylesheet" type="text/css" href="/medisys/css/menu.css" />
+	<script type="text/javascript" src="/medisys/calendar/calendar.js"></script>		
 	<script type="text/javascript" src="/medisys/js/validate_form.js"></script>
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -112,23 +114,25 @@ if ($uservice==6 || $uservice==66 )
 if (($uservice==0) || ($uservice==9) || ($uservice==77) || ($uservice==88))
     echo "Select GM Service ".form_dropdown('my_service',$this->config->item('census_service_list'))."<br />";
 
-$d1 = array(
-              'name'        => 'my_date1',
-              'size'        => '8',
-              
-            );
-$d2 = array(
-              'name'        => 'my_date2',
-              'size'        => '8',
-              
-            );
-
-echo "Start Date (yyyy-mm-dd)";
-echo form_input($d1)."</br>";
-echo "End Date (yyyy-mm-dd)";
-echo form_input($d2);
 $js = 'onClick="return validatePeriod(this.form)"';
-echo form_submit($gm,'', $js).form_close().form_fieldset_close();
+//date picker
+	  require_once('calendar/classes/tc_calendar.php');
+      $myCalendar = new tc_calendar("my_datea", true, false);
+	  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+	  $myCalendar->setPath("calendar/");
+	  $myCalendar->setYearInterval(2011, 2020);
+	  $myCalendar->setAlignment('left', 'bottom');
+	  $myCalendar->setDatePair('my_datea', 'my_dateb');
+	  $myCalendar->writeScript();	  
+	  
+	  $myCalendar = new tc_calendar("my_dateb", true, false);
+	  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+	  $myCalendar->setPath("calendar/");
+	  $myCalendar->setYearInterval(2011, 2020);
+	  $myCalendar->setAlignment('left', 'bottom');
+	  $myCalendar->setDatePair('my_datea', 'my_dateb');
+	  $myCalendar->writeScript();	  
+echo "<br/>".form_submit($gm,'', $js).form_close().form_fieldset_close();
 }
 echo "</td>";
 
@@ -140,23 +144,25 @@ echo form_open('census/gm_census');
 echo form_fieldset('ER Admissions', $fs);
 echo form_hidden('my_service', 'er');
 
-$d1 = array(
-              'name'        => 'my_date1',
-              'size'        => '8',
-              
-            );
-$d2 = array(
-              'name'        => 'my_date2',
-              'size'        => '8',
-              
-            );
-
-echo "Start Date (yyyy-mm-dd)";
-echo form_input($d1)."</br>";
-echo "End Date (yyyy-mm-dd)";
-echo form_input($d2);
 $js = 'onClick="return validatePeriod(this.form)"';
-echo form_submit($gm,'', $js).form_close().form_fieldset_close()."</td>";
+//date picker
+	  require_once('calendar/classes/tc_calendar.php');
+      $myCalendar = new tc_calendar("my_datec", true, false);
+	  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+	  $myCalendar->setPath("calendar/");
+	  $myCalendar->setYearInterval(2011, 2020);
+	  $myCalendar->setAlignment('left', 'bottom');
+	  $myCalendar->setDatePair('my_datec', 'my_dated');
+	  $myCalendar->writeScript();	  
+	  
+	  $myCalendar = new tc_calendar("my_dated", true, false);
+	  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+	  $myCalendar->setPath("calendar/");
+	  $myCalendar->setYearInterval(2011, 2020);
+	  $myCalendar->setAlignment('left', 'bottom');
+	  $myCalendar->setDatePair('my_datec', 'my_dated');
+	  $myCalendar->writeScript();	  
+echo "<br/>".form_submit($gm,'', $js).form_close().form_fieldset_close()."</td>";
 }
 echo "<td>";
 if ($uservice==8 || $uservice==0 || $uservice==9 || $uservice == 88 || $uservice==77 )
@@ -165,22 +171,24 @@ echo form_open('census/gm_census');
 echo form_fieldset('MICU Admissions', $fs);
 echo form_hidden('my_service', 'micu');
 
-$d1 = array(
-              'name'        => 'my_date1',
-              'size'        => '8',
-              
-            );
-$d2 = array(
-              'name'        => 'my_date2',
-              'size'        => '8',
-              
-            );
-
-echo "Start Date (yyyy-mm-dd)";
-echo form_input($d1)."</br>";
-echo "End Date (yyyy-mm-dd)";
-echo form_input($d2);
 $js = 'onClick="return validatePeriod(this.form)"';
+//date picker
+	  require_once('calendar/classes/tc_calendar.php');
+      $myCalendar = new tc_calendar("my_datee", true, false);
+	  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+	  $myCalendar->setPath("calendar/");
+	  $myCalendar->setYearInterval(2011, 2020);
+	  $myCalendar->setAlignment('left', 'bottom');
+	  $myCalendar->setDatePair('my_datee', 'my_datef');
+	  $myCalendar->writeScript();	  
+	  
+	  $myCalendar = new tc_calendar("my_datef", true, false);
+	  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+	  $myCalendar->setPath("calendar/");
+	  $myCalendar->setYearInterval(2011, 2020);
+	  $myCalendar->setAlignment('left', 'bottom');
+	  $myCalendar->setDatePair('my_datee', 'my_datef');
+	  $myCalendar->writeScript();	  
 echo form_submit($gm,'', $js).form_close().form_fieldset_close();
 }
 echo "</td></tr>";
@@ -191,26 +199,25 @@ echo form_open('census/count_pcp');
 echo form_hidden('area', 'ward');
 echo form_fieldset('Count ICD-PCP Cases', $fs);
 echo "Ward ICD-PCP Case Count<br />";
-$d1 = array(
-              'name'        => 'my_date1',
 
-              'size'        => '8',
-              
-            );
-
-$d2 = array(
-              'name'        => 'my_date2',
-              'size'        => '8',
-              
-
-            );
-
-echo "Start Date (yyyy-mm-dd)";
-echo form_input($d1)."</br>";
-
-echo "End Date (yyyy-mm-dd)";
-echo form_input($d2);
 $js = 'onClick="return validatePeriod(this.form)"';
+//date picker
+	  require_once('calendar/classes/tc_calendar.php');
+      $myCalendar = new tc_calendar("my_dateg", true, false);
+	  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+	  $myCalendar->setPath("calendar/");
+	  $myCalendar->setYearInterval(2011, 2020);
+	  $myCalendar->setAlignment('left', 'bottom');
+	  $myCalendar->setDatePair('my_dateg', 'my_dateh');
+	  $myCalendar->writeScript();	  
+	  
+	  $myCalendar = new tc_calendar("my_dateh", true, false);
+	  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+	  $myCalendar->setPath("calendar/");
+	  $myCalendar->setYearInterval(2011, 2020);
+	  $myCalendar->setAlignment('left', 'bottom');
+	  $myCalendar->setDatePair('my_dateg', 'my_dateh');
+	  $myCalendar->writeScript();	  
 echo form_submit($gm,'', $js).form_close().form_fieldset_close()."</td>";
 
 //ER ICD-PCP Report
@@ -219,22 +226,24 @@ echo form_open('census/count_pcp');
 echo form_hidden('area', 'er');
 echo form_fieldset('Count ICD-PCP Cases', $fs);
 echo "Ward ICD-PCP Case Count<br />";
-$d1 = array(
-              'name'        => 'my_date1',
-              'size'        => '8',
-              
-            );
-$d2 = array(
-              'name'        => 'my_date2',
-              'size'        => '8',
-              
-            );
-
-echo "Start Date (yyyy-mm-dd)";
-echo form_input($d1)."</br>";
-echo "End Date (yyyy-mm-dd)";
-echo form_input($d2);
 $js = 'onClick="return validatePeriod(this.form)"';
+//date picker
+	  require_once('calendar/classes/tc_calendar.php');
+      $myCalendar = new tc_calendar("my_datei", true, false);
+	  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+	  $myCalendar->setPath("calendar/");
+	  $myCalendar->setYearInterval(2011, 2020);
+	  $myCalendar->setAlignment('left', 'bottom');
+	  $myCalendar->setDatePair('my_datei', 'my_datej');
+	  $myCalendar->writeScript();	  
+	  
+	  $myCalendar = new tc_calendar("my_datej", true, false);
+	  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+	  $myCalendar->setPath("calendar/");
+	  $myCalendar->setYearInterval(2011, 2020);
+	  $myCalendar->setAlignment('left', 'bottom');
+	  $myCalendar->setDatePair('my_datei', 'my_datej');
+	  $myCalendar->writeScript();	  
 echo form_submit($gm,'', $js).form_close().form_fieldset_close();
 
 echo "</td><td>";
@@ -242,22 +251,24 @@ echo form_open('census/count_pcp');
 echo form_hidden('area', 'micu');
 echo form_fieldset('Count ICD-PCP Cases', $fs);
 echo "Ward ICD-PCP Case Count<br />";
-$d1 = array(
-              'name'        => 'my_date1',
-              'size'        => '8',
-              
-            );
-$d2 = array(
-              'name'        => 'my_date2',
-              'size'        => '8',
-              
-            );
-
-echo "Start Date (yyyy-mm-dd)";
-echo form_input($d1)."</br>";
-echo "End Date (yyyy-mm-dd)";
-echo form_input($d2);
 $js = 'onClick="return validatePeriod(this.form)"';
+//date picker
+	  require_once('calendar/classes/tc_calendar.php');
+      $myCalendar = new tc_calendar("my_datek", true, false);
+	  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+	  $myCalendar->setPath("calendar/");
+	  $myCalendar->setYearInterval(2011, 2020);
+	  $myCalendar->setAlignment('left', 'bottom');
+	  $myCalendar->setDatePair('my_datek', 'my_datel');
+	  $myCalendar->writeScript();	  
+	  
+	  $myCalendar = new tc_calendar("my_datel", true, false);
+	  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+	  $myCalendar->setPath("calendar/");
+	  $myCalendar->setYearInterval(2011, 2020);
+	  $myCalendar->setAlignment('left', 'bottom');
+	  $myCalendar->setDatePair('my_datek', 'my_datel');
+	  $myCalendar->writeScript();	  
 echo form_submit($gm,'', $js).form_close().form_fieldset_close()."</td>";
 
 echo "</td></tr>";

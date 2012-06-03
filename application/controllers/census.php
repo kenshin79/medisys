@@ -79,8 +79,12 @@ function one_gm_census(){
 
 function gm_census(){
 	    $my_service = $this->input->post('my_service', TRUE);
-        $my_date1 = $this->input->post('my_date1', TRUE);
-        $my_date2 = $this->input->post('my_date2', TRUE);
+		foreach ($_POST as $k=>$v){
+			if (in_array($k, array('my_datea', 'my_datec', 'my_datee'))) 	
+				$my_date1 = $v;
+			if (in_array($k, array('my_dateb', 'my_dated', 'my_datef'))) 
+				$my_date2 = $v;				
+		}
 	    $census = array( 
   	  		               'my_service'=>$my_service,
 			               'my_dispo'=>'All',
@@ -382,8 +386,14 @@ function gm_census(){
 	    	
 	 //create ICD-PCP report
 	 function count_pcp(){
-	     $data['my_date1'] = $this->input->post('my_date1', TRUE);
-		 $data['my_date2'] = $this->input->post('my_date2', TRUE);
+		foreach ($_POST as $k=>$v){
+			if (in_array($k, array('my_dateg', 'my_datei', 'my_datek'))) 	
+				$my_date1 = $v;
+			if (in_array($k, array('my_dateh', 'my_datej', 'my_datel'))) 
+				$my_date2 = $v;				
+		}	     
+	     $data['my_date1'] = $my_date1;
+		 $data['my_date2'] = $my_date2;
          $data['area'] = $this->input->post('area', TRUE);
 		 $this->load->view('list/show_pcpcount', $data);
 	 
@@ -411,6 +421,14 @@ function edit_date_out(){
     $view_type = $this->input->post('view_type', TRUE);
     $my_service = $this->input->post('my_service', TRUE);
     $r_id = $this->input->post('eresident', TRUE);
+	$p_id = $this->input->post('epatient', TRUE);
+	$one_gm = $this->input->post('one_gm', TRUE);
+	$num = $this->input->post('num', TRUE);
+	$samp = "date_out".$num;
+	foreach ($_POST as $k=>$v){
+		if (!strcmp($k, $samp))
+			$date_out = $v;
+	}
 	$census = array( 
 		    	  		   'my_service'=>$my_service,
 					       'my_dispo'=>'All',
@@ -418,7 +436,9 @@ function edit_date_out(){
                           'my_date2'=>$my_date2,
                        'view_type'=>$view_type,
 					   'r_id'=>$r_id,
-					   'rname'=>$this->input->post('rname', TRUE),						 
+					   'rname'=>$this->input->post('rname', TRUE),				
+						'one_gm'=>$one_gm,
+						'p_id'=>$p_id,		
 	  			   );
 	$this->session->set_userdata($census);	
 	$aid = $this->input->post('eadmission', TRUE);
@@ -429,7 +449,7 @@ function edit_date_out(){
 	else
 		$this->Admission_model->edit_dispo_date($aid, $date_out);
 	    
-	if (!strcmp($view_type, 'byresident')){
+	if (!strcmp($one_gm, 'res')){
 	    if (!strcmp($my_service, 'er'))
         	$data['c_admissions'] = $this->Er_census_model->get_erresidents_adm($r_id);
         elseif (!strcmp($my_service, 'micu')){
@@ -442,7 +462,17 @@ function edit_date_out(){
 		  	$data['jr_admissions'] = $this->Admission_model->get_jresidents_adm($r_id);
 		  	$data['c_admissions'] = array_merge($data['sr_admissions'], $data['jr_admissions']);
         }
-     }   
+     
+	 }
+     else{
+	 	  if (!strcmp($my_service, "All"))
+	            $data['c_admissions'] = $this->Admission_model->get_patients_adm($p_id);
+		  if (!strcmp($my_service, "er"))
+                $data['c_admissions'] = $this->Er_census_model->get_patients_adm($p_id);
+          if (!strcmp($my_service, "micu"))
+                $data['c_admissions'] = $this->Micu_census_model->get_patients_adm($p_id);         
+	 }	 
+     /*	for seeing all admissions in reports, if date editing allowed 
 	 else{
 		  if (!strcmp($my_service, 'er'))
 		       $data['c_admissions'] = $this->Er_census_model->er_report($my_service, $my_date1, $my_date2);   
@@ -450,7 +480,8 @@ function edit_date_out(){
 		       $data['c_admissions'] = $this->Micu_census_model->micu_report($my_service, $my_date1, $my_date2);
           else
                $data['c_admissions'] = $this->Admission_model->gm_report($my_service, $my_date1, $my_date2);
-	 }	
+	 }
+	*/	
     $this->load->view('list/show_admissions', $data); 
 } 
 

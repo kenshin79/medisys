@@ -18,9 +18,7 @@
 $auth_list = $this->Users_model->get_all_users();
 $csess = get_cookie('ci_session');
 authorize_user($auth_list, $csess);
-//get user session variables
-    $my_date1 = $this->session->userdata('my_date1');
-    $my_date2 = $this->session->userdata('my_date2');
+
 //greet user
 make_page_header($_SERVER['PHP_AUTH_USER']);
 
