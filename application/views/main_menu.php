@@ -24,6 +24,7 @@
                 $(this).removeClass('hover');
                 }
                 );
+			openSysnotes();	
             showSysNotes(1);
 	    });
 

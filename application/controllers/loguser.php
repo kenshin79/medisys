@@ -8,6 +8,7 @@ class Loguser extends CI_Controller {
 
 	    
 	  function log_out(){
+			
               $oldsession = $this->Ci_sessions_model->get_sessions();
               delete_cookie('ci_session');
 	      $this->session->sess_destroy();
@@ -17,7 +18,7 @@ class Loguser extends CI_Controller {
                                   date_default_timezone_set('Asia/Hong_Kong');
                                   $data = date('m/d/Y h:i:s a', time()).", IP Add: ".$this->session->userdata('ip_address').", user:".$_SERVER['PHP_AUTH_USER'].", task: logged-out \r\n"; 
                                   fwrite($handle, $data);  	
-              redirect('/');
+              redirect('/webpage/log_out.htm');
 	      
               
 	  }

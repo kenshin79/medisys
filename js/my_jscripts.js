@@ -1,3 +1,7 @@
+function openSysnotes(){
+	alert("Attention:\n1. <6/6/2012> RIC Dr Ngo/Intern Ecarma (MICU): Please correct birthdate of patient E. Hermosa MICU B7. TY.");
+}
+
 function loadYearA(){
 	if (window.XMLHttpRequest)
 	  {// code for IE7+, Firefox, Chrome, Opera, Safari

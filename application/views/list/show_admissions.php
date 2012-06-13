@@ -463,7 +463,7 @@ if (!strcmp($one_gm, "n")){
          	echo "myChart.setDataArray(myData);";
          	echo "myChart.setAxisNameX('Bed Number');";
          	echo "myChart.setAxisNameY('Number of Admissions', true);";
-         	echo "myChart.setTitle('MICU Bed Admissions');";
+         	echo "myChart.setTitle('MICU Bed Admissions <Total: ".$numrows.">');";
          	echo "myChart.draw();";
          	echo "myChart.resize(800, 300)";
          	echo "</script>";
@@ -498,6 +498,7 @@ if (!strcmp($one_gm, "n")){
          	 
          }         
          //Ward 1 bed admissions
+		 $w1_total = 0;
          if (strcmp($my_service, 'er') && strcmp($my_service, 'micu') && !strcmp($my_service, 'All')){
          	echo "<div id = \"ward1bedadmtable\" align=\"center\"></div>";
          	echo "<script type=\"text/javascript\">";
@@ -508,13 +509,15 @@ if (!strcmp($one_gm, "n")){
          		echo "['".$x."', ".$b."]";
          		if ($x<50)
          			echo ", ";
+				$w1_total = $w1_total + $b;		
          	}
+			
          	echo ");";
          	echo "var myChart = new JSChart('ward1bedadmtable', 'bar');";
          	echo "myChart.setDataArray(myData);";
          	echo "myChart.setAxisNameX('Bed Number');";
          	echo "myChart.setAxisNameY('Number of Admissions', true);";
-         	echo "myChart.setTitle('Ward 1 Bed Admissions');";
+         	echo "myChart.setTitle('Ward 1 Bed Admissions <Total: ".$w1_total.">');";
          	echo "myChart.draw();";
          	echo "myChart.resize(800, 300)";
          	echo "</script>";
@@ -541,7 +544,7 @@ if (!strcmp($one_gm, "n")){
          	echo "myChart.setDataArray(myData);";
          	echo "myChart.setAxisNameX('Bed Number');";
          	echo "myChart.setAxisNameY('Number of Admissions', true);";
-         	echo "myChart.setTitle('Ward 1 Bed Mortalities (".$w1_mort.")');";
+         	echo "myChart.setTitle('Ward 1 Bed Mortalities <Total:".$w1_mort." or ".round(($w1_mort/$numrows*100), 2)."% of All W1 Admissions>');";
          	echo "myChart.draw();";
          	echo "myChart.resize(800, 300)";
          	echo "</script>";
@@ -549,6 +552,7 @@ if (!strcmp($one_gm, "n")){
          	 
          }
          //Ward 3 bed admissions
+		 $w3_total = 0;
          if (strcmp($my_service, 'er') && strcmp($my_service, 'micu') && !strcmp($my_service, 'All')){
          	echo "<div id = \"ward3bedadmtable\" align=\"center\"></div>";
          	echo "<script type=\"text/javascript\">";
@@ -559,13 +563,14 @@ if (!strcmp($one_gm, "n")){
          	echo "['".$x."', ".$b."]";
          	if ($x<55)
          		echo ", ";
+			$w3_total = $w3_total + $b;	
          	}
          	echo ");";
          	echo "var myChart = new JSChart('ward3bedadmtable', 'bar');";
          	echo "myChart.setDataArray(myData);";
          	echo "myChart.setAxisNameX('Bed Number');";
          	echo "myChart.setAxisNameY('Number of Admissions', true);";
-         	echo "myChart.setTitle('Ward 3 Bed Admissions');";
+         	echo "myChart.setTitle('Ward 3 Bed Admissions <Total: ".$w3_total.">');";
          	echo "myChart.draw();";
          	echo "myChart.resize(800, 300)";
          	echo "</script>";
@@ -591,7 +596,7 @@ if (!strcmp($one_gm, "n")){
          	echo "myChart.setDataArray(myData);";
          	echo "myChart.setAxisNameX('Bed Number');";
          	echo "myChart.setAxisNameY('Number of Admissions', true);";
-         	echo "myChart.setTitle('Ward 3 Bed Mortalities (".$w3_mort.")');";
+         	echo "myChart.setTitle('Ward 3 Bed Mortalities <Total: ".$w3_mort." or ".round(($w3_mort/$numrows*100), 2)."% of All W3 Admissions>');";
          	echo "myChart.draw();";
          	echo "myChart.resize(800, 300)";
          	echo "</script>";
@@ -614,7 +619,7 @@ if (!strcmp($one_gm, "n")){
          echo "</script>";
          
          //Hospital days graph
-         
+         $hd_ave = round((($hd_total/$numrows)), 2);
          echo "<div id = \"hdtable\" align=\"center\"></div>";
          
          echo "<script type=\"text/javascript\">";
@@ -623,7 +628,7 @@ if (!strcmp($one_gm, "n")){
          echo "myChart.setDataArray(myData);";
          echo "myChart.setAxisNameX('No. of Hospital Days');";
          echo "myChart.setAxisNameY('Number of Dispositions', true);";
-         echo "myChart.setTitle('Hospital Days');";
+         echo "myChart.setTitle('Hospital Days <Average:".$hd_ave." days>');";
          echo "myChart.draw();";
          echo "myChart.resize(600, 300)";
          echo "</script>";
@@ -633,6 +638,7 @@ if (!strcmp($one_gm, "n")){
          $totalf = $f1 + $f2 + $f3 + $f4 + $f5 + $f6;
          $totalm = $m1 + $m2 + $m3 + $m4 + $m5 + $m6;
          //Both sexes graph
+		 $age_ave = $age_total/$numrows;
          echo "<div id = \"bothsextable\" align=\"center\"></div>"; 
          echo "<script type=\"text/javascript\">";
          echo "var myData = new Array(['<18 (".round((($s1/$totalsex)*100), 2)."%)', ".$s1."], ['18-40 (".round((($s2/$totalsex)*100), 2)."%)', ".$s2."], ['40-60 (".round((($s3/$totalsex)*100), 2)."%)', ".$s3."], ['60-70 (".round((($s4/$totalsex)*100), 2)."%)', ".$s4."], ['70-80 (".round((($s5/$totalsex)*100), 2)."%)', ".$s5."], ['>80 (".round((($s6/$totalsex)*100), 2)."%)', ".$s6."] );";
@@ -640,7 +646,7 @@ if (!strcmp($one_gm, "n")){
          echo "myChart.setDataArray(myData);";
          echo "myChart.setAxisNameX('Age Group');";
          echo "myChart.setAxisNameY('Number of Admissions', true);";
-         echo "myChart.setTitle('Primary Patients by Age Group');";
+         echo "myChart.setTitle('Primary Patients by Age Group <Ave: ".round($age_ave, 2)." yrs>');";
          echo "myChart.draw();";
          echo "var myColors = new Array('#0f0', '#ff0000', '#00f', '#ff0', '#00ffff', '#9ACD32');";
          echo "myChart.colorizeBars(myColors);";
