@@ -146,8 +146,11 @@ if ($c_admissions){
 					make_num_column(0, $x, revert_form_input($patient->cnum));
 				make_location_column($row->location, $row->bed);
 				make_type_column($row->type);
-	      			foreach ($pdata as $patient)
-	      				make_patient_column(revert_form_input($patient->p_name));
+	      			foreach ($pdata as $patient){
+						$page = compute_age_adm($row->date_in, $patient->p_bday);
+	      				make_patient_column(revert_form_input($patient->p_name), $page, $patient->p_sex);
+						
+					}	
     				$jr = $this->Resident_model->get_resident_name($row->r_id);	
 				foreach ($jr as $rdata)
 					make_ric_column((revert_form_input($rdata->r_name)));
@@ -166,8 +169,10 @@ if ($c_admissions){
 						make_num_column(0, $x, revert_form_input($patient->cnum));
 					make_location_column($row->location, $row->bed);
 					make_type_column($row->type);
-	      				foreach ($pdata as $patient)
-	      					make_patient_column(revert_form_input($patient->p_name));
+	      				foreach ($pdata as $patient){
+							$page = compute_age_adm($row->date_in, $patient->p_bday);
+	      					make_patient_column(revert_form_input($patient->p_name), $page, $patient->p_sex);
+						}	
     					$jr = $this->Resident_model->get_resident_name($row->r_id);	
 					foreach ($jr as $rdata)
 						make_ric_column(revert_form_input($rdata->r_name));
@@ -196,8 +201,10 @@ if ($c_admissions){
 				make_num_column(0, $x, revert_form_input($patient->cnum));
 			if (!strcmp($my_service, 'micu'))
 				make_micubed_column($row->bed);
-  			foreach ($pdata as $patient)
-	      			make_patient_column(revert_form_input($patient->p_name));
+  			foreach ($pdata as $patient){
+					$page = compute_age_adm($row->date_in, $patient->p_bday);
+	      			make_patient_column(revert_form_input($patient->p_name), $page, $patient->p_sex);
+			}		
 		        if (!strcmp($my_service, 'micu')) 
     				$jr = $this->Resident_model->get_resident_name($row->r_id);
 
@@ -240,8 +247,10 @@ echo "<div id=\"micu_body\">";
 			$pdata = $this->Patient_model->get_one_patient($row->p_id);
 			make_num_column(2, $x, "");
 			make_micubed_column($row->bed);
-	      	foreach ($pdata as $patient)
-	      			make_patient_column(revert_form_input($patient->p_name));
+	      	foreach ($pdata as $patient){
+					$page = compute_age_adm($row->date_in, $patient->p_bday);
+	      			make_patient_column(revert_form_input($patient->p_name), $page, $patient->p_sex);
+			}		
     		$jr = $this->Resident_model->get_resident_name($row->r_id);	
 			foreach ($jr as $rdata)
 			make_ric_column(revert_form_input($rdata->r_name));
@@ -275,8 +284,10 @@ echo "<div id=\"er_body\">";
 			echo "<tr>";
 			make_num_column(2, $x, "");
 			$pdata = $this->Patient_model->get_one_patient($row->p_id);
-	      		foreach ($pdata as $patient)
-	      			make_patient_column(revert_form_input($patient->p_name));
+	      		foreach ($pdata as $patient){
+					$page = compute_age_adm($row->date_in, $patient->p_bday);
+	      			make_patient_column(revert_form_input($patient->p_name), $page, $patient->p_sex);
+			}		
     		$jr = $this->Resident_model->get_resident_name($row->pod_id);	
 			foreach ($jr as $rdata)
 			make_ric_column(revert_form_input($rdata->r_name));

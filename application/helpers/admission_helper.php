@@ -85,8 +85,8 @@ function make_location_column($location, $bed){
 function make_type_column($type){
 	echo "<td>".$type."</td>";
 }
-function make_patient_column($pname){
-	echo "<td class = \"allCaps\">".$pname."</td>";
+function make_patient_column($pname, $page, $psex){
+	echo "<td class = \"allCaps\">".$pname." ".$page."/".$psex."</td>";
 }
 function make_ric_column($rname){
 	echo "<td class = \"unemphasis\">".$rname."</td>";
