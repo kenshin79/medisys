@@ -12,8 +12,10 @@
 	   }
 	</style>
     <script type="text/javascript" src="/medisys/js/jquery.js"></script>
+	<script type="text/javascript" src="/medisys/calendar/calendar.js"></script>	
   	<script type="text/javascript" src="/medisys/js/my_jscripts.js"></script>	
 	<link rel="stylesheet" type="text/css" href="/medisys/css/menu.css" />
+	<link rel="stylesheet" type="text/css" href="/medisys/calendar/calendar.css" />
 	<script type="text/javascript" src="/medisys/js/validate_form.js"></script>
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -63,8 +65,6 @@ echo "</tr></table><hr />";
 //echo form_close();
 echo "<br />";
 
-
-echo "<hr />";
 echo "<div id = \"residentTable\"></div>";
 //Add new resident
 echo form_open('add/insert_resident');
@@ -74,16 +74,26 @@ $rn = array (
 	  	'name' => 'rname',
 		'size' => '35',
 		);
-echo "<table ><tr><td><h3>Name:</h3></td><td>".form_input($rn)."</td><td></td></tr>";
+echo "<table ><tr><td colspan = 2>Name:".form_input($rn)."</td><td>Date Started:</td><td>";
 $ds = array (
 	  	'name' => 'dstart',
 		'size' => '10',
 		);
-echo "<tr><td><h3>Date Started:</h3></td><td>".form_input($ds);
-echo " Status: ".form_radio('status', 'Y', TRUE)."Active  ".form_radio('status', 'N', FALSE)."Not Active</td><td></td></tr>";
-echo "<tr><td></td><td></td><td>";
+//date picker
+ //get class into the page		
+require_once('calendar/classes/tc_calendar.php');
+ $myCalendar = new tc_calendar("dstart", true, false);
+ $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+ $myCalendar->setPath("calendar/");
+ $myCalendar->setYearInterval(2008, 2020);
+ $myCalendar->dateAllow('2008-01-01', '2020-01-01');
+ $myCalendar->setDateFormat('j F Y');
+ $myCalendar->setAlignment('right', 'top');
+ $myCalendar->writeScript();
+echo "</td><td>";	
+echo " Status: ".form_radio('status', 'Y', TRUE)."Active  ".form_radio('status', 'N', FALSE)."Not Active</td><td>";
 make_buttons("", $rb, $vars, "center", 'onClick = "return validateRedit(this.form)"');
-echo "</td></tr>";
+echo "</td></tr></table>";
 echo form_close()."</div>";
 ?>
 

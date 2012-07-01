@@ -35,7 +35,8 @@ class Show extends CI_Controller {
 	  //update single resident data
 	  function edit_resident(){
 		   $id = $this->input->post('eresident', TRUE);
-		   $this->Resident_model->edit_one_resident($id);
+		   $num = $this->input->post('num', TRUE);
+		   $this->Resident_model->edit_one_resident($id, $num);
 		   $data['resident'] = $this->Resident_model->get_one_resident($id);
 		   $this->load->view('success/new_rform', $data);   	
 	  }

@@ -52,9 +52,14 @@ class Resident_model extends CI_Model {
 	  
 	  //edit
 	  //update single resident data
-	  function edit_one_resident($id){
+	  function edit_one_resident($id, $num){
+	      $samp = "dstart".$num;
+		  foreach($_POST as $k=>$v){			
+			if (!strcmp($k, $samp))
+				$this->dstart = clean_form_input($v);
+		 }	
 	      $this->r_name = clean_form_input($this->input->post('rname', TRUE));
-		  $this->dstart = clean_form_input($this->input->post('dstart', TRUE));
+		  //$this->dstart = clean_form_input($this->input->post('dstart', TRUE));
 		  $this->status = clean_form_input($this->input->post('status', TRUE)); 
 		  $this->db->where('r_id', $id);
 		  $query = $this->db->update('residents',$this);  							  
