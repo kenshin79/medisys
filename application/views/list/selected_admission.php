@@ -1,4 +1,9 @@
 <?php
+//authorize user with uname and pword
+$auth_list = $this->Users_model->get_all_users();
+$csess = get_cookie('ci_session');
+authorize_user($auth_list, $csess);
+
 
 //set user session variables
 $my_service = $this->session->userdata('my_service');

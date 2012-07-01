@@ -213,7 +213,8 @@ if (($uservice == 8) || ($uservice == 0) || ($uservice == 88))
     echo form_close();
 }
 //pre-op patients
-if (($uservice == 11) || ($uservice == 22) || ($uservice == 33) || ($uservice == 44) || ($uservice == 55) || ($uservice == 66) || ($uservice == 77) || ($uservice == 88) || ($uservice == 0))
+//if (($uservice == 11) || ($uservice == 22) || ($uservice == 33) || ($uservice == 44) || ($uservice == 55) || ($uservice == 66) || ($uservice == 77) || ($uservice == 88) || ($uservice == 0))
+if (($uservice == 99) || ($uservice == 0))
 {
     echo "<tr><td>".form_open('census/one_gm_census');
     $vars = array('my_service'=>'preop', 'my_dispo'=>'Admitted', 'one_gm'=>'y', 'stp1'=>"stp1");

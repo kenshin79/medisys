@@ -138,6 +138,7 @@ if ($c_admissions){
 		
         	foreach ($c_admissions as $row){
 		    $eadmission = $row->a_id;
+
 			if (!strcmp($my_service, "preop")){
 				echo "<tr onclick = \"getAdm('".$eadmission."', '".$my_service."', '".$my_dispo."', '".$one_gm."', '".$stp1."')\">";
 				$pdata = $this->Patient_model->get_one_patient($row->p_id);
@@ -215,10 +216,11 @@ if ($c_admissions){
 		 echo "</table>";
 		 echo "<br/>";
 	   }
+	echo "</div>";    
 }	   
 else
     echo "<h1>No service admissions!</h1>";
-       echo "</div>"; 
+       
 echo "</div>";
 //end of Ward tab
 if (!(in_array($my_service, array('er', 'micu', 'preop')))){
