@@ -34,7 +34,7 @@ echo "<div align=\"center\"><font size=\"4\">Note: Only 'Active' Residents will 
   $rm = array('value'=>'MICU Admissions', 'class'=>'menubb');
   if ($resident){
       $x = 1;
-      
+      $y = 1;
       echo "<div align=\"center\"><table><tr><th>N0.</th><th>Resident Name</th><th>Date Started</th><th>Status</th><th>Edit/View Admissions</th></tr>";
       foreach($resident as $row){
                   if ($row->r_id == 1){
@@ -48,10 +48,28 @@ echo "<div align=\"center\"><font size=\"4\">Note: Only 'Active' Residents will 
 					            'size'=> '40'
 					        );
                        echo form_open('show/edit_resident'); 
-                       echo "<tr><td width = \"30px\">".$x."</td><td width = \"300px\">".form_input($na)."</td><td width = \"200px\">".form_input('dstart',$row->dstart)."</td>";
-		               echo "<td width = \"100px\">Active: <select name = \"status\" ><option value = \"".$row->status."\" >".$row->status."</option><option value = \"Y\">Y</option><option value = \"N\">N</option></select></td>";
+                       echo "<tr><td width = \"30px\">".$x."</td><td width = \"300px\">".form_input($na)."</td>";
+					   //<td width = \"200px\">".form_input('dstart',$row->dstart)."</td>";
+		               //datepicker
+					   echo "<td>";
+					   require_once('calendar/classes/tc_calendar.php');
+					   $pbnum = "dstart".$y;
+					   $myCalendar = new tc_calendar($pbnum, true, false);
+					   $myCalendar->setIcon("calendar/images/iconCalendar.gif");
+					   $dd = (int)substr($row->dstart,8, 2);
+					   $mm = (int)substr($row->dstart, 5, 2);
+					   $yy = (int)substr($row->dstart, 0, 4);
+					   $myCalendar->setDate($dd, $mm, $yy);
+     				   $myCalendar->setPath("calendar/");
+					   $myCalendar->setYearInterval(1900, 2015);
+					   //$myCalendar->dateAllow('1900-01-01', '2015-01-01');
+					   $myCalendar->setDateFormat('j F Y');
+					   $myCalendar->setAlignment('right', 'top');
+					   $myCalendar->writeScript();					
+					   echo "</td>";
+					   echo "<td width = \"100px\">Active: <select name = \"status\" ><option value = \"".$row->status."\" >".$row->status."</option><option value = \"Y\">Y</option><option value = \"N\">N</option></select></td>";
                        echo "<td>";
-                        echo form_hidden('eresident', $row->r_id).form_hidden('my_service', $my_service).form_hidden('my_dispo', $my_dispo).form_hidden('one_gm', $one_gm).form_hidden('stp1', $stp1);
+                        echo form_hidden('num', $y).form_hidden('eresident', $row->r_id).form_hidden('my_service', $my_service).form_hidden('my_dispo', $my_dispo).form_hidden('one_gm', $one_gm).form_hidden('stp1', $stp1);
                         echo "<div align = \"center\"><input type = \"submit\"  value = \"Edit Resident\" style = \"font-size:large; color:red; height:30px; width:250px;\" /></div>";
                         echo form_close();
 		         }
@@ -83,19 +101,13 @@ echo "<div align=\"center\"><font size=\"4\">Note: Only 'Active' Residents will 
 		        echo form_close();    
 		        
 		        $x++;
+				$y++;
 		        echo "</td></tr>";
       }
   }
   
 ?>
-  
   </table>
-    
-  
-  
-  
-  
-  
   </div>
-  
+  <hr/>
 
