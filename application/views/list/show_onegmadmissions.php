@@ -84,7 +84,10 @@ else
 if (in_array($my_service, array(1, 2, 3, 4, 5, 6, 'micu')))
 {
 	echo form_open('census/print_gmcensus');
-	$label = array('name'=>"", 'value'=>"Make My Gen Med Census!", 'class'=>"menubb");
+	if (!strcmp($my_service, 'micu'))
+		$label = array('name'=>"", 'value'=>"Make My MICU Census!", 'class'=>"menubb");
+	else
+		$label = array('name'=>"", 'value'=>"Make My Gen Med Census!", 'class'=>"menubb");
 	make_buttons($my_service, $label, $vars, "center", "");
 }
 

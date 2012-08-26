@@ -196,8 +196,9 @@ $config['eref_list'] = array (
 		   "Radio"=>"Radio", 
 		   "Tox"=>"Tox", 
 		   "Pedia"=>"Pedia", 
-		   "FM"=>"FM",
-		   "Rehab"=>"Rehab", 
+		   "FM"=>"FM/Hospice",
+		   "Rehab"=>"Rehab",
+		   "Dentistry"=>"Dentistry",
 		   );					   	
 $config['pulmodx_list'] = array (
            "Acute Respiratory Failure J96.0"=> "Acute Respiratory Failure J96.0",

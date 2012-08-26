@@ -86,7 +86,7 @@ function showQuiz(){
 	    document.getElementById("quizcopy").innerHTML=xmlhttp.responseText;
 	    }
 	  }
-	xmlhttp.open("GET", "/medisys/quiznotes.htm",true);
+	xmlhttp.open("GET", "/medisys/quiz/quiznotes.htm",true);
 	xmlhttp.send();
 }
 
@@ -117,7 +117,7 @@ function showSysNotes(x){
 		xmlhttp.open("GET", "lu6notes.txt",true);
 		}
 	if (x==4){
-		xmlhttp.open("GET", "quiznotes.htm",true);
+		xmlhttp.open("GET", "quiz/quiznotes.htm",true);
 		}
 
 	xmlhttp.send();

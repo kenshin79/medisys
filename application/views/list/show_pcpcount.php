@@ -22,6 +22,10 @@ authorize_user($auth_list, $csess);
 //greet user
 make_page_header($_SERVER['PHP_AUTH_USER']);
 
+//getsession data
+$my_date1 = $this->session->userdata('my_date1');
+$my_date2 = $this->session->userdata('my_date2');
+
 $ab = array('name'=>'main_showa', 'value'=>'Manage Admissions', 'class'=>'menub');
 
     echo form_open('menu');

@@ -129,7 +129,7 @@ foreach ($p_admission as $row){
         echo "<td style=\"width:1000px;border-bottom-color:black; border-bottom-style:solid; border-bottom-width:thin; \"><div style=\"float:left\"><img src=\"/medisys/img/pghlabel2.jpg\" style=\"width:300px; height:80px;\" /></div><div style=\"float:right;\"><img src=\"/medisys/img/dsummary.jpg\" style=\"width:300px; height:75px\" /></div></td>";
         echo "</tr></table>";
         echo "<table>";
-        echo "<tr><td>Name:</td><td style=\"text-align:left;\"><input type=\"text\" name=\"plname\" style = \"text-align:left;border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" size = 30 value=\"";
+        echo "<tr><td>Name:</td><td style=\"text-align:left;\"><input type=\"text\" name=\"plname\" style = \"text-align:left;border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" size = 20 value=\"";
 //Last name of patient
         if ($row->dsummary){  
             if ($edsummary[0])
@@ -139,11 +139,11 @@ foreach ($p_admission as $row){
         }
         else
             echo revert_form_input($pname);
-        echo "\"></td><td><input type=\"text\" name=\"pfname\" style = \"text-align:left;border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" size = 30 value =\"";
+        echo "\"></td><td><input type=\"text\" name=\"pfname\" style = \"text-align:left;border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" size = 20 value =\"";
 //First name of patient
         if ($row->dsummary)
             echo revert_form_input($edsummary[1]);
-        echo "\"></td><td><input type=\"text\" name=\"pmname\" style = \"border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" size = 20 value=\"";
+        echo "\"></td><td><input type=\"text\" name=\"pmname\" style = \"border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" size = 2 value=\"";
 //Middle Name of patient
         if ($row->dsummary)
             echo revert_form_input($edsummary[2]);
@@ -152,8 +152,8 @@ foreach ($p_admission as $row){
         echo "<td>Age/Sex:</td><td><input type=\"text\" style = \"border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" size = 10 value=\"";
 //age and sex
         echo $age."/".revert_form_input($psex)."\"></td>";
-        echo "<td style=\"width:10px\"></td>";
-        echo "<td style=\"text-align:left;\">Case No.:<input type=\"text\" style = \"border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" size = 20 value = \"";
+        echo "<td style=\"width:100px\"></td>";
+        echo "<td style=\"text-align:left;\">Case No.:<input type=\"text\" style = \"border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" size = 10 value = \"";
 //cnum
         echo revert_form_input($pcnum)."\"></td>";
         echo "</td></tr>"; 
@@ -161,7 +161,7 @@ foreach ($p_admission as $row){
         echo "</table>";
 
         echo "<table>";
-        echo "<tr><td style=\"text-align:left;vertical-align:top; width:150px\">Discharge Diagnosis:</td><td></td><td><textarea  name=\"disdiagnosis\" rows = \"4\" cols = \"120\" wrap = \"on\" >";
+        echo "<tr><td style=\"text-align:left;vertical-align:top; width:150px\">Discharge Diagnosis:</td><td></td><td><textarea  name=\"disdiagnosis\" rows = \"3\" cols = \"50\" wrap = \"on\" >";
 //Discharge Diagnosis
         if ($row->dsummary){
             if ($edsummary[3])
@@ -171,73 +171,22 @@ foreach ($p_admission as $row){
         }
         else
             echo $row->plist;
-        echo "</textarea></td>";
-//for prev xray number variable
-		if ($row->dsummary)
-			echo form_hidden('xnum', $edsummary[4]);	
-		else
-			echo form_hidden('xnum','');
-/*		<td style=\"width:50px\"></td><td style=\"text-align:right;vertical-align:top;\">X-ray No.:</td><td style=\"vertical-align:top;\"><input style=\"border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\"type=\"text\" name=\"xnum\" size=\"10\" value=\"";
+        echo "</textarea></td><td style=\"width:50px\"></td><td style=\"text-align:right;vertical-align:top;\">X-ray No.:</td><td style=\"vertical-align:top;\"><input style=\"border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\"type=\"text\" name=\"xnum\" size=\"10\" value=\"";
 //xray number
         if ($row->dsummary)
             echo revert_form_input($edsummary[4]);
         echo "\"/></td></tr>";
         echo "<tr><td></td><td></td><td></td><td style=\"width:70px\"></td><td>Service:GM </td><td><input style=\"border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\"type=\"text\" size=\"10\" value=\"".$my_service."\"/></td></tr>";
         echo "</table>";
-*/
+
         echo "<table>";
-        echo "<tr><td style=\"width:100px\">Date Admitted:</td><td><input style = \"border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" type=\"text\" name=\"\" size=\"10\" value=\"";
+        echo "<tr><td style=\"width:100px\">Date of Admission:</td><td></td><td><input style = \"border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" type=\"text\" name=\"\" size=\"10\" value=\"";
 //Date Admitted
-        echo revert_form_input($row->date_in)."\"></td><td>Time Admitted:</td><td>_____</td><td>AM</td><td>_____ </td><td>PM</td>";
-//chief complaint
-		echo "<td rowspan = 6 style=\"vertical-align:top;border-top-width:thin; border-top-color:black; border-top-style:solid;border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;border-left-width:thin; border-left-color:black; border-left-style:solid;border-right-width:thin; border-right-color:black; border-right-style:solid; \">Chief Complaint/ Reason for Admission <br/>";
-        if ($row->abstract)
-            echo revert_form_input($eabstract[5]);		
-		echo "</td></tr>";
-		echo "<tr><td>Date Discharged:</td><td><input style = \"border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" type=\"text\" name=\"disdate\" size=\"10\" value=\"";		
-		//Date Discharged
+        echo revert_form_input($row->date_in)."\"></td><td></td><td>Date Discharge:</td><td></td><td><input style = \"border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" type=\"text\" name=\"disdate\" size=\"10\" value=\"";
+//Date Discharged
         if ($row->dsummary)
             echo revert_form_input($edsummary[5]);
-        echo "\"></td><td>Time Discharged:</td><td>_____</td><td>AM</td><td>_____</td><td>PM</td></tr>";
-//Attending Physician
-		echo "<tr><td>Attending Physician</td><td colspan = 6><input style=\"text-align:center\" type=\"text\" name=\"ric\" size=\"30\" value=\"";
-//RIC
-        if (!strcmp($my_service, "er"))
-            $jr = $this->Resident_model->get_resident_name($row->pod_id); 
-        else
-            $jr = $this->Resident_model->get_resident_name($row->r_id); 
-        foreach ($jr as $name)
-            echo revert_form_input($name->r_name)." M.D.";
- 
-        echo "\"/></td></tr>";		
-        echo "<tr><td></td><td colspan = 2 style=\"border-top-width:thin; border-top-color:black; border-top-style:solid;text-align:center;\"></td></tr>";		
-        echo "</table>";
-		if ($row->dsummary){
-		
-//for prev histopath variable
-			echo form_hidden('hisnum', $edsummary[6]);
-//for prev mail address variable
-			echo form_hidden('mailadd', $edsummary[7]);
-//for prev telnumber variable
-			echo form_hidden('ptelnum', $edsummary[8]);
-//for prev relative variable
-			echo form_hidden('relative', $edsummary[9]);
-//for prev relative address variable
-			echo form_hidden('reladd', $edsummary[10]);
-//for prev relative telnum variable
-			echo form_hidden('rtelnum', $edsummary[11]);
-	    }
-		else{
-			echo form_hidden('hisnum', '');
-			echo form_hidden('mailadd', '');
-			echo form_hidden('ptelnum', '');
-			echo form_hidden('relative', '');
-			echo form_hidden('reladd', '');
-			echo form_hidden('rtelnum', '');
-		}
-		
-/*		
-		<td style=\"width:100px;text-align:right\">Histopath No.:</td><td><input type=\"text\" name=\"hisnum\" style=\"border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" size=\"10\" value=\"";
+        echo "\"></td><td style=\"width:100px\"></td><td style=\"width:100px;text-align:right\">Histopath No.:</td><td><input type=\"text\" name=\"hisnum\" style=\"border-bottom-width:thin; border-bottom-color:black; border-bottom-style:solid;\" size=\"10\" value=\"";
 //Histopath number
         if ($row->dsummary)
             echo revert_form_input($edsummary[6]);
@@ -271,18 +220,15 @@ foreach ($p_admission as $row){
         if ($row->dsummary)
             echo revert_form_input($edsummary[11]);
         echo "\"></td></tr>";
-*/		
-
+        echo "</table>";
         echo "<hr style=\"border-bottom-style:dotted;\" />";
 
         echo "<table>";
-/*old chief complaint		
         echo "<tr><td>Chief Complaint:</td><td><input type=\"text\" name=\"cc\" value=\"";
 //Chief Complaint
         if ($row->abstract)
             echo revert_form_input($eabstract[5]);
         echo "\" /></td></tr>";
-*/		
         echo "<tr><td style=\"vertical-align:top;\">History of Present Illness:</td><td><textarea cols=\"120\" rows=\"25\" wrap=\"on\">";
 //HPI
         if ($row->abstract)

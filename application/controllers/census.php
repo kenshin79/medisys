@@ -391,10 +391,18 @@ function gm_census(){
 				$my_date1 = $v;
 			if (in_array($k, array('my_dateh', 'my_datej', 'my_datel'))) 
 				$my_date2 = $v;				
-		}	     
-	     $data['my_date1'] = $my_date1;
-		 $data['my_date2'] = $my_date2;
+		}
+		
+		 $data = array( 
+  	  		               
+                           'my_date1'=>$my_date1,
+                           'my_date2'=>$my_date2,
+						   
+		   );	
+		   
+	     
          $data['area'] = $this->input->post('area', TRUE);
+		 $this->session->set_userdata($data);	
 		 $this->load->view('list/show_pcpcount', $data);
 	 
 	 }
