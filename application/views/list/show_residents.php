@@ -96,7 +96,7 @@ echo "<div align=\"center\"><font size=\"4\">Note: Only 'Active' Residents will 
                 $this->db->or_where('sr_id', $row->r_id);
                 $this->db->from('micu_census');
                 $madm = $this->db->count_all_results();
-                        echo form_hidden('eresident', $row->r_id).form_hidden('rname', $row->r_name).form_hidden('my_service', $my_service).form_hidden('my_dispo', $my_dispo).form_hidden('one_gm', $one_gm).form_hidden('stp1', $stp1);
+                        echo form_hidden('eresident', $row->r_id).form_hidden('rname', $row->r_name).form_hidden('my_service', "micu").form_hidden('my_dispo', $my_dispo).form_hidden('one_gm', $one_gm).form_hidden('stp1', $stp1);
                         echo "<div align = \"center\"><input type = \"submit\"  value = \"MICU (".$madm.")\" style = \"font-size:large; color:red; height:30px; width:250px;\" /></div>";
 		        echo form_close();    
 		        

@@ -964,6 +964,7 @@ else{
       echo form_open('show/edit_dsummary');
       $label = array('value'=>"D-Summary");
 	  make_buttons($my_service, $label, $vars, "center", "");
+	  echo form_hidden('date_out', $row->date_out);
       echo form_close();
       echo "<tr><td>";
                       

@@ -539,6 +539,20 @@ function insert_one_admission_bu($aid){
             $displans = clean_form_input($this->input->post('displans', TRUE));
             $prepby = clean_form_input($this->input->post('prepby', TRUE));
             $ric = clean_form_input($this->input->post('ric', TRUE));
+			$lfinding = clean_form_input($this->input->post('lfinding', TRUE));
+			$dateacc = clean_form_input($this->input->post('dateacc', TRUE));	
+			$gensurvey = clean_form_input($this->input->post('gensurvey', TRUE));
+			$bp = clean_form_input($this->input->post('bp', TRUE));
+			$cr = clean_form_input($this->input->post('cr', TRUE));
+			$rr = clean_form_input($this->input->post('rr', TRUE));
+			$temp = clean_form_input($this->input->post('temp', TRUE));
+			$abdomen = clean_form_input($this->input->post('abdomen', TRUE));
+			$heent = clean_form_input($this->input->post('heent', TRUE));
+			$gu = clean_form_input($this->input->post('gu', TRUE));
+			$chest = clean_form_input($this->input->post('chest', TRUE));
+			$skin = clean_form_input($this->input->post('skin', TRUE));
+			$cvs = clean_form_input($this->input->post('cvs', TRUE));
+			$neuro = clean_form_input($this->input->post('neuro', TRUE));			
 
             $dsummary = array(
                                'plname'=>$plname, 
@@ -585,6 +599,20 @@ function insert_one_admission_bu($aid){
             			'displans'=>$displans,
             			'prepby'=>$prepby,
             			'ric'=>	$ric,
+						'lfinding'=>$lfinding,
+						'dateacc'=>$dateacc,		
+						'gensurvey'=>$gensurvey,
+						'bp'=>$bp,
+						'cr'=>$cr,
+						'rr'=>$rr,
+						'temp'=>$temp,
+						'abdomen'=>$abdomen,
+						'heent'=>$heent,
+						'gu'=>$gu,
+						'chest'=>$chest,
+						'skin'=>$skin,
+						'cvs'=>$cvs,
+						'neuro'=>$neuro,						
                       );
 
                  $cs_dsummary = implode(",", $dsummary);

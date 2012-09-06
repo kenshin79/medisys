@@ -361,6 +361,7 @@ function get_selected_admission(){
 		  $one_gm = $this->input->post('one_gm');
 		  $stp1 = $this->input->post('stp1');  
 		  $aid = $this->input->post('eadmission');
+		  $date_out = $this->input->post('date_out');
 		  if (!strcmp($one_gm, "res")){    
        	        $r_id = $this->input->post('eresident');
 		        $rname = $this->input->post('rname');
@@ -381,7 +382,12 @@ function get_selected_admission(){
                $data['p_admission'] = $this->Micu_census_model->get_forms_label($aid, 2);
           else
 		       $data['p_admission'] = $this->Admission_model->get_forms_label($aid, 2);
-	      $this->load->view('list/d_summary', $data);
+		  if ((strcmp($date_out, "0000-00-00")) && (strtotime($date_out) < strtotime("2012-09-01"))){
+			
+				$this->load->view('list/d_summary_old', $data);
+		  }	
+		  else	
+    		$this->load->view('list/d_summary', $data);
 	  } 
           //show sagip buhay form
 	  function edit_sagipbuhay(){
@@ -410,6 +416,7 @@ function get_selected_admission(){
                 $data['p_admission'] = $this->Micu_census_model->get_forms_label($aid, 4);
           else
 		        $data['p_admission'] = $this->Admission_model->get_forms_label($aid, 4);
+		  		
 	      $this->load->view('list/sagip_request', $data);
 	  } 
           //show home meds form

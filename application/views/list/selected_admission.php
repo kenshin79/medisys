@@ -222,6 +222,7 @@ $mbed_list = $this->config->item('m_beds');
 				'value'=>"D-Summary",
 				'class'=>'forms_buttons',
 			);
+	 echo form_hidden('date_out', $row->date_out);		
 	 make_buttons($my_service, $label, $dvars, "center", "");  
          echo "</td></tr>";
          echo form_close();	         
