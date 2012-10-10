@@ -6,7 +6,7 @@
     <meta name="created" content="Mon, 24 Oct 2011 03:14:15 GMT">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>Medisina - Edit ICD/PCP</title>
+    <title>Medisys - Edit ICD/PCP</title>
     <link rel="stylesheet" type="text/css" href="/medisys/css/menu.css" />
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -58,7 +58,10 @@ elseif (!strcmp($one_gm, 'res')){
 echo "<div align=\"center\">";
 foreach ($p_admission as $row){
     echo "<table>";
-    echo form_open('show/update_pcpdx');
+	if (!strcmp($one_gm, 'res'))
+		echo form_open('census/update_pcpdx');
+	else	
+		echo form_open('show/update_pcpdx');
     if (!strcmp($my_service, 'micu'))
         $vars['eadmission'] = $row->micu_id;
     elseif (!strcmp($my_service, 'er'))

@@ -133,7 +133,7 @@ if ($c_admissions){
     		echo "<th>SIC</th>";
 	if (!strcmp($my_service, 'er') || !strcmp($my_service, 'micu'))
     		echo "<th>GM Service</th>";
-	echo "<th>Hosp Days</th>";
+	echo "<th>Hosp Days</th></tr>";
 //	echo "<th>Select</th></tr>";
 	
     if (strcmp($my_service, 'micu') && strcmp($my_service, 'er')){

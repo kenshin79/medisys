@@ -108,8 +108,118 @@
     margin-left: -500px;
     margin-top: +50px;
     }
+/*
+ *Resident admissions list boxes
+*/
+    #main_resdisplay{
+    width:1000px;
+    height:1000px;
+    background-color:none;
+    border-left:1px solid black ;
+    border-right:1px solid black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left: -500px;
+    margin-top: -80px;
+    }
 
+    #res_wards{
+    width:200px;
+    height:40px;
+    background-color:#7F171F;
+    font-size:1.25em;
+    font-weight:bold;
+    color:#F0E68C;
+    border-left:none;
+    border-right:1px solid white;
+    border-top:1px solid white;    
+    position:absolute;
+    top:0%;
+    left:0%;
+    
+    }
+	
+   #res_er{
+    width:200px;
+    height:40px;
+    background-color:#808000;
+    font-size:1.25em;
+    font-weight:bold;
+    color:#F0E68C;
+    border-left:none;
+    border-right:1px solid white;
+    border-top:1px solid white;    
+    position:absolute;
+    top:0%;
+    left:200px;
+    
+    }	
 
+  #res_micu{
+    width:200px;
+    height:40px;
+    background-color:#7B68EE;
+    font-size:1.25em;
+    font-weight:bold;
+    color:#F0E68C;
+    border-left:none;
+    border-right:1px solid white;
+    border-top:1px solid white;    
+    position:absolute;
+    top:0%;
+    left:400px;
+    
+    }	
+	
+  #res_comx{
+    width:200px;
+    height:40px;
+    background-color:#D2691E;
+    font-size:1.25em;
+    font-weight:bold;
+    color:#F0E68C;
+    border-left:none;
+    border-right:1px solid white;
+    border-top:1px solid white;    
+    position:absolute;
+    top:0%;
+    left:600px;
+    
+    }		
+
+  #res_preop{
+    width:130px;
+    height:40px;
+    background-color:#191970;
+    font-size:1.25em;
+    font-weight:bold;
+    color:#F0E68C;
+    border-left:none;
+    border-right:1px solid white;
+    border-top:1px solid white;    
+    position:absolute;
+    top:0%;
+    left:800px;
+    
+    }		
+
+  #res_edit{
+    width:70px;
+    height:40px;
+    background-color:#006400;
+    font-size:1.25em;
+    font-weight:bold;
+    color:#F0E68C;
+    border-left:none;
+    border-right:1px solid white;
+    border-top:1px solid white;    
+    position:absolute;
+    top:0%;
+    left:930px;
+    
+    }			
+	
     #ward_banner1{
     width:300px;
     height:40px;
@@ -250,4 +360,24 @@
  
     }
 
+    #preop{
+    width:1000px;
+    height:960px;
+    background-color:white;
+    position:absolute;
+    top:0%;
+    left:0%;
+    margin-top:40px;
     
+    }
+	
+	#comx{
+    width:1000px;
+    height:960px;
+    background-color:white;
+    position:absolute;
+    top:0%;
+    left:0%;
+    margin-top:40px;
+    
+    }

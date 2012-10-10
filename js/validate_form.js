@@ -283,20 +283,29 @@ function validateDispoDate2(form)
 	 
 	}	
 	
-function validateDateedit(dispo, datein, dateout){
+function validateDateedit(c, form){
+	 var a=form.dispo.value;
+	 var b=form.date_out.value;
 
-     if ((dispo!='Admitted') && ((dateout.value=="") || ((dateout.value==null) || (dateout.value=="0000-00-00")))) 
+     if ( a != 'Admitted' && ( b == "" || ( b == null || b == "0000-00-00" ))) 
 	 {
 	    alert ("DATE-OUT should NOT BE EMPTY or '0000-00-00' if STATUS is NOT Admitted");
 	    return false;
-	  }
-     if ((datein > dateout.value) && (dispo != 'Admitted')) 
+	 }
+	  
+     if ( c > b && a != 'Admitted' ) 
 	 {
 	    alert ("Disposition Date should be LATER than Admission date");
 	    return false;
-	  } 
-	 else
-		return true;
+	 } 
+	 
+	 if ( a == 'Admitted' && b != "0000-00-00" )
+	 {
+		alert ("DATE-OUT should be left 'unset' if patient is STILL Admitted");
+		return false;
+	 }
+	 
+	 return true;
 
 
 }	

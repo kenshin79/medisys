@@ -287,6 +287,7 @@ function get_selected_admission(){
 			        $this->load->view('list/show_onegmadmissions', $data);        
 	      }   
 		  elseif (!strcmp($one_gm, "res")){
+		  /*
 			if (!strcmp($my_service, 'er'))
 				$data['c_admissions'] = $this->Er_census_model->get_erresidents_adm($r_id);
 			elseif (!strcmp($my_service, 'micu')){
@@ -300,6 +301,11 @@ function get_selected_admission(){
 		  		$data['c_admissions'] = array_merge($data['sr_admissions'], $data['jr_admissions']);
 	      	}
 	      	$this->load->view('list/show_admissions', $data);
+			*/
+			$data['sr_wadmissions'] = $this->Admission_model->get_sresidents_adm($r_id);
+		    $data['jr_wadmissions'] = $this->Admission_model->get_jresidents_adm($r_id);
+		    $data['w_admissions'] = array_merge($data['sr_wadmissions'], $data['jr_wadmissions']);
+		    $this->load->view('list/show_res_admissions', $data);	   
 		 }
           
       }

@@ -37,19 +37,20 @@ echo "<div align=\"center\"><font size=\"4\">Note: Only 'Active' Residents will 
       $y = 1;
       echo "<div align=\"center\"><table><tr><th>N0.</th><th>Resident Name</th><th>Date Started</th><th>Status</th><th>Edit/View Admissions</th></tr>";
       foreach($resident as $row){
-                  if ($row->r_id == 1){
-                        echo "<tr><td width = \"30px\">".$x."</td><td width = \"300px\">".revert_form_input($row->r_name)."</td><td width = \"200px\">".revert_form_input($row->dstart)."</td>";
-		                echo "<td width = \"100px\">Active:".revert_form_input($row->status)."<td width = \"150px\">"; 
-                  }
-                  else{
+
                        $na = array(
 		  	  		            'name'=> 'rname',
 					            'value'=> revert_form_input($row->r_name),
 					            'size'=> '40'
 					        );
+					   if (!strcmp($row->r_name, "None")){
+							echo "<tr><td rowspan = 1>".$x."</td><td>None</td><td>0000-00-00</td>";
+							echo "<td width = \"100px\">Active: Y</td><td>";
+							echo form_hidden('status', "Y");
+					   }		
+					   else{		
                        echo form_open('show/edit_resident'); 
-                       echo "<tr><td width = \"30px\">".$x."</td><td width = \"300px\">".form_input($na)."</td>";
-					   //<td width = \"200px\">".form_input('dstart',$row->dstart)."</td>";
+                       echo "<tr><td width = \"30px\" rowspan = 1>".$x."</td><td width = \"300px\">".form_input($na)."</td>";
 		               //datepicker
 					   echo "<td>";
 					   require_once('calendar/classes/tc_calendar.php');
@@ -72,33 +73,15 @@ echo "<div align=\"center\"><font size=\"4\">Note: Only 'Active' Residents will 
                         echo form_hidden('num', $y).form_hidden('eresident', $row->r_id).form_hidden('my_service', $my_service).form_hidden('my_dispo', $my_dispo).form_hidden('one_gm', $one_gm).form_hidden('stp1', $stp1);
                         echo "<div align = \"center\"><input type = \"submit\"  value = \"Edit Resident\" style = \"font-size:large; color:red; height:30px; width:250px;\" /></div>";
                         echo form_close();
-		         }
-//ward admissions			
-		        echo form_open('census/resident_census');
-                $this->db->where('r_id', $row->r_id);
-                $this->db->or_where('sr_id', $row->r_id);
-                $this->db->from('admissions');
-                $wadm = $this->db->count_all_results();
-                        echo form_hidden('eresident', $row->r_id).form_hidden('rname', $row->r_name).form_hidden('my_service', "All").form_hidden('my_dispo', $my_dispo).form_hidden('one_gm', $one_gm).form_hidden('stp1', $stp1);
-                        echo "<div align = \"center\"><input type = \"submit\"  value = \"Ward (".$wadm.")\" style = \"font-size:large; color:red; height:30px; width:250px;\" /></div>";
-		        echo form_close();
-//ER admissions
-                echo form_open('census/resident_census');
-                $this->db->where('pod_id', $row->r_id);
-                $this->db->from('er_census');
-                $eadm = $this->db->count_all_results();
-                        echo form_hidden('eresident', $row->r_id).form_hidden('rname', $row->r_name).form_hidden('my_service', "er").form_hidden('my_dispo', $my_dispo).form_hidden('one_gm', $one_gm).form_hidden('stp1', $stp1);
-                        echo "<div align = \"center\"><input type = \"submit\"  value = \"ER (".$eadm.")\" style = \"font-size:large; color:red; height:30px; width:250px;\" /></div>";
-		        echo form_close();
-//MICU admissions
-                echo form_open('census/resident_census');
-                $this->db->where('r_id', $row->r_id);
-                $this->db->or_where('sr_id', $row->r_id);
-                $this->db->from('micu_census');
-                $madm = $this->db->count_all_results();
-                        echo form_hidden('eresident', $row->r_id).form_hidden('rname', $row->r_name).form_hidden('my_service', "micu").form_hidden('my_dispo', $my_dispo).form_hidden('one_gm', $one_gm).form_hidden('stp1', $stp1);
-                        echo "<div align = \"center\"><input type = \"submit\"  value = \"MICU (".$madm.")\" style = \"font-size:large; color:red; height:30px; width:250px;\" /></div>";
-		        echo form_close();    
+						}
+				        //get admission list
+				        echo form_open('census/resident_census');
+				        $label = array('name'=>"", 'value'=>"Admissions", 'style'=>"font-size:large; color:red; height:30px; width:250px;");
+				        $vars = array('eresident'=>$row->r_id, 'my_service'=>"All", 'my_dispo'=>$my_dispo, 'one_gm'=>"res", 'stp1'=>$stp1);
+				        make_buttons('', $label, $vars, "center", "");			
+						echo "</td></tr>";
+						
+		         //}
 		        
 		        $x++;
 				$y++;

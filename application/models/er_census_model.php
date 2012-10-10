@@ -148,8 +148,8 @@ function count_erefs($erefs, $date1, $date2){
 
       //select admitted er census
       function get_er_census($disp){
-	      		  	
-			 $this->db->select('er_id, p_id, pod_id, date_in, date_out, service, dispo, plist, meds, notes, pcpdx, refs, erefs');
+	      	 //$this->db->select('er_id, p_id, pod_id, date_in, date_out, service, dispo, plist, meds, notes, pcpdx, refs, erefs');
+			 $this->db->select('er_id, p_id, pod_id, date_in, date_out, service, dispo');
 			 $this->db->where('dispo', $disp);
 			 if (!strcmp($disp, "Admitted"))
 			 	$this->db->order_by('service asc,  date_in desc');
@@ -182,8 +182,9 @@ function delete_one_admission($a_id){
 
 //update functions
     //edit dispo date	
-function edit_dispo_date($aid, $ddate){
-    $data = array( 'date_out'=>clean_form_input($ddate)); 
+function edit_dispo_date($aid, $ddate, $dispo, $plist){
+	$pod_id = $this->input->post('pod_id', TRUE);
+    $data = array( 'date_out'=>clean_form_input($ddate), 'dispo'=>clean_form_input($dispo), 'plist'=>clean_form_input($plist), 'pod_id'=>clean_form_input($pod_id)); 
     $this->db->where('er_id', $aid);
     $this->db->update('er_census', $data);
     //log update task in text file
@@ -385,7 +386,7 @@ function insert_one_admission_bu($aid){
 	  }	
           //get admissions of a erresident by id  
 	  function get_erresidents_adm($r_id){
-		  $this->db->select('er_id, pod_id, p_id, date_in, date_out, service, dispo, plist, meds, notes, refs, erefs, pcpdx');
+		  $this->db->select('er_id, p_id, date_in, date_out, dispo, plist, pcpdx');
 		  $this->db->where('pod_id', $r_id);
 		  $this->db->order_by('date_in desc, dispo asc');
 		  $query = $this->db->get('er_census');

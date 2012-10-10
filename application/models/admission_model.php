@@ -178,7 +178,8 @@ function count_erefs($serv, $erefs, $date1, $date2){
 
 	//create one GM census (for editable )
 function get_gm_census($service, $disp){
-		 $this->db->select('a_id, p_id, sr_id, r_id, sic, date_in, date_out, type, source, service, dispo, location, bed, plist, meds, notes, pcpdx, refs, erefs');
+		 //$this->db->select('a_id, p_id, sr_id, r_id, sic, date_in, date_out, type, source, service, dispo, location, bed, plist, meds, notes, pcpdx, refs, erefs');
+		 $this->db->select('a_id, p_id, r_id, sic, date_in, date_out, type, location, bed, dispo'); 
 		 if (!strcmp($service, 'preop'))
 		 	$this->db->where('type', "Pre-operative");
      		 else
@@ -197,8 +198,10 @@ function get_gm_census($service, $disp){
 }	  
 //update functions
     //edit dispo date
-function edit_dispo_date($aid, $ddate){
-    $data = array( 'date_out'=>clean_form_input($ddate)); 
+function edit_dispo_date($aid, $ddate, $dispo, $plist){
+    $sr_id = $this->input->post('sr_id', TRUE);
+	$r_id = $this->input->post('r_id', TRUE);
+    $data = array( 'date_out'=>clean_form_input($ddate), 'dispo'=>clean_form_input($dispo), 'plist'=>clean_form_input($plist), 'sr_id'=>$sr_id, 'r_id'=>$r_id); 
     $this->db->where('a_id', $aid);
     $this->db->update('admissions', $data);
       //log update task in text file
@@ -716,11 +719,26 @@ function edit_one_admission($id){
 	  //get admissions of patients   
 	  function get_patients_adm($p_id){
 		  $this->db->select('a_id, r_id, sr_id, p_id, sic, date_in, date_out, type, source, service, location, bed, dispo, plist, meds, notes, refs, erefs, pcpdx');
-		  $this->db->where('p_id', $p_id);
+		  $this->db->where('p_id', $p_id);		  
 		  $this->db->order_by('date_in desc, dispo asc');
 		  $query = $this->db->get('admissions');
           return $query->result(); 
 	  }	
+	  //get admissions of a jresident by id  
+	  function get_jresidents_adm($r_id, $my_service){
+		  $this->db->select('a_id, p_id, date_in, date_out, location, bed, dispo, plist, pcpdx');
+		  $this->db->where('r_id', $r_id);
+		  if (!strcmp($my_service, "All"))
+			$this->db->where('type', "Primary");
+		  if (!strcmp($my_service, "comx"))
+			$this->db->where('type', "Co-Managed");
+		  if (!strcmp($my_service, "preop"))
+			$this->db->where('type', "Pre-operative");			
+		  $this->db->order_by('date_in desc, dispo asc');
+		  $query = $this->db->get('admissions');
+          return $query->result(); 
+	  }	  
+/*	  
 	  //get admissions of a jresident by id  
 	  function get_jresidents_adm($r_id){
 		  $this->db->select('a_id, r_id, sr_id, p_id, sic, date_in, date_out, type, source, service, location, bed, dispo, plist, meds, notes, refs, erefs, pcpdx');
@@ -729,6 +747,24 @@ function edit_one_admission($id){
 		  $query = $this->db->get('admissions');
           return $query->result(); 
 	  }	  
+*/	  
+	  
+	  //get admissions of an sresident by id
+	  function get_sresidents_adm($r_id, $my_service){
+		  $this->db->select('a_id, p_id, date_in, date_out, location, bed, dispo, plist, pcpdx');
+		  $this->db->where('sr_id', $r_id);
+		  if (!strcmp($my_service, "All"))
+			$this->db->where('type', "Primary");
+		  if (!strcmp($my_service, "comx"))
+			$this->db->where('type', "Co-Managed");			
+		  if (!strcmp($my_service, "preop"))
+			$this->db->where('type', "Pre-operative");
+		  $this->db->order_by('date_in desc, dispo asc');
+		  $query = $this->db->get('admissions');
+          return $query->result(); 
+	  }		  
+	  
+	  /*
 	  //get admissions of an sresident by id
 	  function get_sresidents_adm($r_id){
 		  $this->db->select('a_id, r_id, sr_id, p_id, sic, date_in, date_out, type, source, service, location, bed, dispo, plist, meds, notes, refs, erefs, pcpdx');
@@ -737,6 +773,7 @@ function edit_one_admission($id){
 		  $query = $this->db->get('admissions');
           return $query->result(); 
 	  }	
+	  */
 	  //get admission details for display
 	  function get_admission_data($aid){
 		 $this->db->select('r_id, sr_id, p_id, sic, date_in, date_out, type, source, service, location, bed, dispo, plist, meds, notes, refs, erefs, pcpdx');

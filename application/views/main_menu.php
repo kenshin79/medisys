@@ -24,7 +24,7 @@
                 $(this).removeClass('hover');
                 }
                 );
-			openSysnotes();	
+			//openSysnotes();	
             showSysNotes(1);
 	    });
 
@@ -81,35 +81,6 @@ echo "<div class = \"btab\" onclick = \"showSysNotes(2)\" style=\"text-align:cen
 echo "<div class = \"btab\" onclick = \"showSysNotes(4)\" style=\"text-align:center; font-weight:bold; position:relative; top:0%; left:50%; margin-left:200px; margin-top:-30px; width:200px; height:30px; background-color:#DDA0DD; color:#8A2BE2; text-decoration:blink; \">Quiz Board</div>";
 echo "<div class = \"scrollbulletin\" id=\"sysnotes\"  style=\"top:-30px; border-top:2px solid black; background-color:#DDEBDD; color:black;\"></div>";
 echo "</div>";
-/*
-//clean all ward adm
-$ward = $this->Admission_model->get_allclean();
-foreach($ward as $row){
-//$this->Admission_model->clean_adm($row->a_id, $row->date_in, $row->date_out, $row->sic, $row->plist, $row->meds, $row->refs, $row->erefs, $row->notes, $row->pcpdx); 
-  $this->Admission_model->clean_adm($row->a_id, $row->abstract, $row->dsummary, $row->sagip, $row->home, $row->c_notes);
-}
-//clean all er adm
-$er = $this->Er_census_model->get_allclean();
-foreach($er as $row){
-	$this->Er_census_model->clean_adm($row->er_id, $row->date_in, $row->date_out, $row->plist, $row->meds, $row->refs, $row->erefs, $row->notes, $row->pcpdx);
-}
-//clean all micu adm
-$micu = $this->Micu_census_model->get_allclean();
-foreach($micu as $row){
-	$this->Micu_census_model->clean_adm($row->micu_id, $row->date_in, $row->date_out, $row->sic, $row->plist, $row->meds, $row->refs, $row->erefs, $row->notes, $row->pcpdx);
-}
-
-//clean ric
-$ric = $this->Resident_model->get_allr();
-foreach ($ric as $row){
-	$this->Resident_model->clean_res($row->r_id, $row->r_name, $row->dstart);
-}
-//clean px
-$px = $this->Patient_model->get_allp();
-foreach ($px as $row){
-	$this->Patient_model->clean_px($row->p_id, $row->p_name, $row->p_bday, $row->p_sex, $row->cnum, $row->p_plist, $row->p_add, $row->adm_status);
-}
-*/
 
 echo "<div style=\"position:relative; top:0%; margin-top:20px\">";
 echo "<div align=\"center\"><h3 style=\"color:red;\">Click on bulb to submit answers to quiz. <a href=\"/medisys/webpage/answerSubmit.html\" target=\"_blank\"><img src = \"/medisys/img/lbulb.jpeg\" width=\"20\" height=\"20\"</a></h3></div>";
@@ -252,8 +223,7 @@ echo "(View Admissions/View Problem List-Medications)</td></tr>";
 echo form_close();
 
 //Manage Residents
-if (($uservice == 11) || ($uservice == 22) || ($uservice == 33) || ($uservice == 44) || ($uservice == 55) || ($uservice == 66) || ($uservice == 77) || ($uservice == 88) || ($uservice == 0))
-{
+if (($uservice == 11) || ($uservice == 22) || ($uservice == 33) || ($uservice == 44) || ($uservice == 55) || ($uservice == 66) || ($uservice == 77) || ($uservice == 88) || ($uservice == 0)){
      echo "<tr><td>".form_open('menu');
      $label = array('class'=>'menub', 'name'=>'main_showr', 'value'=>'Manage Residents');
      $vars = array('my_service'=>"All", 'my_dispo'=>"", 'one_gm'=>"res", 'stp1'=>"");	

@@ -165,8 +165,10 @@ function count_erefs($erefs, $date1, $date2){
 }
 //update functions
     //edit dispo date	
-function edit_dispo_date($aid, $ddate){
-    $data = array( 'date_out'=>clean_form_input($ddate)); 
+function edit_dispo_date($aid, $ddate, $dispo, $plist){
+    $sr_id = $this->input->post('sr_id', TRUE);
+	$r_id = $this->input->post('r_id', TRUE);
+    $data = array( 'date_out'=>clean_form_input($ddate), 'dispo'=>clean_form_input($dispo), 'plist'=>clean_form_input($plist), 'sr_id'=>$sr_id, 'r_id'=>$r_id); 
     $this->db->where('micu_id', $aid);
     $this->db->update('micu_census', $data);
     //log update task in text file
@@ -181,8 +183,8 @@ function edit_dispo_date($aid, $ddate){
 
       //get micu admissions
 function get_micu_census($disp){
-	      		  	
-			 $this->db->select('micu_id, p_id, sr_id, r_id, sic, date_in, date_out, source, service, dispo, bed, plist, meds, notes, pcpdx, refs, erefs');
+	      		 //$this->db->select('micu_id, p_id, sr_id, r_id, sic, date_in, date_out, source, service, dispo, bed, plist, meds, notes, pcpdx, refs, erefs');
+				 $this->db->select('micu_id, p_id, r_id, sic, date_in, date_out, bed, dispo, service');
 		         $this->db->where('dispo', $disp);
         	  	 if (!strcmp($disp, "Admitted"))
 			 	$this->db->order_by('bed asc');
@@ -402,6 +404,7 @@ function get_micudata_by_id($aid){
 		  $query = $this->db->get('micu_census');
           return $query->result(); 
 	  }
+	  /*
           //get admissions of a jresident by id  
 	  function get_jresidents_adm($r_id){
 		  $this->db->select('micu_id, r_id, sr_id, p_id, sic, date_in, date_out, source, service, bed, dispo, plist, meds, notes, refs, erefs, pcpdx');
@@ -410,6 +413,15 @@ function get_micudata_by_id($aid){
 		  $query = $this->db->get('micu_census');
           return $query->result(); 
 	  }	  
+	  */
+	  function get_jresidents_adm($r_id){
+		  $this->db->select('micu_id, p_id, date_in, date_out, bed, dispo, plist, pcpdx');
+		  $this->db->where('r_id', $r_id);
+		  $this->db->order_by('date_in desc, dispo asc');
+		  $query = $this->db->get('micu_census');
+          return $query->result(); 	  
+	  }
+	  /*
 	  //get admissions of an sresident by id
 	  function get_sresidents_adm($r_id){
 		  $this->db->select('micu_id, r_id, sr_id, p_id, sic, date_in, date_out, source, service, bed, dispo, plist, meds, notes, refs, erefs, pcpdx');
@@ -418,7 +430,15 @@ function get_micudata_by_id($aid){
 		  $query = $this->db->get('micu_census');
           return $query->result(); 
 	  }			   
-
+	  */
+	   function get_sresidents_adm($r_id){
+	      $this->db->select('micu_id, p_id, date_in, date_out, bed, dispo, plist, pcpdx');
+	      $this->db->where('sr_id', $r_id);
+	      $this->db->order_by('date_in desc, dispo asc');
+	      $query = $this->db->get('micu_census');
+        return $query->result(); 
+	  }			   
+	  
       function edit_pcpdx($aid){
 		 $pcpdx = $this->input->post('pcpdx', TRUE);
 		 if (is_array($pcpdx))

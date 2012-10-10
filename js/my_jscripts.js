@@ -147,11 +147,97 @@ function prepList() {
                     );
               
         }
+		
+function prepresList() {
+      $("#census_table tr td").add("#census_table table tr td").css("font-weight", "bold");
+      $("#census_table tr:nth-child(1) th:nth-child(1)").addClass("gendata_col"); 
+      $("#census_table tr:nth-child(1) th:nth-child(2)").addClass("plist");
+      $("#census_table tr:nth-child(1) th:nth-child(3)").add("#census_table tr:nth-child(1) th:nth-child(4)").addClass("refs");
+      $("#census_table tr:nth-child(1) th:nth-child(5)").addClass("buttons_col");
+      $("#micu_body").hide();
+      $("#er_body").hide();
+      $("#selected_body").hide();
+	  $("#comx").hide();
+	  $("#preop").hide();
+      $(".clickable").hover(function() {
+                    $(this).addClass('hover');
+                    }, function() {
+                    $(this).removeClass('hover');
+                    }
+                    );
+      $("#editable tr").hover(function() {
+                    $(this).addClass('hover').addClass('highlight');
+                    }, function() {
+                    $(this).removeClass('hover').removeClass('highlight');
+                    }
+                    );
+              
+        }		
+		
 function hideMe(a){
 
  a.hide();
 
 }
+/*
+ *resident census part
+ *
+*/
+function showresWards(){
+    $("#ward_body").show();
+    $("#micu_body").hide();
+    $("#er_body").hide();
+	$("#preop").hide();
+	$("#comx").hide();
+    $("#selected_body").hide();	
+}
+
+
+function showresMicu(){
+    $("#micu_body").show();
+    $("#ward_body").hide();
+    $("#er_body").hide();
+	$("#preop").hide();
+	$("#comx").hide();
+    $("#selected_body").hide();	
+}
+
+function showresER(){
+    $("#er_body").show();
+    $("#ward_body").hide();
+    $("#micu_body").hide();
+	$("#preop").hide();
+	$("#comx").hide();
+    $("#selected_body").hide();	
+}
+
+function showresPreop(){
+    $("#ward_body").hide();
+    $("#micu_body").hide();
+    $("#er_body").hide();
+	$("#preop").show();
+	$("#comx").hide();
+    $("#selected_body").hide();	
+}
+
+function showresComx(){
+    $("#comx").show();
+    $("#ward_body").hide();
+    $("#micu_body").hide();
+    $("#er_body").hide();
+	$("#preop").hide();
+    $("#selected_body").hide();	
+}
+
+function showresEdit(){
+    $("#ward_body").hide();
+    $("#micu_body").hide();
+    $("#er_body").hide();
+	$("#preop").hide();
+	$("#comx").hide();
+    $("#selected_body").show();	
+}
+
 function showMicu(){
     $("#ward_body").hide();
     $("#micu_body").show();
@@ -272,4 +358,32 @@ xmlhttp.open("GET","get_selected_admission?aid="+adm+"&my_service="+my_service+"
 xmlhttp.send();
 }    
 
+function getresAdm(adm, my_service, my_dispo, one_gm, stp1)
+{
+showSelected();
+document.getElementById("selected_body").innerHTML="";
+if (adm=="")
+  {
+  document.getElementById("selected_body").innerHTML="";
+  return;
+  } 
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+     document.getElementById("selected_body").innerHTML=xmlhttp.responseText;
+    }
+  }
+var rand = parseInt(Math.random()*999999999999);  
+xmlhttp.open("GET","get_res_selected_admission?aid="+adm+"&my_service="+my_service+"&my_dispo="+my_dispo+"&one_gm="+one_gm+"&stp1="+stp1+"&rand="+rand ,true);
+xmlhttp.send();
+}    
 

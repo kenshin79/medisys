@@ -39,6 +39,89 @@ function get_selected_admission(){
 
 
 }
+
+function get_res_selected_admission(){
+	$my_service = $this->input->get('my_service', TRUE);
+    $my_dispo = $this->input->get('my_dispo', TRUE);
+    $one_gm = $this->input->get('one_gm', TRUE);
+    $stp1 = $this->input->get('stp1', TRUE); 
+    $aid = $this->input->get('aid', TRUE);
+	$census = array( 
+	   	  		   'my_service'=>$my_service,
+				   'my_dispo'=>$my_dispo,
+				   'one_gm'=>$one_gm,
+				   'stp1'=>$stp1,
+		   );
+	$this->session->set_userdata($census);
+        if (!strcmp($my_service, 'er'))
+             	$data['c_admissions'] = $this->Er_census_model->get_one_admission($aid); 
+        elseif (!strcmp($my_service, 'micu'))
+                $data['c_admissions'] = $this->Micu_census_model->get_one_admission($aid);
+		elseif (!strcmp($my_service, 'comx'))		
+				$data['c_admissions'] = $this->Admission_model->get_one_admission($aid);
+        elseif(!strcmp($my_service, 'preop')){
+                $data['c_admissions'] = $this->Admission_model->get_one_admission($aid);
+        } 
+        else{
+	        $data['c_admissions'] = $this->Admission_model->get_one_admission($aid); 
+        }
+	$this->load->view('list/selected_resadmission', $data); 
+    
+
+
+}
+
+	  //update ICD/PCP of admission
+function update_pcpdx(){
+	      $my_service = $this->input->post('my_service');
+		  $my_dispo = $this->input->post('my_dispo');
+		  $one_gm = $this->input->post('one_gm');
+		  $stp1 = $this->input->post('stp1');  
+		  $aid = $this->input->post('eadmission');
+		  if (!strcmp($one_gm, "res")){    
+       	        $r_id = $this->input->post('eresident');
+		        $rname = $this->input->post('rname');
+                $data['rname'] = $rname;
+                $data['eresident'] = $r_id;
+          }
+		  $census = array( 
+		    	  		    'my_service'=>$my_service,
+					        'my_dispo'=>$my_dispo,
+					        'one_gm'=>$one_gm,
+					        'stp1'=>$stp1,
+						   );
+		  $this->session->set_userdata($census);	
+          if (!strcmp($my_service, 'er'))
+		       $this->Er_census_model->edit_pcpdx($aid);
+          elseif (!strcmp($my_service, 'micu'))
+    	       $this->Micu_census_model->edit_pcpdx($aid);
+          else
+               $this->Admission_model->edit_pcpdx($aid);
+		  //wards	   
+		  $data['sr_wadmissions'] = $this->Admission_model->get_sresidents_adm($r_id, $my_service);
+		  $data['jr_wadmissions'] = $this->Admission_model->get_jresidents_adm($r_id, $my_service);
+		  $data['w_admissions'] = array_merge($data['sr_wadmissions'], $data['jr_wadmissions']);
+		  //micu
+          $data['sr_madmissions'] = $this->Micu_census_model->get_sresidents_adm($r_id);
+		  $data['jr_madmissions'] = $this->Micu_census_model->get_jresidents_adm($r_id);
+	      $data['m_admissions'] = array_merge($data['sr_madmissions'], $data['jr_madmissions']);		
+		  //ER
+		  $data['e_admissions'] = $this->Er_census_model->get_erresidents_adm($r_id);		
+		  //comx
+		  $data['sr_cmadmissions'] = $this->Admission_model->get_sresidents_adm($r_id, "comx");
+		  $data['jr_cmadmissions'] = $this->Admission_model->get_jresidents_adm($r_id, "comx");
+		  $data['cm_admissions'] = array_merge($data['sr_cmadmissions'], $data['jr_cmadmissions']);		
+	      //preop
+	      $data['sr_padmissions'] = $this->Admission_model->get_sresidents_adm($r_id, "preop");
+	  	  $data['jr_padmissions'] = $this->Admission_model->get_jresidents_adm($r_id, "preop");
+	  	  $data['p_admissions'] = array_merge($data['sr_padmissions'], $data['jr_padmissions']);
+	      		  
+			   
+		  $this->load->view('list/show_res_admissions', $data);	      
+			   
+			   
+}			   
+
 	  
 function one_gm_census(){
 	$my_service = $this->input->post('my_service', TRUE);
@@ -281,20 +364,29 @@ function gm_census(){
 		  $census['eresident'] = $r_id;
 		  $census['rname'] = $rname;
 		  $this->session->set_userdata($census);	
-	      if (!strcmp($my_service, "All")){
-		       $data['sr_admissions'] = $this->Admission_model->get_sresidents_adm($r_id);
-		       $data['jr_admissions'] = $this->Admission_model->get_jresidents_adm($r_id);
-		       $data['c_admissions'] = array_merge($data['sr_admissions'], $data['jr_admissions']);
-		  }
-		  if (!strcmp($my_service, "er"))
-		       $data['c_admissions'] = $this->Er_census_model->get_erresidents_adm($r_id);
-		  if (!strcmp($my_service, "micu")){
-		       $data['sr_admissions'] = $this->Micu_census_model->get_sresidents_adm($r_id);
-		       $data['jr_admissions'] = $this->Micu_census_model->get_jresidents_adm($r_id);
-		       $data['c_admissions'] = array_merge($data['sr_admissions'], $data['jr_admissions']);
-          }
-		  $this->load->view('list/show_admissions', $data);   
-	  }
+				//wards
+		       $data['sr_wadmissions'] = $this->Admission_model->get_sresidents_adm($r_id, "All");
+		       $data['jr_wadmissions'] = $this->Admission_model->get_jresidents_adm($r_id, "All");
+		       $data['w_admissions'] = array_merge($data['sr_wadmissions'], $data['jr_wadmissions']);
+			    //micu
+			   $data['sr_madmissions'] = $this->Micu_census_model->get_sresidents_adm($r_id);
+		       $data['jr_madmissions'] = $this->Micu_census_model->get_jresidents_adm($r_id);
+			   $data['m_admissions'] = array_merge($data['sr_madmissions'], $data['jr_madmissions']);		
+				//er
+			   $data['e_admissions'] = $this->Er_census_model->get_erresidents_adm($r_id);		
+			   //co-mx
+			   $data['sr_cmadmissions'] = $this->Admission_model->get_sresidents_adm($r_id, "comx");
+		       $data['jr_cmadmissions'] = $this->Admission_model->get_jresidents_adm($r_id, "comx");
+		       $data['cm_admissions'] = array_merge($data['sr_cmadmissions'], $data['jr_cmadmissions']);
+			   //preop
+			   $data['sr_padmissions'] = $this->Admission_model->get_sresidents_adm($r_id, "preop");
+		       $data['jr_padmissions'] = $this->Admission_model->get_jresidents_adm($r_id, "preop");
+		       $data['p_admissions'] = array_merge($data['sr_padmissions'], $data['jr_padmissions']);
+			   
+		       $this->load->view('list/show_res_admissions', $data);	   
+		}  
+		  
+
 	  //By Patients
           //Get ward admissions
 	  function get_patient_admissions(){
@@ -423,12 +515,25 @@ situations where date_out is edited:
 1. list admissions by residents
 */
 function edit_date_out(){
+	      $my_service = $this->input->post('my_service');
+		  $my_dispo = $this->input->post('my_dispo');
+		  $one_gm = $this->input->post('one_gm');
+		  $stp1 = $this->input->post('stp1');  
+		  $aid = $this->input->post('eadmission');
+		  $r_id = $this->input->post('eresident');
+		  if (!strcmp($one_gm, "res")){    
+       	        $r_id = $this->input->post('eresident');
+		        $rname = $this->input->post('rname');
+                $data['rname'] = $rname;
+                $data['eresident'] = $r_id;
+          }
+
     $my_date1 = $this->input->post('my_date1', TRUE);
     $my_date2 = $this->input->post('my_date2', TRUE);
     $date_out = $this->input->post('date_out', TRUE);
+	$dispo = $this->input->post('dispo', TRUE);
+	$plist = $this->input->post('plist', TRUE);
     $view_type = $this->input->post('view_type', TRUE);
-    $my_service = $this->input->post('my_service', TRUE);
-    $r_id = $this->input->post('eresident', TRUE);
 	$p_id = $this->input->post('epatient', TRUE);
 	$one_gm = $this->input->post('one_gm', TRUE);
 	$num = $this->input->post('num', TRUE);
@@ -449,28 +554,36 @@ function edit_date_out(){
 						'p_id'=>$p_id,		
 	  			   );
 	$this->session->set_userdata($census);	
-	$aid = $this->input->post('eadmission', TRUE);
 	if (!strcmp($my_service, 'er'))
-	    $this->Er_census_model->edit_dispo_date($aid, $date_out);	
+	    $this->Er_census_model->edit_dispo_date($aid, $date_out, $dispo, $plist);	
 	elseif (!strcmp($my_service, 'micu'))
-		$this->Micu_census_model->edit_dispo_date($aid, $date_out);
+		$this->Micu_census_model->edit_dispo_date($aid, $date_out, $dispo, $plist);
 	else
-		$this->Admission_model->edit_dispo_date($aid, $date_out);
+		$this->Admission_model->edit_dispo_date($aid, $date_out, $dispo, $plist);
 	    
 	if (!strcmp($one_gm, 'res')){
-	    if (!strcmp($my_service, 'er'))
-        	$data['c_admissions'] = $this->Er_census_model->get_erresidents_adm($r_id);
-        elseif (!strcmp($my_service, 'micu')){
-			$data['sr_admissions'] = $this->Micu_census_model->get_sresidents_adm($r_id);
-		  	$data['jr_admissions'] = $this->Micu_census_model->get_jresidents_adm($r_id);
-		  	$data['c_admissions'] = array_merge($data['sr_admissions'], $data['jr_admissions']);
-		}
-		else{
-			$data['sr_admissions'] = $this->Admission_model->get_sresidents_adm($r_id);
-		  	$data['jr_admissions'] = $this->Admission_model->get_jresidents_adm($r_id);
-		  	$data['c_admissions'] = array_merge($data['sr_admissions'], $data['jr_admissions']);
-        }
-     
+            //ward
+	 		$data['sr_wadmissions'] = $this->Admission_model->get_sresidents_adm($r_id, $my_service);
+		    $data['jr_wadmissions'] = $this->Admission_model->get_jresidents_adm($r_id, $my_service);
+		    $data['w_admissions'] = array_merge($data['sr_wadmissions'], $data['jr_wadmissions']);
+   
+		    //micu
+            $data['sr_madmissions'] = $this->Micu_census_model->get_sresidents_adm($r_id);
+		    $data['jr_madmissions'] = $this->Micu_census_model->get_jresidents_adm($r_id);
+			$data['m_admissions'] = array_merge($data['sr_madmissions'], $data['jr_madmissions']);			
+			//er
+			$data['e_admissions'] = $this->Er_census_model->get_erresidents_adm($r_id);					
+            //comx
+            $data['sr_cmadmissions'] = $this->Admission_model->get_sresidents_adm($r_id, "comx");
+            $data['jr_cmadmissions'] = $this->Admission_model->get_jresidents_adm($r_id, "comx");
+            $data['cm_admissions'] = array_merge($data['sr_cmadmissions'], $data['jr_cmadmissions']);		
+			//preop
+			$data['sr_padmissions'] = $this->Admission_model->get_sresidents_adm($r_id, "preop");
+		    $data['jr_padmissions'] = $this->Admission_model->get_jresidents_adm($r_id, "preop");
+		    $data['p_admissions'] = array_merge($data['sr_padmissions'], $data['jr_padmissions']);
+						
+			
+			$this->load->view('list/show_res_admissions', $data);	
 	 }
      else{
 	 	  if (!strcmp($my_service, "All"))
@@ -478,19 +591,11 @@ function edit_date_out(){
 		  if (!strcmp($my_service, "er"))
                 $data['c_admissions'] = $this->Er_census_model->get_patients_adm($p_id);
           if (!strcmp($my_service, "micu"))
-                $data['c_admissions'] = $this->Micu_census_model->get_patients_adm($p_id);         
+                $data['c_admissions'] = $this->Micu_census_model->get_patients_adm($p_id);     
+		   $this->load->view('list/show_admissions', $data); 
 	 }	 
-     /*	for seeing all admissions in reports, if date editing allowed 
-	 else{
-		  if (!strcmp($my_service, 'er'))
-		       $data['c_admissions'] = $this->Er_census_model->er_report($my_service, $my_date1, $my_date2);   
-		  elseif (!strcmp($my_service, 'micu'))
-		       $data['c_admissions'] = $this->Micu_census_model->micu_report($my_service, $my_date1, $my_date2);
-          else
-               $data['c_admissions'] = $this->Admission_model->gm_report($my_service, $my_date1, $my_date2);
-	 }
-	*/	
-    $this->load->view('list/show_admissions', $data); 
+ 
+   
 } 
 
 }
