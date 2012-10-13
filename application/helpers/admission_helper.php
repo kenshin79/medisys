@@ -4,12 +4,12 @@
 function compute_age_adm($din, $pbd)
     {
 	 	    list($ay, $am, $ad) = explode("-",$din);
-			list($py, $pm, $pd) = explode("-",$pbd);
+			list($py, $pm, $pd) = explode("-",$pbd);		
 			$YearDiff = $ay - $py;
             $MonthDiff = $am - $pm;
             $DayDiff = $ad - $pd;
-            if ($DayDiff < 0 || $MonthDiff < 0)
-              $YearDiff--;
+            if (($DayDiff < 0 && $MonthDiff == 0) || $MonthDiff < 0) 
+              $YearDiff--; 
 			return $YearDiff;  
     }
 function compute_hd($dis, $din, $dout)

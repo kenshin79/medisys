@@ -178,7 +178,6 @@ function count_erefs($serv, $erefs, $date1, $date2){
 
 	//create one GM census (for editable )
 function get_gm_census($service, $disp){
-		 //$this->db->select('a_id, p_id, sr_id, r_id, sic, date_in, date_out, type, source, service, dispo, location, bed, plist, meds, notes, pcpdx, refs, erefs');
 		 $this->db->select('a_id, p_id, r_id, sic, date_in, date_out, type, location, bed, dispo'); 
 		 if (!strcmp($service, 'preop'))
 		 	$this->db->where('type', "Pre-operative");
@@ -194,6 +193,7 @@ function get_gm_census($service, $disp){
 		 else
 			$this->db->order_by('type desc, location asc, date_out desc');
 		 $query = $this->db->get('admissions');
+		 
 		 return $query->result();
 }	  
 //update functions
