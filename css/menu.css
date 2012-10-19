@@ -43,7 +43,12 @@ background-color:#FFFFFF  ;
 .title{
 background-color:#ffffc2;
  }
-
+.menuback{
+font-size:small;
+color:red;
+height:30px;
+width:210px
+}
 .menub{
 font-size:large;
 color:red;

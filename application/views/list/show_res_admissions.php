@@ -59,6 +59,13 @@ $vars = array('my_service'=> $my_service, 'my_dispo'=>$my_dispo, 'one_gm'=>$one_
 
 //greetings and logout
 make_page_header($_SERVER['PHP_AUTH_USER']);
+//back button
+echo form_open('menu');
+     $label = array('class'=>'menuback', 'name'=>'main_showr', 'value'=>'Back to Manage Residents');
+     $vars = array('my_service'=>"All", 'my_dispo'=>"", 'one_gm'=>"res", 'stp1'=>"");	
+     make_buttons("", $label, $vars, "left", "");	
+echo form_close();
+
 $rn = $this->Resident_model->get_resident_name($eresident);
 echo "<div align=\"center\"><h1>";
 foreach ($rn as $r)

@@ -39,6 +39,53 @@ function get_selected_admission(){
 
 
 }
+//get resident reports
+function get_res_report(){
+	$my_service = $this->input->post('my_service', TRUE);
+	$my_dispo = $this->input->post('my_dispo', TRUE);
+	$one_gm = $this->input->post('one_gm', TRUE);
+	$stp1 = $this->input->post('stp1', TRUE);
+	$census = array( 
+		    	  		   'my_service'=>$my_service,
+						   'my_dispo'=>$my_dispo,
+						   'one_gm'=>$one_gm,
+						   'stp1'=>$stp1
+		                );
+	$r_id = $this->input->post('eresident'); 
+	$rname = $this->input->post('rname'); 
+	$census['eresident'] = $r_id;
+	$census['rname'] = $rname;
+	$this->session->set_userdata($census);	
+	$this->load->view('list/res_reports');
+}
+//show resident report
+function show_res_report(){
+	$my_service = $this->input->post('my_service', TRUE);
+	$my_dispo = $this->input->post('my_dispo', TRUE);
+	$one_gm = $this->input->post('one_gm', TRUE);
+	$stp1 = $this->input->post('stp1', TRUE);
+	$census = array( 
+		    	  		   'my_service'=>$my_service,
+						   'my_dispo'=>$my_dispo,
+						   'one_gm'=>$one_gm,
+						   'stp1'=>$stp1
+		                );
+	$r_id = $this->input->get('rid', TRUE); 
+	$census['eresident'] = $r_id;
+	$this->session->set_userdata($census);	
+	$datea = $this->input->get('datea', TRUE);
+	$dateb = $this->input->get('dateb', TRUE);
+	$data['wcount'] = $this->Admission_model->count_res_adm($datea, $dateb, $r_id);
+	$data['comxcount'] = $this->Admission_model->count_res_comx($datea, $dateb, $r_id);
+	$data['preopcount'] = $this->Admission_model->count_res_preop($datea, $dateb, $r_id);
+	$data['mcount'] = $this->Micu_census_model->count_res_adm($datea, $dateb, $r_id);
+	$data['ecount'] = $this->Er_census_model->count_res_adm($datea, $dateb, $r_id);
+	$data['datea'] = $datea;
+	$data['dateb'] = $dateb;
+	$data['rid'] = $r_id;
+	$this->load->view('list/selected_res_report', $data);
+}
+
 
 function get_res_selected_admission(){
 	$my_service = $this->input->get('my_service', TRUE);

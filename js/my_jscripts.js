@@ -387,3 +387,31 @@ xmlhttp.open("GET","get_res_selected_admission?aid="+adm+"&my_service="+my_servi
 xmlhttp.send();
 }    
 
+function getresReport(my_datea, my_dateb, res, my_service, my_dispo, one_gm, stp1)
+{
+//validatePeriod(form);
+document.getElementById("selected_report").innerHTML="";
+if (res=="")
+  {
+  document.getElementById("selected_report").innerHTML="";
+  return;
+  } 
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+     document.getElementById("selected_report").innerHTML=xmlhttp.responseText;
+    }
+  }
+var rand = parseInt(Math.random()*999999999999);  
+xmlhttp.open("GET","show_res_report?datea="+my_datea.value+"&dateb="+my_dateb.value+"&rid="+res+"&my_service="+my_service+"&my_dispo="+my_dispo+"&one_gm="+one_gm+"&stp1="+stp1+"&rand="+rand ,true);
+xmlhttp.send();
+}    

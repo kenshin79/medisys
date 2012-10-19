@@ -176,9 +176,9 @@ foreach ($tox_list as $tox){
 	$tcount = $tcount + $count;
 	}	
 echo "<div align=\"center\"><h1>ICD/PCP Case Count for the Period ".$my_date1." to ".$my_date2.".</h1>";
-echo "<div align=\"center\"><h1>Summary Table By Disease Category</h1>";
+echo "<div align=\"center\"><h1><a name=\"top\" >Summary Table By Disease Category</a></h1>";
 echo "<table border = 1>";
-echo "<tr><th><a href=\"#pulmo\" ><a name=\"top\" >Pulmonary</a></a></th><td><font size=5>".$pcount."</font></td><th><a href=\"#ids\" >Infectious</a></th><td><font size=5>".$icount."</font></td><th><a href=\"#gastro\" >Gastroenterology</a></th><td><font size=5>".$gcount."</font></td><th><a href=\"#cardio\" >Cardiology</th></a><td><font size=5>".$ccount."</font></td><th><a href=\"#endo\" >Endocrinology</a></th><td><font size=5>".$ecount."</font></td></tr>";
+echo "<tr><th><a href=\"#pulmo\" >Pulmonary</a></th><td><font size=5>".$pcount."</font></td><th><a href=\"#ids\" >Infectious</a></th><td><font size=5>".$icount."</font></td><th><a href=\"#gastro\" >Gastroenterology</a></th><td><font size=5>".$gcount."</font></td><th><a href=\"#cardio\" >Cardiology</th></a><td><font size=5>".$ccount."</font></td><th><a href=\"#endo\" >Endocrinology</a></th><td><font size=5>".$ecount."</font></td></tr>";
 echo "<tr><th><a href=\"#rheuma\" >Rheumatology</a></th><td><font size=5>".$rcount."</font></td><th><a href=\"#onco\"> Oncology</a></th><td><font size=5>".$ocount."</font></td><th><a href=\"#nephro\" >Nephrology</a></th><td><font size=5>".$ncount."</font></td><th><a href=\"#allergy\" >Allergy</a></th><td><font size=5>".$acount."</font></td><th><a href=\"#derma\" >Dermatology</a></th><td><font size=5>".$dcount."</font></td></tr>";
 echo "<th><a href=\"#hema\" >Hematology</a></th><td><font size=5>".$hcount."</font></td><th><a href=\"#neuro\" >Neurology</a></th><td><font size=5>".$necount."</font></td><th><a href=\"#tox\" >Toxicology</a></th><td><font size=5>".$tcount."</font></td></tr>";
 echo "</table></div>";

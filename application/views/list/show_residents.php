@@ -78,7 +78,12 @@ echo "<div align=\"center\"><font size=\"4\">Note: Only 'Active' Residents will 
 				        echo form_open('census/resident_census');
 				        $label = array('name'=>"", 'value'=>"Admissions", 'style'=>"font-size:large; color:red; height:30px; width:250px;");
 				        $vars = array('eresident'=>$row->r_id, 'my_service'=>"All", 'my_dispo'=>$my_dispo, 'one_gm'=>"res", 'stp1'=>$stp1);
-				        make_buttons('', $label, $vars, "center", "");			
+				        make_buttons('', $label, $vars, "center", "");	
+						//get reports		
+						echo form_open('census/get_res_report');
+						$label = array('name'=>"", 'value'=>"Reports", 'style'=>"font-size:large; color:red; height:30px; width:250px;");
+						$vars = array('rname'=>revert_form_input($row->r_name), 'eresident'=>$row->r_id, 'my_service'=>"All", 'my_dispo'=>$my_dispo, 'one_gm'=>"res", 'stp1'=>$stp1);
+						make_buttons('', $label, $vars, "center", "");
 						echo "</td></tr>";
 						
 		         //}

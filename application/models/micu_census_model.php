@@ -99,7 +99,12 @@ function get_one_admission($aid){
          $query = $this->db->get('micu_census');
          return $query->result();
 }
-
+//count resident admission data
+function count_res_adm($datea, $dateb, $r_id){
+	$sql = "SELECT COUNT(IF(dispo = 'Admitted', 1, NULL)) AS admitted, COUNT(IF(dispo = 'Discharged', 1, NULL)) AS discharged, COUNT(IF(dispo = 'Mortality', 1, NULL)) as mortality, COUNT(IF(dispo = 'HAMA', 1, NULL)) as hama, COUNT(IF(dispo = 'TOS', 1, NULL)) as tos, COUNT(IF(dispo = 'Absconded', 1, NULL)) as absconded, COUNT(IF(dispo = 'Admitted to Wards', 1, NULL)) as award FROM micu_census WHERE (r_id = ? OR sr_id = ?) AND (date_in >= ? AND date_in <= ?)";
+	$query = $this->db->query($sql, array($r_id, $r_id, $datea, $dateb));
+	return $query->result();
+}
       
 //get forms label data
 // #form : 0 - cnotes, 1 - abstract, 2 - d-sumary, 3 - home meds, 4 - sagip, 5 - lab1, 6 - lab2, 7 - pcp  
@@ -184,7 +189,7 @@ function edit_dispo_date($aid, $ddate, $dispo, $plist){
       //get micu admissions
 function get_micu_census($disp){
 	      		 //$this->db->select('micu_id, p_id, sr_id, r_id, sic, date_in, date_out, source, service, dispo, bed, plist, meds, notes, pcpdx, refs, erefs');
-				 $this->db->select('micu_id, p_id, r_id, sic, date_in, date_out, bed, dispo, service');
+				 $this->db->select('micu_id, p_id, r_id, sic, sr_id, date_in, date_out, bed, dispo, service, plist, meds, notes, refs, erefs');
 		         $this->db->where('dispo', $disp);
         	  	 if (!strcmp($disp, "Admitted"))
 			 	$this->db->order_by('bed asc');
@@ -1013,6 +1018,11 @@ function get_micudata_by_id($aid){
                      $data = date('m/d/Y h:i:s a', time()).", IP Add: ".$this->session->userdata('ip_address').", user:".$_SERVER['PHP_AUTH_USER'].", task: edit home id#".$aid."\r\n"; 
                      fwrite($handle, $data);                
        }
+	  function count_res_pcpdx($date1, $date2, $dx, $rid){
+			 $sql = "SELECT micu_id FROM micu_census WHERE (date_in >= ? AND date_in <= ?) AND (r_id = ? OR sr_id = ?) AND pcpdx LIKE ? "; 
+	         $query = $this->db->query($sql, array($date1, $date2, $rid, $rid, "%".$dx."%"));
+			 return $query->num_rows();
+	  }	  
        function count_pcpdx($date1, $date2, $dx){
 	         $datewhere = array(
 		  			   'date_in >=' => $date1,

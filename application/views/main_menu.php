@@ -2,13 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
-    <meta name="created" content="Sun, 25 Sep 2011 01:41:22 GMT">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
     <title>Main Menu - MediSys</title>
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery_ui.css" />
    	<script type="text/javascript" src="/medisys/js/jquery.js"></script>
+   	<script type="text/javascript" src="/medisys/js/jquery_ui.js"></script>	
    	<script type="text/javascript" src="/medisys/js/my_jscripts.js"></script>
 	<script>
 		$(document).ready(function(){
@@ -29,13 +27,13 @@
 	    });
 
 
-        </script>    <!--[if IE]>
+        </script>    
+	<!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
 <?php
-
 //authorize user with uname and pword
 $auth_list = $this->Users_model->get_all_users();
 $csess = get_cookie('ci_session');
@@ -71,8 +69,7 @@ echo "<font size=\"7\" ><div align=\"center\" onmouseover = \"showCredits()\">Me
 echo "<div align=\"center\" id = \"version\" onclick = \"showInfo2()\">version 2.1!(April 2012)</div>";
 echo "<div align=\"center\" style = \"color:red; font-size:large; font-weight:bold;\">If you have any feedback, comments and suggestions, please submit them <a href=\"/medisys/webpage/addcomment.html\" target=\"_blank\">here</a>.</div>";
 echo "<div align=\"center\" style = \"color:red; font-size:large; font-weight:bold;\">To view user feedback, click <a href=\"/medisys/webpage/view_fback.html\" target=\"_blank\">here</a>.</div>";
-$subspec = array(110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120);
-if (!in_array($uservice, $subspec)){
+
 //bulletin board
 echo "<div style=\"border:2px solid black; position:relative;; left:50%; margin-left:-400px; margin-top:20px;width:800px; height:182px;\">";
 echo "<div class = \"btab\" onclick = \"showSysNotes(1)\" style=\"text-align:center; font-weight:bold; position:relative; top:0%; left:50%; margin-left:-400px; width:200px; height:30px; background-color:#F0E68C; color:red;\">Sysadmin Bulletin</div>";
@@ -85,7 +82,7 @@ echo "</div>";
 echo "<div style=\"position:relative; top:0%; margin-top:20px\">";
 echo "<div align=\"center\"><h3 style=\"color:red;\">Click on bulb to submit answers to quiz. <a href=\"/medisys/webpage/answerSubmit.html\" target=\"_blank\"><img src = \"/medisys/img/lbulb.jpeg\" width=\"20\" height=\"20\"</a></h3></div>";
 echo "<div align=\"center\" ><a  style=\"font-weight:bold; color:red; font-size:large;\" href = \"/medisys/webpage/gmservices.html\" target = \"_blank\">Gen Med Roster for the Month</a></div>";
-}
+
 //menu table
 echo "<table class=\"center\" >";
 echo "<tr><th><h1>MAIN MENU</h1></th></tr>";
@@ -194,41 +191,22 @@ if (($uservice == 99) || ($uservice == 0))
     echo "(Update Pre-operative Census)</td></tr>";
     echo form_close();
 }
-/*
-//Subspec
-if (($uservice >= 110) && ($uservice !=999)){
-	echo "<tr><td>".form_open('menu');
-	switch ($uservice){
-		case 110:
-			$sub = 'Rheuma';
-			break;
-		case 111:
-			$sub = 'IDS';
-			break;
 
-	}
-	$label = array ('class'=>'menub', 'name'=>'main_showsub', 'value'=>$sub);
-	$vars = array('my_service'=>"All", 'my_dispo'=>"", 'one_gm'=>"px", 'stp1'=>"");
-	make_buttons("", $label, $vars, "center", "");
-	echo "(".$sub." Interface)</td></tr>";
-	echo form_close();
-}
-*/
 //Manage Admissions
 echo "<tr><td>".form_open('menu');
 $vars = array('my_service'=>'', 'my_dispo'=>'', 'one_gm'=>'n', 'stp1'=>'');
 $label = array ('class'=>'menub', 'name'=>'main_showa', 'value'=>'View Reports');
 make_buttons("", $label, $vars, "", "");	
-echo "(View Admissions/View Problem List-Medications)</td></tr>";
+echo "(Create Reports/Graphs)</td></tr>";
 echo form_close();
 
 //Manage Residents
-if (($uservice == 11) || ($uservice == 22) || ($uservice == 33) || ($uservice == 44) || ($uservice == 55) || ($uservice == 66) || ($uservice == 77) || ($uservice == 88) || ($uservice == 0)){
+if (($uservice == 11) || ($uservice == 22) || ($uservice == 33) || ($uservice == 44) || ($uservice == 55) || ($uservice == 66) || ($uservice == 77) || ($uservice == 88) || ($uservice == 0) || ($uservice == 9)){
      echo "<tr><td>".form_open('menu');
      $label = array('class'=>'menub', 'name'=>'main_showr', 'value'=>'Manage Residents');
      $vars = array('my_service'=>"All", 'my_dispo'=>"", 'one_gm'=>"res", 'stp1'=>"");	
      make_buttons("", $label, $vars, "center", "");	
-     echo "(Search Residents/Add-Edit Resident Info/View Resident Admissions)</td></tr>";
+     echo "(Add-Edit Resident Info/View Resident Admissions)</td></tr>";
      echo form_close();
      
 }
@@ -239,7 +217,7 @@ if (($uservice!=9) && ($uservice!=999))
     $label = array ('class'=>'menub', 'name'=>'main_showp', 'value'=>'Manage Patients');	
     $vars = array('my_service'=>"All", 'my_dispo'=>"", 'one_gm'=>"px", 'stp1'=>"");	
     make_buttons("", $label, $vars, "center", "");	
-    echo "(Search Patients/Edit Patient Info/View Patient Admissions/Re-Admit Patient)</td></tr>";
+    echo "(Edit Patient Info/View Patient Admissions)</td></tr>";
     echo form_close();
 }
 

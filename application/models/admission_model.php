@@ -100,7 +100,24 @@ function get_ward_bed_admission($ward, $bed, $dispo, $date1, $date2){
 	$query = $this->db->get('admissions');
 	return $query->result();
 }
-
+//count resident admission data
+function count_res_adm($datea, $dateb, $r_id){
+	$sql = "SELECT COUNT(IF(dispo = 'Admitted', 1, NULL)) AS admitted, COUNT(IF(dispo = 'Discharged', 1, NULL)) AS discharged, COUNT(IF(dispo = 'Mortality', 1, NULL)) as mortality, COUNT(IF(dispo = 'HAMA', 1, NULL)) as hama, COUNT(IF(dispo = 'TOS', 1, NULL)) as tos, COUNT(IF(dispo = 'Absconded', 1, NULL)) as absconded, COUNT(IF(dispo = 'Admitted to MICU', 1, NULL)) as amicu FROM admissions WHERE (r_id = ? OR sr_id = ?) AND (date_in >= ? AND date_in <= ?) AND type = 'Primary'";
+	$query = $this->db->query($sql, array($r_id, $r_id, $datea, $dateb));
+	return $query->result();
+}
+//count resident co-mx data
+function count_res_comx($datea, $dateb, $r_id){
+	$sql = "SELECT COUNT(IF(dispo = 'Admitted', 1, NULL)) AS admitted, COUNT(IF(dispo = 'Discharged', 1, NULL)) AS discharged, COUNT(IF(dispo = 'Mortality', 1, NULL)) as mortality, COUNT(IF(dispo = 'HAMA', 1, NULL)) as hama, COUNT(IF(dispo = 'TOS', 1, NULL)) as tos, COUNT(IF(dispo = 'Absconded', 1, NULL)) as absconded, COUNT(IF(dispo = 'Admitted to MICU', 1, NULL)) as amicu FROM admissions WHERE (r_id = ? OR sr_id = ?) AND (date_in >= ? AND date_in <= ?) AND type = 'Co-managed'";
+	$query = $this->db->query($sql, array($r_id, $r_id, $datea, $dateb));
+	return $query->result();
+}
+//count resident preop data
+function count_res_preop($datea, $dateb, $r_id){
+	$sql = "SELECT COUNT(IF(dispo = 'Admitted', 1, NULL)) AS admitted, COUNT(IF(dispo = 'Discharged', 1, NULL)) AS discharged, COUNT(IF(dispo = 'Mortality', 1, NULL)) as mortality, COUNT(IF(dispo = 'HAMA', 1, NULL)) as hama, COUNT(IF(dispo = 'TOS', 1, NULL)) as tos, COUNT(IF(dispo = 'Absconded', 1, NULL)) as absconded, COUNT(IF(dispo = 'Admitted to MICU', 1, NULL)) as amicu FROM admissions WHERE (r_id = ? OR sr_id = ?) AND (date_in >= ? AND date_in <= ?) AND type = 'Pre-operative'";
+	$query = $this->db->query($sql, array($r_id, $r_id, $datea, $dateb));
+	return $query->result();
+}
       
 //get forms label data
 // #form : 0 - cnotes, 1 - abstract, 2 - d-sumary, 3 - home meds, 4 - sagip, 5 - lab1, 6 - lab2, 7 - pcp  
@@ -917,6 +934,12 @@ function get_admissiondata_by_id($aid){
 	return $query->result(); 
 }		  
 
+	  function count_res_pcpdx($date1, $date2, $dx, $rid){
+			 $sql = "SELECT a_id FROM admissions WHERE (date_in >= ? AND date_in <= ?) AND (r_id = ? OR sr_id = ?) AND pcpdx LIKE ?"; 
+	         $query = $this->db->query($sql, array($date1, $date2, $rid, $rid, "%".$dx."%"));
+			 return $query->num_rows();
+	  }	  
+	  
 	  
       function count_pcpdx($date1, $date2, $dx){
 	         $datewhere = array(

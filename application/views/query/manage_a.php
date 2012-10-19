@@ -273,7 +273,6 @@ echo form_submit($gm,'', $js).form_close().form_fieldset_close()."</td>";
 
 echo "</td></tr>";
 
-
 echo "</table></div>";
 ?>
   </body>
