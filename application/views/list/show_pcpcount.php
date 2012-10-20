@@ -2,15 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
-    <meta name="created" content="Mon, 24 Oct 2011 14:21:25 GMT">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title>Medisina - ICD/PCP Count</title>
+    <title>Medisys - ICD/PCP Count</title>
     <link rel="stylesheet" type="text/css" href="/medisys/css/menu.css" />
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	
   </head>
   <body>
 <?php
@@ -57,304 +54,406 @@ $hcount = 0;
 $necount = 0;
 $gcount = 0;
 $tcount = 0;
-//count cases
-foreach ($pulmo_list as $pulmo){
-        if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $pulmo);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $pulmo);
-        elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $pulmo); 
-	 $pcount = $pcount + $count;
-	}		
-foreach ($ids_list as $ids){
-        if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $ids);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $ids);
-        elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $ids); 
-	 $icount = $icount + $count;
-	}			
-foreach ($gastro_list as $gastro){
-        if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $gastro);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $gastro);
-        elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $gastro); 
-	$gcount = $gcount + $count;
-	}
-foreach ($cardio_list as $cardio){
-        if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $cardio);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $cardio);
-        elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $cardio); 
-	$ccount = $ccount + $count;
-	}	
-foreach ($endo_list as $endo){
-        if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $endo);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $endo);
-        elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $endo); 
-	$ecount = $ecount + $count;
-	}	
-foreach ($rheuma_list as $rheuma){
-        if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $rheuma);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $rheuma);
-        elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $rheuma); 
-	$rcount = $rcount + $count;
-	}	
-foreach ($onco_list as $onco){
-        if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $onco);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $onco);
-        elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $onco); 
-	$ocount = $ocount + $count;
-	}
-foreach ($nephro_list as $nephro){
-        if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $nephro);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $nephro);
-        elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $nephro); 
-	$ncount = $ncount + $count;
-	}
-foreach ($allergy_list as $allergy){
-        if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $allergy);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $allergy);
-        elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $allergy); 
-	$acount = $acount + $count;
-	}
-foreach ($derma_list as $derma){
-        if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $derma);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $derma);
-        elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $derma); 
-	$dcount = $dcount + $count;
-	}	
-foreach ($hema_list as $hema){
-        if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $hema);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $hema);
-        elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $hema); 
-	$hcount = $hcount + $count;
-	}
-foreach ($neuro_list as $neuro){
-        if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $neuro);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $neuro);
-        elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $neuro); 
-	$necount = $necount + $count;
-	}
-foreach ($tox_list as $tox){
-        if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $tox);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $tox);
-        elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $tox); 
-	$tcount = $tcount + $count;
-	}	
 echo "<div align=\"center\"><h1>ICD/PCP Case Count for the Period ".$my_date1." to ".$my_date2.".</h1>";
 echo "<div align=\"center\"><h1><a name=\"top\" >Summary Table By Disease Category</a></h1>";
 echo "<table border = 1>";
-echo "<tr><th><a href=\"#pulmo\" >Pulmonary</a></th><td><font size=5>".$pcount."</font></td><th><a href=\"#ids\" >Infectious</a></th><td><font size=5>".$icount."</font></td><th><a href=\"#gastro\" >Gastroenterology</a></th><td><font size=5>".$gcount."</font></td><th><a href=\"#cardio\" >Cardiology</th></a><td><font size=5>".$ccount."</font></td><th><a href=\"#endo\" >Endocrinology</a></th><td><font size=5>".$ecount."</font></td></tr>";
-echo "<tr><th><a href=\"#rheuma\" >Rheumatology</a></th><td><font size=5>".$rcount."</font></td><th><a href=\"#onco\"> Oncology</a></th><td><font size=5>".$ocount."</font></td><th><a href=\"#nephro\" >Nephrology</a></th><td><font size=5>".$ncount."</font></td><th><a href=\"#allergy\" >Allergy</a></th><td><font size=5>".$acount."</font></td><th><a href=\"#derma\" >Dermatology</a></th><td><font size=5>".$dcount."</font></td></tr>";
-echo "<th><a href=\"#hema\" >Hematology</a></th><td><font size=5>".$hcount."</font></td><th><a href=\"#neuro\" >Neurology</a></th><td><font size=5>".$necount."</font></td><th><a href=\"#tox\" >Toxicology</a></th><td><font size=5>".$tcount."</font></td></tr>";
+echo "<tr><th><a href=\"#pulmo\" >Pulmonary</a></th><th><a href=\"#ids\" >Infectious</a></th><th><a href=\"#gastro\" >Gastroenterology</a></th><th><a href=\"#cardio\" >Cardiology</th></a><th><a href=\"#endo\" >Endocrinology</a></th></tr>";
+echo "<tr><th><a href=\"#rheuma\" >Rheumatology</a></th><th><a href=\"#onco\"> Oncology</a></th><th><a href=\"#nephro\" >Nephrology</a></th><th><a href=\"#allergy\" >Allergy</a></th><th><a href=\"#derma\" >Dermatology</a></th></tr>";
+echo "<th><a href=\"#hema\" >Hematology</a></th><th><a href=\"#neuro\" >Neurology</a></th><th><a href=\"#tox\" >Toxicology</a></th></tr>";
 echo "</table></div>";
 
 echo "<br/>";
 
-echo "<div align=\"center\" ><div style=\"float:left\"><table><td><table><tr><th><a name=\"pulmo\"></a> Pulmonary<div align=\"right\"><a href=\"#top\" >Top</a></div></th>";
+echo "<div style=\"float:left\"><table width = \"1000\"><tr><th><a name=\"pulmo\"></a> Pulmonary<div align=\"right\"><a href=\"#top\" >Top</a></div></th><th>Total</th><th>Mortality</th><th>Mort%</th><th>Referred</th><th>Ref%</th><th>Ave HD</th></tr>";
 foreach ($pulmo_list as $pulmo){
         if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $pulmo);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $pulmo);
+			$count = $this->Admission_model->count_all_pcpdx($my_date1, $my_date2, $pulmo, "Pulmo");
+		elseif(!strcmp($area, 'er'))
+			$count = $this->Er_census_model->count_all_pcpdx($my_date1, $my_date2, $pulmo, "Pulmo");
         elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $pulmo); 
-	 echo "<tr><td>".$pulmo."</td><td><font size=5>".$count."</font></td></tr>";
-	
+            $count = $this->Micu_census_model->count_all_pcpdx($my_date1, $my_date2, $pulmo, "Pulmo");
+		foreach($count as $row){	
+			echo "<tr><td>".$pulmo."</td><td>".$row->numrows."<td>".$row->mortality."</td><td>";
+			if ($row->numrows)
+				echo round($row->mortality/$row->numrows*100, 2);
+			else
+				echo "0";
+			echo "</td><td>".$row->referred."</td><td>";
+			if ($row->numrows)
+				echo round($row->referred/$row->numrows*100, 2);
+			else 
+				echo "0";
+			echo "</td><td>";
+			if ($row->numrows)
+				echo round($row->totaldays/$row->numrows, 2);
+			else
+				echo "0";
+			echo "</td></tr>";
+		}
+	$pcount = $pcount + $row->numrows;		
 	}		
-echo "<tr><th class=\"totals\">Pulmonary Total: ".$pcount."</th></tr>";	
-echo "<tr><th><a name=\"ids\">Infectious</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th>";
+echo "<tr><th class=\"totals\" colspan = 7>Pulmonary Total: ".$pcount."</th></tr>";	
+echo "<tr><th><a name=\"ids\">Infectious</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th><th>Total</th><th>Mortality</th><th>Mort%</th><th>Referred</th><th>Ref%</th><th>Ave HD</th></tr>";
 foreach ($ids_list as $ids){
         if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $ids);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $ids);
+			$count = $this->Admission_model->count_all_pcpdx($my_date1, $my_date2, $ids, "IDS");
+		elseif(!strcmp($area, 'er'))
+			$count = $this->Er_census_model->count_all_pcpdx($my_date1, $my_date2, $ids, "IDS");
         elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $ids); 
-	    echo "<tr><td>".$ids."</td><td><font size=5>".$count."</font></td></tr>";
-		
+            $count = $this->Micu_census_model->count_all_pcpdx($my_date1, $my_date2, $ids, "IDS");
+		foreach($count as $row){	
+			echo "<tr><td>".$ids."</td><td>".$row->numrows."<td>".$row->mortality."</td><td>";
+			if ($row->numrows)
+				echo round($row->mortality/$row->numrows*100, 2);
+			else
+				echo "0";
+			echo "</td><td>".$row->referred."</td><td>";
+			if ($row->numrows)
+				echo round($row->referred/$row->numrows*100, 2);
+			else 
+				echo "0";
+			echo "</td><td>";
+			if ($row->numrows)
+				echo round($row->totaldays/$row->numrows, 2);
+			else
+				echo "0";
+			echo "</td></tr>";
+		}	
+		$icount = $icount + $row->numrows;
 	}			
-echo "<tr><th class=\"totals\">Infectious Total: ".$icount."</th></tr>";	
+echo "<tr><th class=\"totals\" colspan = 7>Infectious Total: ".$icount."</th></tr>";	
 				
-echo "<tr><th><a name=\"gastro\">Gastroenterology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th>";
+echo "<tr><th><a name=\"gastro\">Gastroenterology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th><th>Total</th><th>Mortality</th><th>Mort%</th><th>Referred</th><th>Ref%</th><th>Ave HD</th></tr>";
 foreach ($gastro_list as $gastro){
         if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $gastro);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $gastro);
+			$count = $this->Admission_model->count_all_pcpdx($my_date1, $my_date2, $gastro, "GI");
+		elseif(!strcmp($area, 'er'))
+			$count = $this->Er_census_model->count_all_pcpdx($my_date1, $my_date2, $gastro, "GI");
         elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $gastro); 
-	    echo "<tr><td>".$gastro."</td><td><font size=5>".$count."</font></td></tr>";
-		
+            $count = $this->Micu_census_model->count_all_pcpdx($my_date1, $my_date2, $gastro, "GI");
+		foreach($count as $row){	
+			echo "<tr><td>".$gastro."</td><td>".$row->numrows."<td>".$row->mortality."</td><td>";
+			if ($row->numrows)
+				echo round($row->mortality/$row->numrows*100, 2);
+			else
+				echo "0";
+			echo "</td><td>".$row->referred."</td><td>";
+			if ($row->numrows)
+				echo round($row->referred/$row->numrows*100, 2);
+			else 
+				echo "0";
+			echo "</td><td>";
+			if ($row->numrows)
+				echo round($row->totaldays/$row->numrows, 2);
+			else
+				echo "0";
+			echo "</td></tr>";
+		}	
+		$gcount = $gcount + $row->numrows;
 	}				
-echo "<tr><th class=\"totals\">Gastroenterology Total: ".$gcount."</th></tr>";	
-	
-	
-echo "</table></td>";
-echo "<td>";
-echo "<table><tr><th><a name=\"cardio\">Cardiology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th></tr>";
+echo "<tr><th class=\"totals\" colspan = 7>Gastroenterology Total: ".$gcount."</th></tr>";		
+echo "</table></div>";
+//next table
+echo "<div style=\"float:left\"><table width = \"1000\"><tr><th><a name=\"cardio\">Cardiology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th><th>Total</th><th>Mortality</th><th>Mort%</th><th>Referred</th><th>Ref%</th><th>Ave HD</th></tr>";
 foreach ($cardio_list as $cardio){
         if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $cardio);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $cardio);
+			$count = $this->Admission_model->count_all_pcpdx($my_date1, $my_date2, $cardio, "Cardio");
+		elseif(!strcmp($area, 'er'))
+			$count = $this->Er_census_model->count_all_pcpdx($my_date1, $my_date2, $cardio, "Cardio");
         elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $cardio); 
-	    echo "<tr><td>".$cardio."</td><td><font size=5>".$count."</font></td></tr>";
-		
+            $count = $this->Micu_census_model->count_all_pcpdx($my_date1, $my_date2, $cardio, "Cardio");
+		foreach($count as $row){	
+			echo "<tr><td>".$cardio."</td><td>".$row->numrows."<td>".$row->mortality."</td><td>";
+			if ($row->numrows)
+				echo round($row->mortality/$row->numrows*100, 2);
+			else
+				echo "0";
+			echo "</td><td>".$row->referred."</td><td>";
+			if ($row->numrows)
+				echo round($row->referred/$row->numrows*100, 2);
+			else 
+				echo "0";
+			echo "</td><td>";
+			if ($row->numrows)
+				echo round($row->totaldays/$row->numrows, 2);
+			else
+				echo "0";
+			echo "</td></tr>";
+		}	
+		$ccount = $ccount + $row->numrows;
 	}	
-echo "<tr><th class=\"totals\">Cardiology Total: ".$ccount."</th></tr>";		
-echo "<tr><th><a name=\"endo\">Endocrinology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th>";
+echo "<tr><th class=\"totals\" colspan = 7>Cardiology Total: ".$ccount."</th></tr>";		
+echo "<tr><th><a name=\"endo\">Endocrinology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th><th>Total</th><th>Mortality</th><th>Mort%</th><th>Referred</th><th>Ref%</th><th>Ave HD</th></tr>";
 foreach ($endo_list as $endo){
         if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $endo);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $endo);
+			$count = $this->Admission_model->count_all_pcpdx($my_date1, $my_date2, $endo, "Endo");
+		elseif(!strcmp($area, 'er'))
+			$count = $this->Er_census_model->count_all_pcpdx($my_date1, $my_date2, $endo, "Endo");
         elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $endo); 
-	    echo "<tr><td>".$endo."</td><td><font size=5>".$count."</font></td></tr>";
-		
+            $count = $this->Micu_census_model->count_all_pcpdx($my_date1, $my_date2, $endo, "Endo");
+		foreach($count as $row){	
+			echo "<tr><td>".$endo."</td><td>".$row->numrows."<td>".$row->mortality."</td><td>";
+			if ($row->numrows)
+				echo round($row->mortality/$row->numrows*100, 2);
+			else
+				echo "0";
+			echo "</td><td>".$row->referred."</td><td>";
+			if ($row->numrows)
+				echo round($row->referred/$row->numrows*100, 2);
+			else 
+				echo "0";
+			echo "</td><td>";
+			if ($row->numrows)
+				echo round($row->totaldays/$row->numrows, 2);
+			else
+				echo "0";
+			echo "</td></tr>";
+		}	
+		$ecount = $ecount + $row->numrows;
 	}		
-echo "<tr><th class=\"totals\">Endocrinology Total: ".$ecount."</th></tr>";		
-echo "<tr><th><a name=\"rheuma\">Rheumatology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th></tr>";
+echo "<tr><th class=\"totals\" colspan = 7>Endocrinology Total: ".$ecount."</th></tr>";		
+echo "<tr><th><a name=\"rheuma\">Rheumatology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th><th>Total</th><th>Mortality</th><th>Mort%</th><th>Referred</th><th>Ref%</th><th>Ave HD</th></tr>";
 foreach ($rheuma_list as $rheuma){
         if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $rheuma);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $rheuma);
+			$count = $this->Admission_model->count_all_pcpdx($my_date1, $my_date2, $rheuma, "Rheuma");
+		elseif(!strcmp($area, 'er'))
+			$count = $this->Er_census_model->count_all_pcpdx($my_date1, $my_date2, $rheuma, "Rheuma");
         elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $rheuma); 
-	    echo "<tr><td>".$rheuma."</td><td><font size=5>".$count."</font></td></tr>";
-		
+            $count = $this->Micu_census_model->count_all_pcpdx($my_date1, $my_date2, $rheuma, "Rheuma");
+		foreach($count as $row){	
+			echo "<tr><td>".$rheuma."</td><td>".$row->numrows."<td>".$row->mortality."</td><td>";
+			if ($row->numrows)
+				echo round($row->mortality/$row->numrows*100, 2);
+			else
+				echo "0";
+			echo "</td><td>".$row->referred."</td><td>";
+			if ($row->numrows)
+				echo round($row->referred/$row->numrows*100, 2);
+			else 
+				echo "0";
+			echo "</td><td>";
+			if ($row->numrows)
+				echo round($row->totaldays/$row->numrows, 2);
+			else
+				echo "0";
+			echo "</td></tr>";
+		}	
+		$rcount = $rcount + $row->numrows;
 	}			
-echo "<tr><th class=\"totals\">Rheumatology Total: ".$rcount."</th></tr>";		
-echo "<tr><th><a name=\"onco\">Oncology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th></tr>";
+echo "<tr><th class=\"totals\" colspan = 7>Rheumatology Total: ".$rcount."</th></tr>";		
+echo "<tr><th><a name=\"onco\">Oncology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th><th>Total</th><th>Mortality</th><th>Mort%</th><th>Referred</th><th>Ref%</th><th>Ave HD</th></tr>";
 foreach ($onco_list as $onco){
         if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $onco);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $onco);
+			$count = $this->Admission_model->count_all_pcpdx($my_date1, $my_date2, $onco, "Onco");
+		elseif(!strcmp($area, 'er'))
+			$count = $this->Er_census_model->count_all_pcpdx($my_date1, $my_date2, $onco, "Onco");
         elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $onco); 
-	    echo "<tr><td>".$onco."</td><td><font size=5>".$count."</font></td></tr>";
-		
+            $count = $this->Micu_census_model->count_all_pcpdx($my_date1, $my_date2, $onco, "Onco");
+		foreach($count as $row){	
+			echo "<tr><td>".$onco."</td><td>".$row->numrows."<td>".$row->mortality."</td><td>";
+			if ($row->numrows)
+				echo round($row->mortality/$row->numrows*100, 2);
+			else
+				echo "0";
+			echo "</td><td>".$row->referred."</td><td>";
+			if ($row->numrows)
+				echo round($row->referred/$row->numrows*100, 2);
+			else 
+				echo "0";
+			echo "</td><td>";
+			if ($row->numrows)
+				echo round($row->totaldays/$row->numrows, 2);
+			else
+				echo "0";
+			echo "</td></tr>";
+		}	
+		$ocount = $ocount + $row->numrows;
 	}
-echo "<tr><th class=\"totals\">Oncology Total: ".$ocount."</th></tr>";						
-echo "</table></td>";
+echo "<tr><th class=\"totals\" colspan = 7>Oncology Total: ".$ocount."</th></tr>";						
+echo "</table></div>";
 
-echo "<td>";
-echo "<table><tr><th><a name=\"nephro\">Nephrology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th></tr>";
+//next table
+echo "<div style=\"float:left\"><table width = \"1000\"><tr><th><a name=\"nephro\">Nephrology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th><th>Total</th><th>Mortality</th><th>Mort%</th><th>Referred</th><th>Ref%</th><th>Ave HD</th></tr>";
 foreach ($nephro_list as $nephro){
         if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $nephro);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $nephro);
+			$count = $this->Admission_model->count_all_pcpdx($my_date1, $my_date2, $nephro, "Nephro");
+		elseif(!strcmp($area, 'er'))
+			$count = $this->Er_census_model->count_all_pcpdx($my_date1, $my_date2, $nephro, "Nephro");
         elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $nephro); 
-	    echo "<tr><td>".$nephro."</td><td><font size=5>".$count."</font></td></tr>";
-		
+            $count = $this->Micu_census_model->count_all_pcpdx($my_date1, $my_date2, $nephro, "Nephro");
+		foreach($count as $row){	
+			echo "<tr><td>".$nephro."</td><td>".$row->numrows."<td>".$row->mortality."</td><td>";
+			if ($row->numrows)
+				echo round($row->mortality/$row->numrows*100, 2);
+			else
+				echo "0";
+			echo "</td><td>".$row->referred."</td><td>";
+			if ($row->numrows)
+				echo round($row->referred/$row->numrows*100, 2);
+			else 
+				echo "0";
+			echo "</td><td>";
+			if ($row->numrows)
+				echo round($row->totaldays/$row->numrows, 2);
+			else
+				echo "0";
+			echo "</td></tr>";
+		}	
+		$ncount = $ncount + $row->numrows;
 	}	
-echo "<tr><th class=\"totals\">Nephrology Total: ".$ncount."</th></tr>";			
-echo "<tr><th><a name=\"allergy\">Allergy</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th></tr>";
+echo "<tr><th class=\"totals\" colspan = 7>Nephrology Total: ".$ncount."</th></tr>";			
+echo "<tr><th><a name=\"allergy\">Allergy</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th><th>Total</th><th>Mortality</th><th>Mort%</th><th>Referred</th><th>Ref%</th><th>Ave HD</th></tr>";
 foreach ($allergy_list as $allergy){
         if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $allergy);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $allergy);
+			$count = $this->Admission_model->count_all_pcpdx($my_date1, $my_date2, $allergy, "Allergy");
+		elseif(!strcmp($area, 'er'))
+			$count = $this->Er_census_model->count_all_pcpdx($my_date1, $my_date2, $allergy, "Allergy");
         elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $allergy); 
-	    echo "<tr><td>".$allergy."</td><td><font size=5>".$count."</font></td></tr>";
-		
+            $count = $this->Micu_census_model->count_all_pcpdx($my_date1, $my_date2, $allergy, "Allergy");
+		foreach($count as $row){	
+			echo "<tr><td>".$allergy."</td><td>".$row->numrows."<td>".$row->mortality."</td><td>";
+			if ($row->numrows)
+				echo round($row->mortality/$row->numrows*100, 2);
+			else
+				echo "0";
+			echo "</td><td>".$row->referred."</td><td>";
+			if ($row->numrows)
+				echo round($row->referred/$row->numrows*100, 2);
+			else 
+				echo "0";
+			echo "</td><td>";
+			if ($row->numrows)
+				echo round($row->totaldays/$row->numrows, 2);
+			else
+				echo "0";
+			echo "</td></tr>";
+		}	
+		$acount = $acount + $row->numrows;
 	}			
-echo "<tr><th class=\"totals\">Allergy Total: ".$acount."</th></tr>";		
-echo "<tr><th><a name=\"derma\">Dermatology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th></tr>";
+echo "<tr><th class=\"totals\" colspan = 7>Allergy Total: ".$acount."</th></tr>";		
+echo "<tr><th><a name=\"derma\">Dermatology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th><th>Total</th><th>Mortality</th><th>Mort%</th><th>Referred</th><th>Ref%</th><th>Ave HD</th></tr>";
 foreach ($derma_list as $derma){
         if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $derma);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $derma);
+			$count = $this->Admission_model->count_all_pcpdx($my_date1, $my_date2, $derma, "Derma");
+		elseif(!strcmp($area, 'er'))
+			$count = $this->Er_census_model->count_all_pcpdx($my_date1, $my_date2, $derma, "Derma");
         elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $derma); 
-	    echo "<tr><td>".$derma."</td><td><font size=5>".$count."</font></td></tr>";
-		
+            $count = $this->Micu_census_model->count_all_pcpdx($my_date1, $my_date2, $derma, "Derma");
+		foreach($count as $row){	
+			echo "<tr><td>".$derma."</td><td>".$row->numrows."<td>".$row->mortality."</td><td>";
+			if ($row->numrows)
+				echo round($row->mortality/$row->numrows*100, 2);
+			else
+				echo "0";
+			echo "</td><td>".$row->referred."</td><td>";
+			if ($row->numrows)
+				echo round($row->referred/$row->numrows*100, 2);
+			else 
+				echo "0";
+			echo "</td><td>";
+			if ($row->numrows)
+				echo round($row->totaldays/$row->numrows, 2);
+			else
+				echo "0";
+			echo "</td></tr>";
+		}	
+		$dcount = $dcount + $row->numrows;
 	}	
-echo "<tr><th class=\"totals\">Dermatology Total: ".$dcount."</th></tr>";		
-echo "<tr><th><a name=\"hema\">Hematology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th></tr>";
+echo "<tr><th class=\"totals\" colspan = 7>Dermatology Total: ".$dcount."</th></tr>";		
+echo "<tr><th><a name=\"hema\">Hematology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th><th>Total</th><th>Mortality</th><th>Mort%</th><th>Referred</th><th>Ref%</th><th>Ave HD</th></tr>";
 foreach ($hema_list as $hema){
         if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $hema);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $hema);
+			$count = $this->Admission_model->count_all_pcpdx($my_date1, $my_date2, $hema, "Hema");
+		elseif(!strcmp($area, 'er'))
+			$count = $this->Er_census_model->count_all_pcpdx($my_date1, $my_date2, $hema, "Hema");
         elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $hema); 
-	    echo "<tr><td>".$hema."</td><td><font size=5>".$count."</font></td></tr>";
-		
+            $count = $this->Micu_census_model->count_all_pcpdx($my_date1, $my_date2, $hema, "Hema");
+		foreach($count as $row){	
+			echo "<tr><td>".$hema."</td><td>".$row->numrows."<td>".$row->mortality."</td><td>";
+			if ($row->numrows)
+				echo round($row->mortality/$row->numrows*100, 2);
+			else
+				echo "0";
+			echo "</td><td>".$row->referred."</td><td>";
+			if ($row->numrows)
+				echo round($row->referred/$row->numrows*100, 2);
+			else 
+				echo "0";
+			echo "</td><td>";
+			if ($row->numrows)
+				echo round($row->totaldays/$row->numrows, 2);
+			else
+				echo "0";
+			echo "</td></tr>";
+		}	
+		$hcount = $hcount + $row->numrows;
 	}	
-echo "<tr><th class=\"totals\">Hematology Total: ".$hcount."</th></tr>";	
-echo "<tr><th><a name=\"neuro\">Neurology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th></tr>";
+echo "<tr><th class=\"totals\" colspan = 7>Hematology Total: ".$hcount."</th></tr>";	
+echo "<tr><th><a name=\"neuro\">Neurology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th><th>Total</th><th>Mortality</th><th>Mort%</th><th>Referred</th><th>Ref%</th><th>Ave HD</th></tr>";
 foreach ($neuro_list as $neuro){
         if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $neuro);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $neuro);
+			$count = $this->Admission_model->count_all_pcpdx($my_date1, $my_date2, $neuro, "Neuro");
+		elseif(!strcmp($area, 'er'))
+			$count = $this->Er_census_model->count_all_pcpdx($my_date1, $my_date2, $neuro, "Neuro");
         elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $neuro); 
-	    echo "<tr><td>".$neuro."</td><td><font size=5>".$count."</font></td></tr>";
-		
+            $count = $this->Micu_census_model->count_all_pcpdx($my_date1, $my_date2, $neuro, "Neuro");
+		foreach($count as $row){	
+			echo "<tr><td>".$neuro."</td><td>".$row->numrows."<td>".$row->mortality."</td><td>";
+			if ($row->numrows)
+				echo round($row->mortality/$row->numrows*100, 2);
+			else
+				echo "0";
+			echo "</td><td>".$row->referred."</td><td>";
+			if ($row->numrows)
+				echo round($row->referred/$row->numrows*100, 2);
+			else 
+				echo "0";
+			echo "</td><td>";
+			if ($row->numrows)
+				echo round($row->totaldays/$row->numrows, 2);
+			else
+				echo "0";
+			echo "</td></tr>";
+		}	
+		$necount = $necount + $row->numrows;
 	}		
-echo "<tr><th class=\"totals\">Neurology Total: ".$necount."</th></tr>";		
-echo "<tr><th><a name=\"tox\">Toxicology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th></tr>";
+echo "<tr><th class=\"totals\" colspan= 7>Neurology Total: ".$necount."</th></tr>";		
+echo "<tr><th><a name=\"tox\">Toxicology</a><div align=\"right\"><a href=\"#top\" >Top</a></div></th><th>Total</th><th>Mortality</th><th>Mort%</th><th>Referred</th><th>Ref%</th><th>Ave HD</th></tr>";
 foreach ($tox_list as $tox){
         if (!strcmp($area, 'ward'))
-            $count = $this->Admission_model->count_pcpdx($my_date1, $my_date2, $tox);
-        elseif(!strcmp($area, 'er'))
-	    $count = $this->Er_census_model->count_pcpdx($my_date1, $my_date2, $tox);
+			$count = $this->Admission_model->count_all_pcpdx($my_date1, $my_date2, $tox, "Tox");
+		elseif(!strcmp($area, 'er'))
+			$count = $this->Er_census_model->count_all_pcpdx($my_date1, $my_date2, $tox, "Tox");
         elseif(!strcmp($area, 'micu'))
-            $count = $this->Micu_census_model->count_pcpdx($my_date1, $my_date2, $tox); 
-	    echo "<tr><td>".$tox."</td><td><font size=5>".$count."</font></td></tr>";
-		
+            $count = $this->Micu_census_model->count_all_pcpdx($my_date1, $my_date2, $tox, "Tox");
+		foreach($count as $row){	
+			echo "<tr><td>".$tox."</td><td>".$row->numrows."<td>".$row->mortality."</td><td>";
+			if ($row->numrows)
+				echo round($row->mortality/$row->numrows*100, 2);
+			else
+				echo "0";
+			echo "</td>";
+			echo "<td>--</td><td>--</td>";
+			
+			/*<td>".$row->referred."(";
+			if ($row->numrows)
+				echo round($row->referred/$row->numrows*100, 2);
+			else 
+				echo "0";
+			echo ")</td>
+			*/
+			echo "<td>";
+			if ($row->numrows)
+				echo round($row->totaldays/$row->numrows, 2);
+			else
+				echo "0";
+			echo "</td></tr>";
+		}	
+		$tcount = $tcount + $row->numrows;
 	}		
-echo "<tr><th class=\"totals\">Toxicology Total: ".$tcount."</th></tr>";			
-echo "</table></td>";
-
-
-
-
+echo "<tr><th class=\"totals\" colspan = 7>Toxicology Total: ".$tcount."</th></tr>";			
 echo "</table></div>";
+
 
 ?>
   </body>

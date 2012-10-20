@@ -1023,6 +1023,12 @@ function get_micudata_by_id($aid){
 	         $query = $this->db->query($sql, array($date1, $date2, $rid, $rid, "%".$dx."%"));
 			 return $query->num_rows();
 	  }	  
+	  
+	  function count_all_pcpdx($date1, $date2, $dx, $ref){
+			 $sql = "SELECT COUNT(*) AS numrows, COUNT(IF(dispo = 'Mortality', 1, NULL)) AS mortality, COUNT(IF(refs LIKE ?, 1, NULL)) AS referred, SUM(DATEDIFF(date_out, date_in)) as totaldays FROM admissions WHERE (date_in >= ? AND date_in <= ?) AND pcpdx LIKE ? AND type = 'Primary'"; 
+	         $query = $this->db->query($sql, array("%".$ref."%", $date1, $date2, "%".$dx."%"));
+			 return $query->result();
+	  }	  	  
        function count_pcpdx($date1, $date2, $dx){
 	         $datewhere = array(
 		  			   'date_in >=' => $date1,
