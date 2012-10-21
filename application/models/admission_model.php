@@ -292,14 +292,14 @@ function edit_one_admission($id){
           
 	  }
           //GM service report
-          function gm_report($service, $date1, $date2, $type)
-          {
+          function gm_report($service, $date1, $date2, $type){
            $datewhere = array(
 		  			   'date_in >=' => $date1,
 					   'date_in <=' => $date2
 					   );
-           if (!strcmp($service, 'All'))
+           if (!strcmp($type, 'All') || !strcmp($type, 'Types'))
            {
+		   /*
             $this->db->from('admissions');
 	    $this->db->join('patients', 'patients.p_id = admissions.p_id', 'inner');
 	    $this->db->join('residents', 'residents.r_id = admissions.r_id', 'inner');
@@ -309,8 +309,98 @@ function edit_one_admission($id){
 	    $this->db->order_by('dispo asc, service asc, type desc,  date_in desc');
 	    $query = $this->db->get();
 	    return $query->result();
-           }
-           else
+		*/
+			if(!strcmp($type, 'Types')){	
+				$type_count = "COUNT(IF(type = 'Primary', 1, NULL)) AS prime,
+							   COUNT(IF(type = 'Co-Managed', 1, NULL)) AS comx,
+							   COUNT(IF(type = 'Pre-operative', 1, NULL)) AS preop
+							  ";	
+			}
+			else{
+				$dispo_count = "COUNT(IF(dispo = 'Admitted', 1, NULL)) AS admitted, 
+								COUNT(IF(dispo = 'Discharged', 1, NULL)) AS discharged, 
+								COUNT(IF(dispo = 'Mortality', 1, NULL)) AS mortality, 
+								COUNT(IF(dispo = 'HAMA', 1, NULL)) AS hama, 
+								COUNT(IF(dispo = 'TOS', 1, NULL)) AS tos, 
+								COUNT(IF(dispo = 'Admitted to MICU', 1, NULL)) AS amicu, 
+								COUNT(IF(dispo = 'Absconded', 1, NULL)) AS absconded,
+								COUNT(IF(dispo <> 'Admitted', 1, NULL)) AS disposed
+								";
+				$hd_count = "COUNT(IF(DATEDIFF(date_out, date_in) <= 1, 1, NULL)) AS hd1,
+							 COUNT(IF(DATEDIFF(date_out, date_in) = 2, 1, NULL)) AS hd2,
+							 COUNT(IF(DATEDIFF(date_out, date_in) = 3, 1, NULL)) AS hd3,
+							 COUNT(IF(DATEDIFF(date_out, date_in) = 4, 1, NULL)) AS hd4,
+							 COUNT(IF(DATEDIFF(date_out, date_in) = 5, 1, NULL)) AS hd5,
+							 COUNT(IF(DATEDIFF(date_out, date_in) = 6, 1, NULL)) AS hd6,
+							 COUNT(IF(DATEDIFF(date_out, date_in) = 7, 1, NULL)) AS hd7,
+							 COUNT(IF((DATEDIFF(date_out, date_in) > 7 AND DATEDIFF(date_out, date_in) < 14) , 1, NULL)) AS hd8,
+							 COUNT(IF(DATEDIFF(date_out, date_in) >= 14, 1, NULL)) AS hd9,
+							 COUNT(IF(DATEDIFF(date_out, date_in) = '' OR DATEDIFF(date_out, date_in) = NULL, 1, NULL)) AS hd10,
+							 ROUND(SUM(IF(dispo <> 'Admitted', DATEDIFF(date_out, date_in), NULL))/COUNT(IF(dispo <> 'Admitted', 1, NULL))) as averagehd
+							 ";			
+				$m_count = "COUNT(IF((DATEDIFF(date_out, date_in) <= 1 AND dispo = 'Mortality'), 1, NULL)) AS md1,
+							COUNT(IF((DATEDIFF(date_out, date_in) = 2 AND dispo = 'Mortality'), 1, NULL)) AS md2,
+							COUNT(IF((DATEDIFF(date_out, date_in) = 3 AND dispo = 'Mortality'), 1, NULL)) AS md3,
+							COUNT(IF((DATEDIFF(date_out, date_in) = 4 AND dispo = 'Mortality'), 1, NULL)) AS md4,
+							COUNT(IF((DATEDIFF(date_out, date_in) = 5 AND dispo = 'Mortality'), 1, NULL)) AS md5,
+							COUNT(IF((DATEDIFF(date_out, date_in) = 6 AND dispo = 'Mortality'), 1, NULL)) AS md6,
+							COUNT(IF((DATEDIFF(date_out, date_in) = 7 AND dispo = 'Mortality'), 1, NULL)) AS md7,
+							COUNT(IF((DATEDIFF(date_out, date_in) >= 8 AND DATEDIFF(date_out, date_in) < 14 AND dispo = 'Mortality'), 1, NULL)) AS md8,
+							COUNT(IF((DATEDIFF(date_out, date_in) >= 14 AND dispo = 'Mortality'), 1, NULL)) AS md9";
+				$ed_count = "COUNT(IF((DATEDIFF(date_out, date_in) <= 1 AND dispo <> 'Admitted'), 1, NULL)) AS ed1,
+							 COUNT(IF((DATEDIFF(date_out, date_in) = 2 AND dispo <> 'Admitted'), 1, NULL)) AS ed2,
+							 COUNT(IF((DATEDIFF(date_out, date_in) = 3 AND dispo <> 'Admitted'), 1, NULL)) AS ed3,
+							 COUNT(IF((DATEDIFF(date_out, date_in) = 4 AND dispo <> 'Admitted'), 1, NULL)) AS ed4,
+							 COUNT(IF((DATEDIFF(date_out, date_in) = 5 AND dispo <> 'Admitted'), 1, NULL)) AS ed5,
+							 COUNT(IF((DATEDIFF(date_out, date_in) = 6 AND dispo <> 'Admitted'), 1, NULL)) AS ed6,
+							 COUNT(IF((DATEDIFF(date_out, date_in) = 7 AND dispo <> 'Admitted'), 1, NULL)) AS ed7,
+							 COUNT(IF((DATEDIFF(date_out, date_in) >= 8 AND DATEDIFF(date_out, date_in) < 14 AND dispo != 'Admitted'), 1, NULL)) AS ed8,
+							 COUNT(IF((DATEDIFF(date_out, date_in) >= 14 AND dispo != 'Admitted'), 1, NULL)) AS ed9";
+				$age_count = "COUNT(IF((ROUND(DATEDIFF(date_in, patients.p_bday)/365) < 18 ), 1, NULL)) AS f1,
+							  COUNT(IF((ROUND(DATEDIFF(date_in, patients.p_bday)/365) >= 18 AND ROUND(DATEDIFF(date_in, patients.p_bday)/365) < 40 AND patients.p_sex = 'F'), 1, NULL)) AS f2,
+							  COUNT(IF((ROUND(DATEDIFF(date_in, patients.p_bday)/365) >= 40 AND ROUND(DATEDIFF(date_in, patients.p_bday)/365) < 60 AND patients.p_sex = 'F'), 1, NULL)) AS f3,
+							  COUNT(IF((ROUND(DATEDIFF(date_in, patients.p_bday)/365) >= 60 AND ROUND(DATEDIFF(date_in, patients.p_bday)/365) < 70 AND patients.p_sex = 'F'), 1, NULL)) AS f4,
+							  COUNT(IF((ROUND(DATEDIFF(date_in, patients.p_bday)/365) >= 70 AND ROUND(DATEDIFF(date_in, patients.p_bday)/365) < 80 AND patients.p_sex = 'F'), 1, NULL)) AS f5,
+							  COUNT(IF((ROUND(DATEDIFF(date_in, patients.p_bday)/365) >= 80 AND patients.p_sex = 'F'), 1, NULL)) AS f6,
+							  COUNT(IF((ROUND(DATEDIFF(date_in, patients.p_bday)/365) < 18 AND patients.p_sex = 'M'), 1, NULL)) AS m1,
+							  COUNT(IF((ROUND(DATEDIFF(date_in, patients.p_bday)/365) >= 18 AND ROUND(DATEDIFF(date_in, patients.p_bday)/365) < 40 AND patients.p_sex = 'M'), 1, NULL)) AS m2,
+							  COUNT(IF((ROUND(DATEDIFF(date_in, patients.p_bday)/365) >= 40 AND ROUND(DATEDIFF(date_in, patients.p_bday)/365) < 60 AND patients.p_sex = 'M'), 1, NULL)) AS m3,
+							  COUNT(IF((ROUND(DATEDIFF(date_in, patients.p_bday)/365) >= 60 AND ROUND(DATEDIFF(date_in, patients.p_bday)/365) < 70 AND patients.p_sex = 'M'), 1, NULL)) AS m4,
+							  COUNT(IF((ROUND(DATEDIFF(date_in, patients.p_bday)/365) >= 70 AND ROUND(DATEDIFF(date_in, patients.p_bday)/365) < 80 AND patients.p_sex = 'M'), 1, NULL)) AS m5,
+							  COUNT(IF((ROUND(DATEDIFF(date_in, patients.p_bday)/365) >= 80 AND patients.p_sex = 'M'), 1, NULL)) AS m6,
+							  ROUND(SUM(DATEDIFF(date_in, patients.p_bday)/365)/COUNT(a_id)) as averageage,
+							  SUM(IF(patients.p_sex = 'F', DATEDIFF(date_in, patients.p_bday)/365, NULL)) as fagetotal,
+							  SUM(IF(patients.p_sex = 'M', DATEDIFF(date_in, patients.p_bday)/365, NULL)) as magetotal
+							  ";
+				$minmax_count = "MAX(ROUND(DATEDIFF(date_in, patients.p_bday)/365)) as maxage,
+								 MIN(ROUND(DATEDIFF(date_in, patients.p_bday)/365)) as minage,	
+								 MAX(ROUND(IF(patients.p_sex = 'F', DATEDIFF(date_in, patients.p_bday)/365, NULL))) as maxf,
+								 MAX(ROUND(IF(patients.p_sex = 'M', DATEDIFF(date_in, patients.p_bday)/365, NULL))) as maxm,
+								 MIN(ROUND(IF(patients.p_sex = 'F', DATEDIFF(date_in, patients.p_bday)/365, NULL))) as minf,
+								 MIN(ROUND(IF(patients.p_sex = 'M', DATEDIFF(date_in, patients.p_bday)/365, NULL))) as minm,
+								 MAX(IF(dispo <> 'Admitted', DATEDIFF(date_out, date_in), NULL)) as maxhd,
+								 MIN(IF(dispo <> 'Admitted', DATEDIFF(date_out, date_in), NULL)) as minhd
+								 ";	
+				}				 
+				if (!strcmp($service, 'All') && !strcmp($type, 'All')){					
+					$sql = "SELECT COUNT(a_id) AS total, ".$dispo_count.", ".$hd_count.", ".$m_count.", ".$ed_count.", ".$age_count.", ".$minmax_count." FROM admissions, patients WHERE admissions.p_id = patients.p_id AND date_in >= ? AND date_in <= ? AND type = 'Primary'";		
+					$query = $this->db->query($sql, array($date1, $date2));					
+				}
+				elseif(strcmp($service, 'All') && !strcmp($type, 'All')){	
+					$sql = "SELECT COUNT(a_id) AS total, ".$dispo_count.", ".$hd_count.", ".$m_count.", ".$ed_count.", ".$age_count.", ".$minmax_count." FROM admissions, patients WHERE admissions.p_id = patients.p_id AND date_in >= ? AND date_in <= ? AND service = ? AND type = 'Primary'";		
+					$query = $this->db->query($sql, array($date1, $date2, $service));					
+				}
+				elseif (!strcmp($service, 'All') && !strcmp($type, 'Types')){					
+					$sql = "SELECT COUNT(a_id) AS total, ".$type_count." FROM admissions WHERE date_in >= ? AND date_in <= ?";		
+					$query = $this->db->query($sql, array($date1, $date2));					
+				}
+				elseif(strcmp($service, 'All') && !strcmp($type, 'Types')){	
+					$sql = "SELECT COUNT(a_id) AS total, ".$type_count." FROM admissions WHERE date_in >= ? AND date_in <= ? AND service = ?";		
+					$query = $this->db->query($sql, array($date1, $date2, $service));					
+				}
+				return $query->result();
+		}		
+        else
            {
             $this->db->from('admissions');
 	    $this->db->join('patients', 'patients.p_id = admissions.p_id', 'inner');

@@ -54,7 +54,7 @@ $hcount = 0;
 $necount = 0;
 $gcount = 0;
 $tcount = 0;
-echo "<div align=\"center\"><h1>ICD/PCP Case Count for the Period ".$my_date1." to ".$my_date2.".</h1>";
+echo "<div align=\"center\"><h1>".strtoupper($area).": ICD/PCP Case Count for the Period ".$my_date1." to ".$my_date2.".</h1>";
 echo "<div align=\"center\"><h1><a name=\"top\" >Summary Table By Disease Category</a></h1>";
 echo "<table border = 1>";
 echo "<tr><th><a href=\"#pulmo\" >Pulmonary</a></th><th><a href=\"#ids\" >Infectious</a></th><th><a href=\"#gastro\" >Gastroenterology</a></th><th><a href=\"#cardio\" >Cardiology</th></a><th><a href=\"#endo\" >Endocrinology</a></th></tr>";

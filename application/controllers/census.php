@@ -261,20 +261,8 @@ function gm_census(){
 		   			'fm'=>$this->Er_census_model->count_erefs("FM", $my_date1, $my_date2),	
               		'rehab'=>$this->Er_census_model->count_erefs("Rehab", $my_date1, $my_date2),
 				);
-		
 
-	      $data['dispos'] = array(
-					'admit'=> $this->Er_census_model->count_dispo("Admitted", $my_date1, $my_date2),
-					'a_wards'=>$this->Er_census_model->count_dispo("Admitted to Wards", $my_date1, $my_date2),
-	      				'tos'=>$this->Er_census_model->count_dispo("TOS", $my_date1, $my_date2),	
-	      				'a_micu'=>$this->Er_census_model->count_dispo("Admitted to MICU", $my_date1, $my_date2),	
-	      				'hama'=>$this->Er_census_model->count_dispo("HAMA", $my_date1, $my_date2),	
-	      				'mort'=>$this->Er_census_model->count_dispo("Mortality", $my_date1, $my_date2),	
-	      				'disch'=>$this->Er_census_model->count_dispo("Discharged", $my_date1, $my_date2),	
-						'absc'=>$this->Er_census_model->count_dispo("Absconded", $my_date1, $my_date2)
-
-				 );  	
-	      $data['c_admissions'] = $this->Er_census_model->er_report($my_service, $my_date1, $my_date2);   
+					$data['c_admissions'] = $this->Er_census_model->er_report($my_service, $my_date1, $my_date2);   
        }
        elseif (!strcmp($my_service, 'micu'))
        {
@@ -316,17 +304,6 @@ function gm_census(){
               		'rehab'=>$this->Er_census_model->count_erefs("Rehab", $my_date1, $my_date2),
 				);
 
-
-	      $data['dispos'] = array(
-					'admit'=> $this->Micu_census_model->count_dispo("Admitted", $my_date1, $my_date2),
-					'a_wards'=>$this->Micu_census_model->count_dispo("Admitted to Wards", $my_date1, $my_date2),
-	      				'tos'=>$this->Micu_census_model->count_dispo("TOS", $my_date1, $my_date2),	
-	      				'a_micu'=>$this->Micu_census_model->count_dispo("Admitted to MICU", $my_date1, $my_date2),	
-	      				'hama'=>$this->Micu_census_model->count_dispo("HAMA", $my_date1, $my_date2),	
-	      				'mort'=>$this->Micu_census_model->count_dispo("Mortality", $my_date1, $my_date2),	
-	      				'disch'=>$this->Micu_census_model->count_dispo("Discharged", $my_date1, $my_date2),	
-						'absc'=>$this->Micu_census_model->count_dispo("Absconded", $my_date1, $my_date2)
-				 );  	
 	      $data['c_admissions'] = $this->Micu_census_model->micu_report($my_service, $my_date1, $my_date2);
        }       
        else
@@ -370,20 +347,8 @@ function gm_census(){
 		   			'fm'=>$this->Admission_model->count_erefs($my_service, "FM", $my_date1, $my_date2),	
               		'rehab'=>$this->Er_census_model->count_erefs("Rehab", $my_date1, $my_date2),
 				);
-
-	      $data['dispos'] = array(
-					'admit'=> $this->Admission_model->count_dispo($my_service, "Admitted", $my_date1, $my_date2),
-					'a_wards'=> 0,
-	      				'tos'=>$this->Admission_model->count_dispo($my_service, "TOS", $my_date1, $my_date2),	
-	      				'a_micu'=>$this->Admission_model->count_dispo($my_service, "Admitted to MICU", $my_date1, $my_date2),	
-	      				'hama'=>$this->Admission_model->count_dispo($my_service, "HAMA", $my_date1, $my_date2),	
-	      				'mort'=>$this->Admission_model->count_dispo($my_service, "Mortality", $my_date1, $my_date2),	
-	      				'disch'=>$this->Admission_model->count_dispo($my_service, "Discharged", $my_date1, $my_date2),	
-						'absc'=>$this->Admission_model->count_dispo($my_service, "Absconded", $my_date1, $my_date2)
-
-				 );  	
               $data['c_admissions'] = $this->Admission_model->gm_report($my_service, $my_date1, $my_date2, "All");
-              $data['p_admissions'] = $this->Admission_model->gm_report($my_service, $my_date1, $my_date2, "Primary");
+              $data['admission_types'] = $this->Admission_model->gm_report($my_service, $my_date1, $my_date2, "Types");
        }
        $this->load->view('list/show_admissions', $data); 
 } 	
