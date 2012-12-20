@@ -493,7 +493,7 @@ if (!strcmp($one_gm, "n")){
          echo "myChart.draw();";
          echo "var myColors = new Array('#0f0', '#ff0000', '#00f', '#ff0', '#00ffff', '#9ACD32');";
          echo "myChart.colorizeBars(myColors);";
-         echo "myChart.resize(500, 300)";
+         echo "myChart.resize(600, 300)";
          echo "</script>";         
 
 		 

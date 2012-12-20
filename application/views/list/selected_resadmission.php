@@ -38,7 +38,7 @@ $res_list = $this->Resident_model->get_activer();
 	        $vars['eadmission'] = $row->micu_id;
 	    else
 	        $vars['eadmission'] = $row->a_id;
-
+		$vars['epatient'] = $row->p_id;
 	    $hd = compute_hd($row->dispo, revert_form_input($row->date_in), revert_form_input($row->date_out));
 	    //$vars['num'] = $y;
 
@@ -48,6 +48,7 @@ $res_list = $this->Resident_model->get_activer();
 	      echo form_open('census/edit_date_out');
         echo "<tr><td><table id = \"leftcol\">";
         $pdata = $this->Patient_model->get_one_patient($row->p_id);
+		
 	    foreach ($pdata as $patient){
 	        $age = compute_age_adm(revert_form_input($row->date_in), revert_form_input($patient->p_bday));	
             if (strcmp($my_service, 'er') && strcmp($my_service, 'micu'))

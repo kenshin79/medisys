@@ -573,6 +573,7 @@ function edit_date_out(){
 	else
 		$this->Admission_model->edit_dispo_date($aid, $date_out, $dispo, $plist);
 	    
+	$this->Patient_model->update_adm_status($p_id, $dispo);	
 	if (!strcmp($one_gm, 'res')){
             //ward
 	 		$data['sr_wadmissions'] = $this->Admission_model->get_sresidents_adm($r_id, $my_service);

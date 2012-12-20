@@ -403,12 +403,15 @@ foreach ($neuro_list as $neuro){
 				echo round($row->mortality/$row->numrows*100, 2);
 			else
 				echo "0";
-			echo "</td><td>".$row->referred."</td><td>";
+			echo "</td>";
+			echo "<td>--</td><td>--</td><td>";
+			/*<td>".$row->referred."</td><td>";
 			if ($row->numrows)
 				echo round($row->referred/$row->numrows*100, 2);
 			else 
 				echo "0";
-			echo "</td><td>";
+			*/	
+			
 			if ($row->numrows)
 				echo round($row->totaldays/$row->numrows, 2);
 			else

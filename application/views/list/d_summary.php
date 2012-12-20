@@ -403,7 +403,7 @@ foreach ($p_admission as $row){
 		echo "<hr/>";
 		echo "<span>Discharge Plans:</span>";
         echo "<table>";
-        echo "<tr><td style=\"vertical-align:top\"><textarea name = \"displans\" cols=\"120\" rows=\"6\" wrap=\"on\">";
+        echo "<tr><td style=\"vertical-align:top\"><textarea name = \"displans\" cols=\"120\" rows=\"5\" wrap=\"on\">";
 		//Discharge Plans
         if ($row->dsummary)
             echo revert_form_input($edsummary[41]);
